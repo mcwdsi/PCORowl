@@ -3,6 +3,7 @@
 
 <!DOCTYPE rdf:RDF [
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
@@ -10,19 +11,20 @@
 ]>
 
 
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/PCORnet/"
-     xml:base="http://purl.obolibrary.org/obo/PCORnet/"
+<rdf:RDF xmlns="&obo;PCORnet/"
+     xml:base="&obo;PCORnet/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/PCORnet/">
+    <owl:Ontology rdf:about="&obo;PCORnet/">
         <dc:contributor>Josh Hanna</dc:contributor>
         <dc:contributor>Amanda Hicks</dc:contributor>
         <dc:title xml:lang="en">RDFized PCORnet CDM</dc:title>
         <dc:contributor>William R. Hogan</dc:contributor>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/omrse.owl"/>
+        <owl:imports rdf:resource="&obo;omrse.owl"/>
     </owl:Ontology>
     
 
@@ -40,17 +42,17 @@
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">
+    <rdf:Description rdf:about="&obo;IAO_0000027">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000001"/>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -59,19 +61,19 @@
 
     <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000000 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000000">
+    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000000">
         <rdfs:label xml:lang="en">PROMIS response data item</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000012"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000012"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000010"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -80,64 +82,97 @@
 
     <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000001 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000001">
+    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000001">
         <rdfs:label xml:lang="en">question asking process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000008"/>
+                <owl:onProperty rdf:resource="&obo;RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000008"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                <owl:onProperty rdf:resource="&obo;RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000003 -->
+
+    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000003">
+        <rdfs:label xml:lang="en">PCORnet racial identity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000098"/>
+        <rdfs:comment xml:lang="en">A racial identity that is the output of a racial identification process that uses the PCORnet CDM race or terminology. PCORnet CDM claims to use the OMB racial classification, but the crucial difference is that PCORnet CDM requires persons to identify with only one category whereas the OMB allows for multiple racial identities as outputs of an identification process.</rdfs:comment>
+        <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000004 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000004">
+    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000004">
         <rdfs:label xml:lang="en">question text</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000005 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000005">
+    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000005">
         <rdfs:label xml:lang="en">answer set</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002351"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000012"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002351"/>
+                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000012"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000006 -->
+
+    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000006">
+        <rdfs:label xml:lang="en">PCORnet American Indian or Alaska Native identity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000180"/>
+        <rdfs:subClassOf rdf:resource="&obo;PCORnet/PCORnet_00000003"/>
+        <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000007 -->
+
+    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000007">
+        <rdfs:label xml:lang="en">PCORnet Asian identity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000181"/>
+        <rdfs:subClassOf rdf:resource="&obo;PCORnet/PCORnet_00000003"/>
+        <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000008 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000008">
+    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000008">
         <rdfs:label xml:lang="en">material information bearer of question text plus answer set</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:onProperty rdf:resource="&obo;RO_0000053"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
+                            <rdf:Description rdf:about="&obo;BFO_0000020"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000004"/>
+                                <owl:onProperty rdf:resource="&obo;RO_0000059"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000005"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -146,14 +181,14 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:onProperty rdf:resource="&obo;RO_0000053"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
+                            <rdf:Description rdf:about="&obo;BFO_0000020"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000005"/>
+                                <owl:onProperty rdf:resource="&obo;RO_0000059"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000004"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -164,15 +199,26 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000009 -->
+
+    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000009">
+        <rdfs:label xml:lang="en">PCORnet black or African American identity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000182"/>
+        <rdfs:subClassOf rdf:resource="&obo;PCORnet/PCORnet_00000003"/>
+        <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000010 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000010">
+    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000010">
         <rdfs:label xml:lang="en">PCORnet CDM item identifier</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0020012"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000011"/>
+                <owl:onProperty rdf:resource="&obo;IAO_0020012"/>
+                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000011"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -181,19 +227,19 @@
 
     <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000011 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000011">
+    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000011">
         <rdfs:label xml:lang="en">PCORnet item</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000004"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000005"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -202,15 +248,47 @@
 
     <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000012 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000012">
+    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000012">
         <rdfs:label xml:lang="en">option as memeber of answer set</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000005"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002350"/>
+                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000013 -->
+
+    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000013">
+        <rdfs:label xml:lang="en">PCORnet Native Hawaiian or other Pacific Islander identity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000183"/>
+        <rdfs:subClassOf rdf:resource="&obo;PCORnet/PCORnet_00000003"/>
+        <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000014 -->
+
+    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000014">
+        <rdfs:label xml:lang="en">PCORnet white identity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000184"/>
+        <rdfs:subClassOf rdf:resource="&obo;PCORnet/PCORnet_00000003"/>
+        <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000015 -->
+
+    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000015">
+        <rdfs:label xml:lang="en">PCORnet multiple race identity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PCORnet/PCORnet_00000003"/>
+        <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
     </owl:Class>
 </rdf:RDF>
 
