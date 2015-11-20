@@ -290,6 +290,50 @@
         <rdfs:subClassOf rdf:resource="&obo;PCORnet/PCORnet_00000003"/>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000016 -->
+
+    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000016">
+        <rdfs:label xml:lang="en">PCORnet Hispanic</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000127"/>
+        <rdfs:subClassOf rdf:resource="&obo;PCORnet/PCORnet_00000018"/>
+        <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">From PCORnet CDM &quot;A person of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race.&quot;</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000017 -->
+
+    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000017">
+        <rdfs:label xml:lang="en">PCORnet Not Hispanic</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000128"/>
+        <rdfs:subClassOf rdf:resource="&obo;PCORnet/PCORnet_00000018"/>
+        <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000018 -->
+
+    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000018">
+        <rdfs:label xml:lang="en">PCORnet ethnic identity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000100"/>
+        <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000019 -->
+
+    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000019">
+        <rdfs:label xml:lang="en">PCORnet patient identifier</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000578"/>
+        <obo:IAO_0000115 xml:lang="en">A centrally registered identifier that denotes a person in a PCORnet data mart and is used to link across tables. This identifier is not necessarily unique within PCORnet.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+    </owl:Class>
 </rdf:RDF>
 
 
