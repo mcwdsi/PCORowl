@@ -139,6 +139,201 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000108 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000108">
+        <rdfs:label xml:lang="en">exists at</rdfs:label>
+        <obo:IAO_0000116>BFO2 Reference: entity</obo:IAO_0000116>
+        <obo:IAO_0000116>BFO2 Reference: temporal region</obo:IAO_0000116>
+        <obo:IAO_0000600 xml:lang="en">b exists_at t means: b is an entity which exists at some temporal region t. (axiom label in BFO2 Reference: [118-002])</obo:IAO_0000600>
+        <obo:BFO_0000180>existsAt</obo:BFO_0000180>
+        <obo:BFO_0000179>exists-at</obo:BFO_0000179>
+        <rdfs:domain rdf:resource="&obo;BFO_0000001"/>
+        <rdfs:range rdf:resource="&obo;BFO_0000008"/>
+        <owl:inverseOf rdf:resource="&obo;BFO_0000157"/>
+        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:resource="&obo;BFO_0000008"/>
+        <owl:annotatedSource rdf:resource="&obo;BFO_0000108"/>
+        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/102"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;range"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:resource="&obo;BFO_0000001"/>
+        <owl:annotatedSource rdf:resource="&obo;BFO_0000108"/>
+        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/101"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;domain"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget xml:lang="en">b exists_at t means: b is an entity which exists at some temporal region t. (axiom label in BFO2 Reference: [118-002])</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;BFO_0000108"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000600"/>
+        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/118-002"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000118 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000118"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000132 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000132"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000138 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000138">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label xml:lang="en">proper part of occurrent</rdfs:label>
+        <obo:IAO_0000115>[copied from inverse property &apos;has proper occurrent part&apos;] b has_proper_occurrent_part c = Def. c proper_occurrent_part_of b. [XXX-001</obo:IAO_0000115>
+        <obo:BFO_0000180>properOccurrentPartOf</obo:BFO_0000180>
+        <obo:BFO_0000179>o-ppart-of</obo:BFO_0000179>
+        <obo:IAO_0000602>(iff (properOccurrentPartOf a b) (and (occurrentPartOf a b) (not (= a b)))) // axiom label in BFO2 CLIF: [005-001] </obo:IAO_0000602>
+        <obo:IAO_0000115 xml:lang="en">b proper_occurrent_part_of c =Def. b occurrent_part_of c &amp; b and c are not identical. (axiom label in BFO2 Reference: [005-001])</obo:IAO_0000115>
+        <rdfs:range rdf:resource="&obo;BFO_0000003"/>
+        <rdfs:domain rdf:resource="&obo;BFO_0000003"/>
+        <owl:inverseOf rdf:resource="&obo;BFO_0000118"/>
+        <rdfs:subPropertyOf rdf:resource="&obo;BFO_0000132"/>
+        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedTarget xml:lang="en">b proper_occurrent_part_of c =Def. b occurrent_part_of c &amp; b and c are not identical. (axiom label in BFO2 Reference: [005-001])</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;BFO_0000138"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/005-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="&obo;BFO_0000138"/>
+        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/117"/>
+        <owl:annotatedProperty rdf:resource="&rdf;type"/>
+        <owl:annotatedTarget rdf:resource="&owl;TransitiveProperty"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:resource="&obo;BFO_0000003"/>
+        <owl:annotatedSource rdf:resource="&obo;BFO_0000138"/>
+        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/115"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;range"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:resource="&obo;BFO_0000003"/>
+        <owl:annotatedSource rdf:resource="&obo;BFO_0000138"/>
+        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/114"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;domain"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget>(iff (properOccurrentPartOf a b) (and (occurrentPartOf a b) (not (= a b)))) // axiom label in BFO2 CLIF: [005-001] </owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;BFO_0000138"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000602"/>
+        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/005-001"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000155 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000155">
+        <rdfs:label xml:lang="en">occupies temporal region</rdfs:label>
+        <obo:BFO_0000179>spans</obo:BFO_0000179>
+        <obo:BFO_0000180>occupiesTemporalRegion</obo:BFO_0000180>
+        <obo:IAO_0000600 xml:lang="en">p occupies_temporal_region t. This is a primitive relation between an occurrent p and the temporal region t upon which the spatiotemporal region p occupies_spatiotemporal_region projects. (axiom label in BFO2 Reference: [132-001])</obo:IAO_0000600>
+        <rdfs:domain rdf:resource="&obo;BFO_0000003"/>
+        <rdfs:range rdf:resource="&obo;BFO_0000008"/>
+        <rdfs:subPropertyOf rdf:resource="&obo;BFO_0000108"/>
+        <owl:inverseOf rdf:resource="&obo;BFO_0000156"/>
+        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:resource="&obo;BFO_0000003"/>
+        <owl:annotatedSource rdf:resource="&obo;BFO_0000155"/>
+        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/539"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;domain"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:resource="&obo;BFO_0000008"/>
+        <owl:annotatedSource rdf:resource="&obo;BFO_0000155"/>
+        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/540"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;range"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget xml:lang="en">p occupies_temporal_region t. This is a primitive relation between an occurrent p and the temporal region t upon which the spatiotemporal region p occupies_spatiotemporal_region projects. (axiom label in BFO2 Reference: [132-001])</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;BFO_0000155"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000600"/>
+        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/132-001"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000156 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000156">
+        <rdfs:label xml:lang="en">has temporal occupant</rdfs:label>
+        <obo:BFO_0000179>span-of</obo:BFO_0000179>
+        <obo:IAO_0000600>[copied from inverse property &apos;occupies temporal region&apos;] p occupies_temporal_region t. This is a primitive relation between an occurrent p and the temporal region t upon which the spatiotemporal region p occupies_spatiotemporal_region projects. (axiom label in BFO2 Reference: [132-001])</obo:IAO_0000600>
+        <obo:BFO_0000180>spanOf</obo:BFO_0000180>
+        <rdfs:range rdf:resource="&obo;BFO_0000003"/>
+        <rdfs:domain rdf:resource="&obo;BFO_0000008"/>
+        <rdfs:subPropertyOf rdf:resource="&obo;BFO_0000157"/>
+        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:resource="&obo;BFO_0000008"/>
+        <owl:annotatedSource rdf:resource="&obo;BFO_0000156"/>
+        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/540"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;domain"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:resource="&obo;BFO_0000003"/>
+        <owl:annotatedSource rdf:resource="&obo;BFO_0000156"/>
+        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/539"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;range"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000157 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000157">
+        <rdfs:label xml:lang="en">during which exists</rdfs:label>
+        <obo:IAO_0000116>[copied from inverse property &apos;exists at&apos;] BFO2 Reference: entity</obo:IAO_0000116>
+        <obo:BFO_0000179>during-which-exists</obo:BFO_0000179>
+        <obo:IAO_0000116>[copied from inverse property &apos;exists at&apos;] BFO2 Reference: temporal region</obo:IAO_0000116>
+        <obo:IAO_0000600>[copied from inverse property &apos;exists at&apos;] b exists_at t means: b is an entity which exists at some temporal region t. (axiom label in BFO2 Reference: [118-002])</obo:IAO_0000600>
+        <rdfs:range rdf:resource="&obo;BFO_0000001"/>
+        <rdfs:domain rdf:resource="&obo;BFO_0000008"/>
+        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:resource="&obo;BFO_0000001"/>
+        <owl:annotatedSource rdf:resource="&obo;BFO_0000157"/>
+        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/101"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;range"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:resource="&obo;BFO_0000008"/>
+        <owl:annotatedSource rdf:resource="&obo;BFO_0000157"/>
+        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/102"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;domain"/>
+    </owl:Axiom>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -152,17 +347,26 @@
     <rdf:Description rdf:about="&obo;IAO_0000027">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
                 <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000037 -->
+
+    <owl:Class rdf:about="&obo;PCORnet_00000037">
+        <rdfs:label xml:lang="en">PCORnet racial identification process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000099"/>
+    </owl:Class>
     
 
 
@@ -282,13 +486,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000010"/>
+                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000012"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000012"/>
+                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
