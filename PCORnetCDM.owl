@@ -162,12 +162,6 @@
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </owl:ObjectProperty>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:resource="&obo;BFO_0000008"/>
-        <owl:annotatedSource rdf:resource="&obo;BFO_0000108"/>
-        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/102"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;range"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:resource="&obo;BFO_0000001"/>
         <owl:annotatedSource rdf:resource="&obo;BFO_0000108"/>
         <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/101"/>
@@ -178,6 +172,12 @@
         <owl:annotatedSource rdf:resource="&obo;BFO_0000108"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000600"/>
         <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/118-002"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:resource="&obo;BFO_0000008"/>
+        <owl:annotatedSource rdf:resource="&obo;BFO_0000108"/>
+        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/102"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;range"/>
     </owl:Axiom>
     
 
@@ -211,16 +211,10 @@
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </owl:ObjectProperty>
     <owl:Axiom>
-        <owl:annotatedTarget xml:lang="en">b proper_occurrent_part_of c =Def. b occurrent_part_of c &amp; b and c are not identical. (axiom label in BFO2 Reference: [005-001])</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:resource="&obo;BFO_0000003"/>
         <owl:annotatedSource rdf:resource="&obo;BFO_0000138"/>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
-        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/005-001"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="&obo;BFO_0000138"/>
-        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/117"/>
-        <owl:annotatedProperty rdf:resource="&rdf;type"/>
-        <owl:annotatedTarget rdf:resource="&owl;TransitiveProperty"/>
+        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/114"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;domain"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedTarget rdf:resource="&obo;BFO_0000003"/>
@@ -229,15 +223,21 @@
         <owl:annotatedProperty rdf:resource="&rdfs;range"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:resource="&obo;BFO_0000003"/>
         <owl:annotatedSource rdf:resource="&obo;BFO_0000138"/>
-        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/114"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;domain"/>
+        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/117"/>
+        <owl:annotatedProperty rdf:resource="&rdf;type"/>
+        <owl:annotatedTarget rdf:resource="&owl;TransitiveProperty"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedTarget>(iff (properOccurrentPartOf a b) (and (occurrentPartOf a b) (not (= a b)))) // axiom label in BFO2 CLIF: [005-001] </owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;BFO_0000138"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000602"/>
+        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/005-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget xml:lang="en">b proper_occurrent_part_of c =Def. b occurrent_part_of c &amp; b and c are not identical. (axiom label in BFO2 Reference: [005-001])</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;BFO_0000138"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
         <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/005-001"/>
     </owl:Axiom>
     
@@ -257,12 +257,6 @@
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </owl:ObjectProperty>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:resource="&obo;BFO_0000003"/>
-        <owl:annotatedSource rdf:resource="&obo;BFO_0000155"/>
-        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/539"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;domain"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:resource="&obo;BFO_0000008"/>
         <owl:annotatedSource rdf:resource="&obo;BFO_0000155"/>
         <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/540"/>
@@ -273,6 +267,12 @@
         <owl:annotatedSource rdf:resource="&obo;BFO_0000155"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000600"/>
         <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/132-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:resource="&obo;BFO_0000003"/>
+        <owl:annotatedSource rdf:resource="&obo;BFO_0000155"/>
+        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/539"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;domain"/>
     </owl:Axiom>
     
 
@@ -317,16 +317,16 @@
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </owl:ObjectProperty>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:resource="&obo;BFO_0000001"/>
-        <owl:annotatedSource rdf:resource="&obo;BFO_0000157"/>
-        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/101"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;range"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:resource="&obo;BFO_0000008"/>
         <owl:annotatedSource rdf:resource="&obo;BFO_0000157"/>
         <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/102"/>
         <owl:annotatedProperty rdf:resource="&rdfs;domain"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:resource="&obo;BFO_0000001"/>
+        <owl:annotatedSource rdf:resource="&obo;BFO_0000157"/>
+        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/101"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;range"/>
     </owl:Axiom>
     
 
@@ -347,14 +347,14 @@
     <rdf:Description rdf:about="&obo;IAO_0000027">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000001"/>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -523,7 +523,7 @@
     <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000003 -->
 
     <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000003">
-        <rdfs:label xml:lang="en">PCORnet racial identity</rdfs:label>
+        <rdfs:label xml:lang="en">PCORnet racial identity datum</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000098"/>
         <rdfs:comment xml:lang="en">A racial identity that is the output of a racial identification process that uses the PCORnet CDM race or terminology. PCORnet CDM claims to use the OMB racial classification, but the crucial difference is that PCORnet CDM requires persons to identify with only one category whereas the OMB allows for multiple racial identities as outputs of an identification process.</rdfs:comment>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
@@ -558,8 +558,7 @@
     <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000006 -->
 
     <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000006">
-        <rdfs:label xml:lang="en">PCORnet American Indian or Alaska Native identity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000180"/>
+        <rdfs:label xml:lang="en">PCORnet American Indian or Alaska Native identity datum</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;PCORnet/PCORnet_00000003"/>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
     </owl:Class>
@@ -569,8 +568,7 @@
     <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000007 -->
 
     <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000007">
-        <rdfs:label xml:lang="en">PCORnet Asian identity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000181"/>
+        <rdfs:label xml:lang="en">PCORnet Asian identity datum</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;PCORnet/PCORnet_00000003"/>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
     </owl:Class>
@@ -621,8 +619,7 @@
     <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000009 -->
 
     <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000009">
-        <rdfs:label xml:lang="en">PCORnet black or African American identity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000182"/>
+        <rdfs:label xml:lang="en">PCORnet black or African American identity datum</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;PCORnet/PCORnet_00000003"/>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
     </owl:Class>
@@ -683,8 +680,7 @@
     <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000013 -->
 
     <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000013">
-        <rdfs:label xml:lang="en">PCORnet Native Hawaiian or other Pacific Islander identity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000183"/>
+        <rdfs:label xml:lang="en">PCORnet Native Hawaiian or other Pacific Islander identity datum</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;PCORnet/PCORnet_00000003"/>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
     </owl:Class>
@@ -694,8 +690,7 @@
     <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000014 -->
 
     <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000014">
-        <rdfs:label xml:lang="en">PCORnet white identity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000184"/>
+        <rdfs:label xml:lang="en">PCORnet white identity datum</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;PCORnet/PCORnet_00000003"/>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
     </owl:Class>
@@ -705,7 +700,7 @@
     <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000015 -->
 
     <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000015">
-        <rdfs:label xml:lang="en">PCORnet multiple race identity</rdfs:label>
+        <rdfs:label xml:lang="en">PCORnet multiple race identity datum</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;PCORnet/PCORnet_00000003"/>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
     </owl:Class>
