@@ -211,21 +211,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-      <!-- http://purl.obolibrary.org/obo/RO_0002223 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002223">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-        <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
-    </rdf:Description>
-      
-    <!-- http://purl.obolibrary.org/obo/RO_0002229 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002229">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-        <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
-    </rdf:Description>
+    
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000108 -->
@@ -249,16 +235,16 @@
         <owl:annotatedProperty rdf:resource="&rdfs;range"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:resource="&obo;BFO_0000001"/>
-        <owl:annotatedSource rdf:resource="&obo;BFO_0000108"/>
-        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/101"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;domain"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget xml:lang="en">b exists_at t means: b is an entity which exists at some temporal region t. (axiom label in BFO2 Reference: [118-002])</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;BFO_0000108"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000600"/>
         <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/118-002"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:resource="&obo;BFO_0000001"/>
+        <owl:annotatedSource rdf:resource="&obo;BFO_0000108"/>
+        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/101"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;domain"/>
     </owl:Axiom>
     
 
@@ -395,62 +381,19 @@
         <owl:annotatedProperty rdf:resource="&rdfs;range"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:resource="&obo;BFO_0000003"/>
-        <owl:annotatedSource rdf:resource="&obo;BFO_0000138"/>
-        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/114"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;domain"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget>(iff (properOccurrentPartOf a b) (and (occurrentPartOf a b) (not (= a b)))) // axiom label in BFO2 CLIF: [005-001] </owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;BFO_0000138"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000602"/>
         <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/005-001"/>
     </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:resource="&obo;BFO_0000003"/>
+        <owl:annotatedSource rdf:resource="&obo;BFO_0000138"/>
+        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/114"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;domain"/>
+    </owl:Axiom>
     
- <!-- http://purl.obolibrary.org/obo/UBERON_0035944 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0035944">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0035943"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002229"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000104"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0035943"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002229"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000104"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A life cycle temporal boundary that marks the end of the life cycle of the organism.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">end of life cycle</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">moment of death</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">time of death</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">death</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">end of life</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0035944</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">life-death temporal boundary</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0035944"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A life cycle temporal boundary that marks the end of the life cycle of the organism.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="https://github.com/obophenotype/uberon/issues/1172"/>
-        <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0035944"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">death</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#INCONSISTENT"/>
-    </owl:Axiom>
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000139 -->
 
@@ -491,16 +434,16 @@
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </owl:ObjectProperty>
     <owl:Axiom>
-        <owl:annotatedTarget xml:lang="en">p occupies_temporal_region t. This is a primitive relation between an occurrent p and the temporal region t upon which the spatiotemporal region p occupies_spatiotemporal_region projects. (axiom label in BFO2 Reference: [132-001])</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;BFO_0000155"/>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000600"/>
-        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/132-001"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:resource="&obo;BFO_0000008"/>
         <owl:annotatedSource rdf:resource="&obo;BFO_0000155"/>
         <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/540"/>
         <owl:annotatedProperty rdf:resource="&rdfs;range"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget xml:lang="en">p occupies_temporal_region t. This is a primitive relation between an occurrent p and the temporal region t upon which the spatiotemporal region p occupies_spatiotemporal_region projects. (axiom label in BFO2 Reference: [132-001])</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;BFO_0000155"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000600"/>
+        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/132-001"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedTarget rdf:resource="&obo;BFO_0000003"/>
@@ -551,23 +494,33 @@
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </owl:ObjectProperty>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:resource="&obo;BFO_0000001"/>
-        <owl:annotatedSource rdf:resource="&obo;BFO_0000157"/>
-        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/101"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;range"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:resource="&obo;BFO_0000008"/>
         <owl:annotatedSource rdf:resource="&obo;BFO_0000157"/>
         <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/102"/>
         <owl:annotatedProperty rdf:resource="&rdfs;domain"/>
     </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:resource="&obo;BFO_0000001"/>
+        <owl:annotatedSource rdf:resource="&obo;BFO_0000157"/>
+        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/101"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;range"/>
+    </owl:Axiom>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RO_0002223 -->
+    <!-- http://purl.obolibrary.org/obo/OBI_0000295 -->
 
-    <owl:ObjectProperty rdf:about="&obo;RO_0002223"/>
+    <owl:ObjectProperty rdf:about="&obo;OBI_0000295">
+        <rdfs:label xml:lang="en">is_specified_input_of</rdfs:label>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">PERSON:Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">is_specified_input_of</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">some Autologous EBV(Epstein-Barr virus)-transformed B-LCL (B lymphocyte cell line) is_input_for instance of Chromum Release Assay described at https://wiki.cbil.upenn.edu/obiwiki/index.php/Chromium_Release_assay</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+        <rdfs:range rdf:resource="&obo;OBI_0000011"/>
+        <rdfs:subPropertyOf rdf:resource="&obo;RO_0000056"/>
+    </owl:ObjectProperty>
     
 
 
@@ -744,28 +697,28 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0035944 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0035944">
+        <rdfs:label rdf:datatype="&xsd;string">life-death temporal boundary</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0035943"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A life cycle temporal boundary that marks the end of the life cycle of the organism.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0035944</oboInOwl:id>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">death</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">end of life</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">end of life cycle</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">moment of death</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">time of death</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0035946 -->
 
     <owl:Class rdf:about="&obo;UBERON_0035946">
         <rdfs:label rdf:datatype="&xsd;string">start of neonate stage</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;UBERON_0035943"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;RO_0002223"/>
-                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0007221"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0035943"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002223"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0007221"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A life cycle temporal boundary that marks the start of the neonate stage of the organism.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0035946</oboInOwl:id>
         <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">birth</oboInOwl:hasRelatedSynonym>
@@ -805,13 +758,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
+                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000008"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000008"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -887,7 +840,7 @@
                             <rdf:Description rdf:about="&obo;BFO_0000020"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="&obo;RO_0000059"/>
-                                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000005"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000004"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -903,7 +856,7 @@
                             <rdf:Description rdf:about="&obo;BFO_0000020"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="&obo;RO_0000059"/>
-                                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000004"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000005"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -1046,6 +999,76 @@
         <obo:IAO_0000115 xml:lang="en">A centrally registered identifier that denotes a person in a PCORnet data mart and is used to link across tables. This identifier is not necessarily unique within PCORnet.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000001 -->
+
+    <owl:NamedIndividual rdf:about="&obo;PCORnet_00000001">
+        <rdf:type rdf:resource="&obo;NCBITaxon_9606"/>
+        <rdfs:label xml:lang="en">John Doe</rdfs:label>
+        <obo:RO_0000056 rdf:resource="&obo;PCORnet_00000004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000002 -->
+
+    <owl:NamedIndividual rdf:about="&obo;PCORnet_00000002">
+        <rdf:type rdf:resource="&obo;UBERON_0035946"/>
+        <rdfs:label xml:lang="en">John Doe&apos;s birth</rdfs:label>
+        <obo:BFO_0000155 rdf:resource="&obo;PCORnet_00000003"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000003 -->
+
+    <owl:NamedIndividual rdf:about="&obo;PCORnet_00000003">
+        <rdf:type rdf:resource="&obo;BFO_0000148"/>
+        <rdfs:label>23:59</rdfs:label>
+        <obo:BFO_0000139 rdf:resource="&obo;PCORnet_00000004"/>
+        <obo:BFO_0000139 rdf:resource="&obo;PCORnet_00000006"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000004 -->
+
+    <owl:NamedIndividual rdf:about="&obo;PCORnet_00000004">
+        <rdf:type rdf:resource="&obo;UBERON_0007221"/>
+        <rdfs:label xml:lang="en">John Doe&apos;s neonate stage</rdfs:label>
+        <obo:BFO_0000155 rdf:resource="&obo;PCORnet_00000005"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000005 -->
+
+    <owl:NamedIndividual rdf:about="&obo;PCORnet_00000005">
+        <rdf:type rdf:resource="&obo;BFO_0000038"/>
+        <rdfs:label xml:lang="en">1D temporal interval occuped by John Doe&apos;s neonate stage</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000006 -->
+
+    <owl:NamedIndividual rdf:about="&obo;PCORnet_00000006">
+        <rdf:type rdf:resource="&obo;BFO_0000038"/>
+        <rdfs:label xml:lang="en">2000-02-02</rdfs:label>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
