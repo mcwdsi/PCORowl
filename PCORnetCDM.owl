@@ -363,10 +363,16 @@
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </owl:ObjectProperty>
     <owl:Axiom>
+        <owl:annotatedTarget>(iff (properOccurrentPartOf a b) (and (occurrentPartOf a b) (not (= a b)))) // axiom label in BFO2 CLIF: [005-001] </owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;BFO_0000138"/>
-        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/117"/>
-        <owl:annotatedProperty rdf:resource="&rdf;type"/>
-        <owl:annotatedTarget rdf:resource="&owl;TransitiveProperty"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000602"/>
+        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/005-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:resource="&obo;BFO_0000003"/>
+        <owl:annotatedSource rdf:resource="&obo;BFO_0000138"/>
+        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/114"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;domain"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedTarget xml:lang="en">b proper_occurrent_part_of c =Def. b occurrent_part_of c &amp; b and c are not identical. (axiom label in BFO2 Reference: [005-001])</owl:annotatedTarget>
@@ -381,16 +387,10 @@
         <owl:annotatedProperty rdf:resource="&rdfs;range"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedTarget>(iff (properOccurrentPartOf a b) (and (occurrentPartOf a b) (not (= a b)))) // axiom label in BFO2 CLIF: [005-001] </owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;BFO_0000138"/>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000602"/>
-        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/005-001"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedTarget rdf:resource="&obo;BFO_0000003"/>
-        <owl:annotatedSource rdf:resource="&obo;BFO_0000138"/>
-        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/114"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;domain"/>
+        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/117"/>
+        <owl:annotatedProperty rdf:resource="&rdf;type"/>
+        <owl:annotatedTarget rdf:resource="&owl;TransitiveProperty"/>
     </owl:Axiom>
     
 
@@ -434,12 +434,6 @@
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </owl:ObjectProperty>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:resource="&obo;BFO_0000008"/>
-        <owl:annotatedSource rdf:resource="&obo;BFO_0000155"/>
-        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/540"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;range"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget xml:lang="en">p occupies_temporal_region t. This is a primitive relation between an occurrent p and the temporal region t upon which the spatiotemporal region p occupies_spatiotemporal_region projects. (axiom label in BFO2 Reference: [132-001])</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;BFO_0000155"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000600"/>
@@ -450,6 +444,12 @@
         <owl:annotatedSource rdf:resource="&obo;BFO_0000155"/>
         <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/539"/>
         <owl:annotatedProperty rdf:resource="&rdfs;domain"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:resource="&obo;BFO_0000008"/>
+        <owl:annotatedSource rdf:resource="&obo;BFO_0000155"/>
+        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/540"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;range"/>
     </owl:Axiom>
     
 
@@ -540,17 +540,174 @@
     <rdf:Description rdf:about="&obo;IAO_0000027">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
                 <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000132 -->
+
+    <rdf:Description rdf:about="&obo;OMRSE_00000132">
+        <rdfs:subClassOf rdf:resource="&obo;PCORnet_00000007"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000134 -->
+
+    <rdf:Description rdf:about="&obo;OMRSE_00000134">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;PCORnet_00000009"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000047 -->
+
+    <owl:Class rdf:about="&obo;PATO_0000047">
+        <rdfs:label rdf:datatype="&xsd;string">biological sex</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0001995"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An organismal quality inhering in a bearer by virtue of the bearer&apos;s ability to undergo sexual reproduction in order to differentiate the individuals or types involved.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">PATO:0000047</oboInOwl:id>
+        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/pato.owl</obo:IAO_0000412>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="&obo;pato#attribute_slim"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000383 -->
+
+    <owl:Class rdf:about="&obo;PATO_0000383">
+        <rdfs:label rdf:datatype="&xsd;string">female</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0001894"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A biological sex quality inhering in an individual or a population that only produces gametes that can be fertilised by male gametes.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">PATO:0000383</oboInOwl:id>
+        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/pato.owl</obo:IAO_0000412>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="&obo;pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="&obo;pato#value_slim"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000384 -->
+
+    <owl:Class rdf:about="&obo;PATO_0000384">
+        <rdfs:label rdf:datatype="&xsd;string">male</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0001894"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A biological sex quality inhering in an individual or a population whose sex organs contain only male gametes.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">PATO:0000384</oboInOwl:id>
+        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/pato.owl</obo:IAO_0000412>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="&obo;pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="&obo;pato#value_slim"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001894 -->
+
+    <owl:Class rdf:about="&obo;PATO_0001894">
+        <rdfs:label rdf:datatype="&xsd;string">phenotypic sex</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000047"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">PATO:0001894</oboInOwl:id>
+        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/pato.owl</obo:IAO_0000412>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="&obo;pato#attribute_slim"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001995 -->
+
+    <owl:Class rdf:about="&obo;PATO_0001995">
+        <rdfs:label rdf:datatype="&xsd;string">organismal quality</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A quality that inheres in an entire organism or part of an organism.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">PATO:0001995</oboInOwl:id>
+        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/pato.owl</obo:IAO_0000412>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">quality</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000007 -->
+
+    <owl:Class rdf:about="&obo;PCORnet_00000007">
+        <rdfs:label xml:lang="en">answer to ID question</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PCORnet_00000008"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000008 -->
+
+    <owl:Class rdf:about="&obo;PCORnet_00000008">
+        <rdfs:label xml:lang="en">response to an ID question asking process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PCORnet_00000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000056"/>
+                <owl:someValuesFrom rdf:resource="&obo;PCORnet_00000009"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000009 -->
+
+    <owl:Class rdf:about="&obo;PCORnet_00000009">
+        <rdfs:label xml:lang="en">ID question asking process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PCORnet/PCORnet_00000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000010 -->
+
+    <owl:Class rdf:about="&obo;PCORnet_00000010">
+        <rdfs:label xml:lang="en">refusal to answer datum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PCORnet_00000011"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000011 -->
+
+    <owl:Class rdf:about="&obo;PCORnet_00000011">
+        <rdfs:label xml:lang="en">response to a question asking process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000056"/>
+                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000013 -->
+
+    <owl:Class rdf:about="&obo;PCORnet_00000013">
+        <rdfs:label xml:lang="en">Ethnic ID question asking process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PCORnet_00000009"/>
+    </owl:Class>
     
 
 
@@ -754,17 +911,17 @@
 
     <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000001">
         <rdfs:label xml:lang="en">question asking process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0021003"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000008"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
+                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000008"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -840,7 +997,7 @@
                             <rdf:Description rdf:about="&obo;BFO_0000020"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="&obo;RO_0000059"/>
-                                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000004"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000005"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -856,7 +1013,7 @@
                             <rdf:Description rdf:about="&obo;BFO_0000020"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="&obo;RO_0000059"/>
-                                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000005"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000004"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -1068,6 +1225,83 @@
     <owl:NamedIndividual rdf:about="&obo;PCORnet_00000006">
         <rdf:type rdf:resource="&obo;BFO_0000038"/>
         <rdfs:label xml:lang="en">2000-02-02</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000012 -->
+
+    <owl:NamedIndividual rdf:about="&obo;PCORnet_00000012">
+        <rdf:type rdf:resource="&obo;PCORnet_00000010"/>
+        <rdfs:label xml:lang="en">rta1</rdfs:label>
+        <obo:RO_0000056 rdf:resource="&obo;PCORnet_00000014"/>
+        <obo:IAO_0000136 rdf:resource="&obo;PCORnet_00000015"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000014 -->
+
+    <owl:NamedIndividual rdf:about="&obo;PCORnet_00000014">
+        <rdf:type rdf:resource="&obo;PCORnet_00000013"/>
+        <rdfs:label xml:lang="en">eiqap1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000015 -->
+
+    <owl:NamedIndividual rdf:about="&obo;PCORnet_00000015">
+        <rdf:type rdf:resource="&obo;NCBITaxon_9606"/>
+        <rdfs:label xml:lang="en">p3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000016 -->
+
+    <owl:NamedIndividual rdf:about="&obo;PCORnet_00000016">
+        <rdf:type rdf:resource="&obo;IAO_0020000"/>
+        <rdfs:label xml:lang="en">g</rdfs:label>
+        <obo:IAO_0020012 rdf:resource="&obo;PCORnet_00000001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000017 -->
+
+    <owl:NamedIndividual rdf:about="&obo;PCORnet_00000017">
+        <rdf:type rdf:resource="&obo;NCBITaxon_9606"/>
+        <rdfs:label xml:lang="en">p4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000018 -->
+
+    <owl:NamedIndividual rdf:about="&obo;PCORnet_00000018">
+        <rdf:type rdf:resource="&obo;PATO_0000383"/>
+        <rdfs:label xml:lang="en">f1</rdfs:label>
+        <obo:RO_0000052 rdf:resource="&obo;PCORnet_00000017"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000019 -->
+
+    <owl:NamedIndividual rdf:about="&obo;PCORnet_00000019">
+        <rdf:type rdf:resource="&obo;NCBITaxon_9606"/>
+        <rdfs:label xml:lang="en">p5</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000020 -->
+
+    <owl:NamedIndividual rdf:about="&obo;PCORnet_00000020">
+        <rdf:type rdf:resource="&obo;PATO_0000384"/>
+        <rdfs:label xml:lang="en">m1</rdfs:label>
+        <obo:RO_0000052 rdf:resource="&obo;PCORnet_00000019"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
