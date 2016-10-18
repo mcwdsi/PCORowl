@@ -24,6 +24,21 @@
     <owl:Ontology rdf:about="&obo;PCORnet/">
         <dc:contributor>Josh Hanna</dc:contributor>
         <dc:contributor>Amanda Hicks</dc:contributor>
+        <rdfs:comment xml:lang="en">An RDF/OWL representation of the PCORnet Common Data Model Version 3.0
+
+Contains
+
+Demographic Table
+     birth time
+     birth date
+     sex - male/female/ambigous
+
+Needs
+ 
+Demographic Table
+     sex - other/unknown (working on a general strategy for other and unknown null flavors)
+     Hispanic
+     race</rdfs:comment>
         <dc:title xml:lang="en">RDFized PCORnet CDM</dc:title>
         <dc:contributor>William R. Hogan</dc:contributor>
         <owl:imports rdf:resource="&obo;omrse.owl"/>
@@ -235,16 +250,16 @@
         <owl:annotatedProperty rdf:resource="&rdfs;range"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedTarget xml:lang="en">b exists_at t means: b is an entity which exists at some temporal region t. (axiom label in BFO2 Reference: [118-002])</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;BFO_0000108"/>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000600"/>
-        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/118-002"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:resource="&obo;BFO_0000001"/>
         <owl:annotatedSource rdf:resource="&obo;BFO_0000108"/>
         <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/101"/>
         <owl:annotatedProperty rdf:resource="&rdfs;domain"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget xml:lang="en">b exists_at t means: b is an entity which exists at some temporal region t. (axiom label in BFO2 Reference: [118-002])</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;BFO_0000108"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000600"/>
+        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/118-002"/>
     </owl:Axiom>
     
 
@@ -363,16 +378,16 @@
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </owl:ObjectProperty>
     <owl:Axiom>
-        <owl:annotatedTarget>(iff (properOccurrentPartOf a b) (and (occurrentPartOf a b) (not (= a b)))) // axiom label in BFO2 CLIF: [005-001] </owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;BFO_0000138"/>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000602"/>
-        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/005-001"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:resource="&obo;BFO_0000003"/>
         <owl:annotatedSource rdf:resource="&obo;BFO_0000138"/>
         <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/114"/>
         <owl:annotatedProperty rdf:resource="&rdfs;domain"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="&obo;BFO_0000138"/>
+        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/117"/>
+        <owl:annotatedProperty rdf:resource="&rdf;type"/>
+        <owl:annotatedTarget rdf:resource="&owl;TransitiveProperty"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedTarget xml:lang="en">b proper_occurrent_part_of c =Def. b occurrent_part_of c &amp; b and c are not identical. (axiom label in BFO2 Reference: [005-001])</owl:annotatedTarget>
@@ -387,10 +402,10 @@
         <owl:annotatedProperty rdf:resource="&rdfs;range"/>
     </owl:Axiom>
     <owl:Axiom>
+        <owl:annotatedTarget>(iff (properOccurrentPartOf a b) (and (occurrentPartOf a b) (not (= a b)))) // axiom label in BFO2 CLIF: [005-001] </owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;BFO_0000138"/>
-        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/117"/>
-        <owl:annotatedProperty rdf:resource="&rdf;type"/>
-        <owl:annotatedTarget rdf:resource="&owl;TransitiveProperty"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000602"/>
+        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/005-001"/>
     </owl:Axiom>
     
 
@@ -467,16 +482,16 @@
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </owl:ObjectProperty>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:resource="&obo;BFO_0000003"/>
-        <owl:annotatedSource rdf:resource="&obo;BFO_0000156"/>
-        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/539"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;range"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:resource="&obo;BFO_0000008"/>
         <owl:annotatedSource rdf:resource="&obo;BFO_0000156"/>
         <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/540"/>
         <owl:annotatedProperty rdf:resource="&rdfs;domain"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:resource="&obo;BFO_0000003"/>
+        <owl:annotatedSource rdf:resource="&obo;BFO_0000156"/>
+        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/539"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;range"/>
     </owl:Axiom>
     
 
@@ -494,16 +509,16 @@
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </owl:ObjectProperty>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:resource="&obo;BFO_0000008"/>
-        <owl:annotatedSource rdf:resource="&obo;BFO_0000157"/>
-        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/102"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;domain"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:resource="&obo;BFO_0000001"/>
         <owl:annotatedSource rdf:resource="&obo;BFO_0000157"/>
         <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/101"/>
         <owl:annotatedProperty rdf:resource="&rdfs;range"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:resource="&obo;BFO_0000008"/>
+        <owl:annotatedSource rdf:resource="&obo;BFO_0000157"/>
+        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/102"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;domain"/>
     </owl:Axiom>
     
 
@@ -540,14 +555,14 @@
     <rdf:Description rdf:about="&obo;IAO_0000027">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000001"/>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -915,13 +930,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
+                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000008"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000008"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1057,13 +1072,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000005"/>
+                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000004"/>
+                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
