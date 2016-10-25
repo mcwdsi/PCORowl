@@ -24,6 +24,8 @@
     <owl:Ontology rdf:about="&obo;PCORnet/">
         <dc:contributor>Josh Hanna</dc:contributor>
         <dc:contributor>Amanda Hicks</dc:contributor>
+        <dc:title xml:lang="en">RDFized PCORnet CDM</dc:title>
+        <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:comment xml:lang="en">An RDF/OWL representation of the PCORnet Common Data Model Version 3.0
 
 Contains
@@ -32,15 +34,14 @@ Demographic Table
      birth time
      birth date
      sex - male/female/ambigous
+     Hispanic - refusal to answer
 
 To Do
  
 Demographic Table
      sex - other/unknown (working on a general strategy for other and unknown null flavors)
-     Hispanic
+     Hispanic - Hispanic, non-Hispanic
      race</rdfs:comment>
-        <dc:title xml:lang="en">RDFized PCORnet CDM</dc:title>
-        <dc:contributor>William R. Hogan</dc:contributor>
         <owl:imports rdf:resource="&obo;omrse.owl"/>
     </owl:Ontology>
     
@@ -378,22 +379,22 @@ Demographic Table
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </owl:ObjectProperty>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:resource="&obo;BFO_0000003"/>
-        <owl:annotatedSource rdf:resource="&obo;BFO_0000138"/>
-        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/114"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;domain"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedSource rdf:resource="&obo;BFO_0000138"/>
         <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/117"/>
         <owl:annotatedProperty rdf:resource="&rdf;type"/>
         <owl:annotatedTarget rdf:resource="&owl;TransitiveProperty"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedTarget xml:lang="en">b proper_occurrent_part_of c =Def. b occurrent_part_of c &amp; b and c are not identical. (axiom label in BFO2 Reference: [005-001])</owl:annotatedTarget>
+        <owl:annotatedTarget>(iff (properOccurrentPartOf a b) (and (occurrentPartOf a b) (not (= a b)))) // axiom label in BFO2 CLIF: [005-001] </owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;BFO_0000138"/>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000602"/>
         <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/005-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:resource="&obo;BFO_0000003"/>
+        <owl:annotatedSource rdf:resource="&obo;BFO_0000138"/>
+        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/114"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;domain"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedTarget rdf:resource="&obo;BFO_0000003"/>
@@ -402,9 +403,9 @@ Demographic Table
         <owl:annotatedProperty rdf:resource="&rdfs;range"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedTarget>(iff (properOccurrentPartOf a b) (and (occurrentPartOf a b) (not (= a b)))) // axiom label in BFO2 CLIF: [005-001] </owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">b proper_occurrent_part_of c =Def. b occurrent_part_of c &amp; b and c are not identical. (axiom label in BFO2 Reference: [005-001])</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;BFO_0000138"/>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000602"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
         <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/005-001"/>
     </owl:Axiom>
     
@@ -455,16 +456,16 @@ Demographic Table
         <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/132-001"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:resource="&obo;BFO_0000003"/>
-        <owl:annotatedSource rdf:resource="&obo;BFO_0000155"/>
-        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/539"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;domain"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:resource="&obo;BFO_0000008"/>
         <owl:annotatedSource rdf:resource="&obo;BFO_0000155"/>
         <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/540"/>
         <owl:annotatedProperty rdf:resource="&rdfs;range"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:resource="&obo;BFO_0000003"/>
+        <owl:annotatedSource rdf:resource="&obo;BFO_0000155"/>
+        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/539"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;domain"/>
     </owl:Axiom>
     
 
@@ -482,16 +483,16 @@ Demographic Table
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </owl:ObjectProperty>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:resource="&obo;BFO_0000008"/>
-        <owl:annotatedSource rdf:resource="&obo;BFO_0000156"/>
-        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/540"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;domain"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:resource="&obo;BFO_0000003"/>
         <owl:annotatedSource rdf:resource="&obo;BFO_0000156"/>
         <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/539"/>
         <owl:annotatedProperty rdf:resource="&rdfs;range"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:resource="&obo;BFO_0000008"/>
+        <owl:annotatedSource rdf:resource="&obo;BFO_0000156"/>
+        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/540"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;domain"/>
     </owl:Axiom>
     
 
@@ -509,16 +510,16 @@ Demographic Table
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </owl:ObjectProperty>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:resource="&obo;BFO_0000001"/>
-        <owl:annotatedSource rdf:resource="&obo;BFO_0000157"/>
-        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/101"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;range"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:resource="&obo;BFO_0000008"/>
         <owl:annotatedSource rdf:resource="&obo;BFO_0000157"/>
         <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/102"/>
         <owl:annotatedProperty rdf:resource="&rdfs;domain"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:resource="&obo;BFO_0000001"/>
+        <owl:annotatedSource rdf:resource="&obo;BFO_0000157"/>
+        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/101"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;range"/>
     </owl:Axiom>
     
 
@@ -720,7 +721,7 @@ Demographic Table
     <!-- http://purl.obolibrary.org/obo/PCORnet_00000013 -->
 
     <owl:Class rdf:about="&obo;PCORnet_00000013">
-        <rdfs:label xml:lang="en">Ethnic ID question asking process</rdfs:label>
+        <rdfs:label xml:lang="en">ethnic ID question asking process</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;PCORnet_00000009"/>
     </owl:Class>
     
@@ -1269,6 +1270,7 @@ Demographic Table
     <owl:NamedIndividual rdf:about="&obo;PCORnet_00000015">
         <rdf:type rdf:resource="&obo;NCBITaxon_9606"/>
         <rdfs:label xml:lang="en">p3</rdfs:label>
+        <obo:RO_0000056 rdf:resource="&obo;PCORnet_00000014"/>
     </owl:NamedIndividual>
     
 
