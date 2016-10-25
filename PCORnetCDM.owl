@@ -24,8 +24,6 @@
     <owl:Ontology rdf:about="&obo;PCORnet/">
         <dc:contributor>Josh Hanna</dc:contributor>
         <dc:contributor>Amanda Hicks</dc:contributor>
-        <dc:title xml:lang="en">RDFized PCORnet CDM</dc:title>
-        <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:comment xml:lang="en">An RDF/OWL representation of the PCORnet Common Data Model Version 3.0
 
 Contains
@@ -35,13 +33,16 @@ Demographic Table
      birth date
      sex - male/female/ambigous
      Hispanic - refusal to answer
+     race - refusal to answer
 
 To Do
  
 Demographic Table
      sex - other/unknown (working on a general strategy for other and unknown null flavors)
      Hispanic - Hispanic, non-Hispanic
-     race</rdfs:comment>
+     race -</rdfs:comment>
+        <dc:title xml:lang="en">RDFized PCORnet CDM</dc:title>
+        <dc:contributor>William R. Hogan</dc:contributor>
         <owl:imports rdf:resource="&obo;omrse.owl"/>
     </owl:Ontology>
     
@@ -727,6 +728,15 @@ Demographic Table
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000021 -->
+
+    <owl:Class rdf:about="&obo;PCORnet_00000021">
+        <rdfs:label xml:lang="en">race ID question asking process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PCORnet_00000009"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PCORnet_00000037 -->
 
     <owl:Class rdf:about="&obo;PCORnet_00000037">
@@ -1319,6 +1329,36 @@ Demographic Table
         <rdf:type rdf:resource="&obo;PATO_0000384"/>
         <rdfs:label xml:lang="en">m1</rdfs:label>
         <obo:RO_0000052 rdf:resource="&obo;PCORnet_00000019"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000022 -->
+
+    <owl:NamedIndividual rdf:about="&obo;PCORnet_00000022">
+        <rdf:type rdf:resource="&obo;PCORnet_00000021"/>
+        <rdfs:label xml:lang="en">ridqap1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000024 -->
+
+    <owl:NamedIndividual rdf:about="&obo;PCORnet_00000024">
+        <rdf:type rdf:resource="&obo;NCBITaxon_9606"/>
+        <rdfs:label xml:lang="en">p6</rdfs:label>
+        <obo:RO_0000056 rdf:resource="&obo;PCORnet_00000022"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000025 -->
+
+    <owl:NamedIndividual rdf:about="&obo;PCORnet_00000025">
+        <rdf:type rdf:resource="&obo;PCORnet_00000010"/>
+        <rdfs:label xml:lang="en">rta2</rdfs:label>
+        <obo:RO_0000056 rdf:resource="&obo;PCORnet_00000022"/>
+        <obo:IAO_0000136 rdf:resource="&obo;PCORnet_00000024"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
