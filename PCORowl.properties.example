@@ -1,4 +1,8 @@
-jdbc.url=jdbc:sqlserver://ahc-onefl01.ad.ufl.edu/ONEFLDW_201608_CERT
-jdbc.username=admin
-jdbc.password=PASSWORD_GOES_HERE
-jdbc.driver=com.microsoft.sqlserver.jdbc.SQLServerDriver
+# SQL Server URL
+# use jtds driver to connect via Windows Authentication on Linux
+# change SERVER ADDRESS, DATABASE_NAME, DOMAIN_NAME
+jdbc.url=jdbc:jtds:sqlserver://SERVER_ADDRESS:1433;databaseName=DATABASE_NAME;domain=DOMAIN_NAME;useNTLMv2=true;
+
+jdbc.username=
+jdbc.password=
+jdbc.driver=net.sourceforge.jtds.jdbc.Driver
