@@ -1,0 +1,49 @@
+
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix PCORnet: <http://purl.obolibrary.org/obo/PCORnet/> .
+@prefix bfo: <http://purl.obolibrary.org/obo/> .
+@prefix iao: <http://purl.obolibrary.org/obo/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://example.com/base> .
+
+<#PatidTriplesMap>
+  a rr:TriplesMap;
+
+  rr:logicalTable [ rr:tableName "DEMOGRAPHIC"];
+
+  rr:subjectMap [
+        rr:template "http://example.com/{PATID}";
+        rr:termType rr:BlankNode;
+        rr:class PCORnet:PCORnet_00000019;
+        ];
+
+  rr:predicateObjectMap
+  [
+        rr:predicate bfo:BFO_0000051;
+        rr:objectMap <RefObjectMap1>
+ ]
+
+.
+
+<#PatidTriplesMap2>
+
+ a rr:TriplesMap;
+
+ rr:logicalTable [ rr:tableName "DEMOGRAPHIC"];
+
+ rr:subjectMap [ rr:template "http://example.com/PATID/{PATID}" ;
+                rr:class iao:IAO_0000028;
+                ];
+
+
+        rr:predicateObjectMap
+        [
+                rr:predicate    rdfs:label;
+                rr:objectMap    [        rr:column "PATID"; ]
+        ];
+.
+
+<RefObjectMap1>
+        a rr:RefObjectMap;
+        rr:parentTriplesMap <#PatidTriplesMap2>
+.
