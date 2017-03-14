@@ -1,3 +1,6 @@
+This repository stores the configuration for the PCORowl Stardog virtual graph.
+
+=======
 # PCORowl
 Modelling the PCORnet CDM in an OWL Ontology
 
@@ -12,4 +15,3 @@ PCORowl.properties specifies database connection settings.
 PCORowl.ttl is a mapping of the PCORnet data into a graph structure. 
 -v for verbose
 -f for format, r2rml.
- 
