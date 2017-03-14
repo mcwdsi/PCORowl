@@ -32,10 +32,10 @@ PCORowl:{"patient_identifier"}
 
 PCORowl:{"symbol"}
  a <http://purl.obolibrary.org/obo/IAO_0000028>;  
- rdfs:label PCORowl:{"actual_patid"};
+ rdfs:label "{\"actual_patid\"}";
  sm:map [
 	 sm:query """
-		  SELECT patid AS actual_patid, patid_uri AS symbol,
+		  SELECT patid_uri AS symbol, patid AS actual_patid,
 		  FROM SANDBOX.pcori_cdmv3.demographic
 		 """ ;
 		]
