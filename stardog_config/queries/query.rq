@@ -1,0 +1,11 @@
+# Basic SPO query
+
+SELECT *
+{
+	GRAPH <virtual://PCORowl>
+	{
+		?s ?p ?o .
+	}
+}
+ORDER BY ?s
+LIMIT 100 

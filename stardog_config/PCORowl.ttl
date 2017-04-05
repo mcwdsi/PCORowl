@@ -1,49 +1,45 @@
-
-@prefix rr: <http://www.w3.org/ns/r2rml#> .
-@prefix PCORnet: <http://purl.obolibrary.org/obo/PCORnet/> .
-@prefix bfo: <http://purl.obolibrary.org/obo/> .
-@prefix iao: <http://purl.obolibrary.org/obo/> .
+@prefix ns0: <http://purl.obolibrary.org/obo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix PCORowl: <http://onefloridaconsortium.org/PCORowl_> .
+@prefix sm: <tag:stardog:api:mapping:> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://example.com/base> .
 
-<#PatidTriplesMap>
-  a rr:TriplesMap;
+# patient_role pr1
+PCORowl:{"patient_role"}
+  a <http://purl.obolibrary.org/obo/OMRSE_00000011> ;
+  ns0:RO_0000052 PCORowl:{"organism"};
+  sm:map [
+          sm:query """
+		   SELECT pr_uri AS patient_role, p_uri AS organism
+                  FROM SANDBOX.pcori_cdmv3.demographic
+                  """;
+                  ] .
 
-  rr:logicalTable [ rr:tableName "DEMOGRAPHIC"];
-
-  rr:subjectMap [
-        rr:template "http://example.com/{PATID}";
-        rr:termType rr:BlankNode;
-        rr:class PCORnet:PCORnet_00000019;
-        ];
-
-  rr:predicateObjectMap
-  [
-        rr:predicate bfo:BFO_0000051;
-        rr:objectMap <RefObjectMap1>
- ]
-
+PCORowl:{"patient_identifier"}
+ a <http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000019>;
+ # denotes
+ ns0:IAO_0000219 PCORowl:{"organism"};
+ #  has part
+ ns0:BFO_0000051 PCORowl:{"symbol"};
+ sm:map [
+	 sm:query """
+		  SELECT p_patid_uri AS patient_identifier, patid_uri AS symbol, 
+			p_uri AS organism
+		  FROM SANDBOX.pcori_cdmv3.demographic
+		 """ ;
+		]
 .
 
-<#PatidTriplesMap2>
-
- a rr:TriplesMap;
-
- rr:logicalTable [ rr:tableName "DEMOGRAPHIC"];
-
- rr:subjectMap [ rr:template "http://example.com/PATID/{PATID}" ;
-                rr:class iao:IAO_0000028;
-                ];
-
-
-        rr:predicateObjectMap
-        [
-                rr:predicate    rdfs:label;
-                rr:objectMap    [        rr:column "PATID"; ]
-        ];
+PCORowl:{"symbol"}
+ a <http://purl.obolibrary.org/obo/IAO_0000028>;  
+ rdfs:label "{\"actual_patid\"}";
+ sm:map [
+	 sm:query """
+		  SELECT patid_uri AS symbol, patid AS actual_patid
+		  FROM SANDBOX.pcori_cdmv3.demographic
+		 """ ;
+		]
 .
 
-<RefObjectMap1>
-        a rr:RefObjectMap;
-        rr:parentTriplesMap <#PatidTriplesMap2>
-.
+
+
