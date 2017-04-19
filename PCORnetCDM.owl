@@ -1,28 +1,18 @@
 <?xml version="1.0"?>
-
-
-<!DOCTYPE rdf:RDF [
-    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
-    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
-    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
-    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
-]>
-
-
-<rdf:RDF xmlns="&obo;PCORnet/"
-     xml:base="&obo;PCORnet/"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/PCORnet/"
+     xml:base="http://purl.obolibrary.org/obo/PCORnet/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="&obo;PCORnet/">
-        <dc:contributor>Josh Hanna</dc:contributor>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/PCORnet/">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/omrse.owl"/>
         <dc:contributor>Amanda Hicks</dc:contributor>
         <rdfs:comment xml:lang="en">An RDF/OWL representation of the PCORnet Common Data Model Version 3.0
 
@@ -33,17 +23,18 @@ Demographic Table
      birth date
      sex - male/female/ambigous
      Hispanic - refusal to answer
+     Hispanic - Hispanic, non-Hispanic
      race - refusal to answer
 
 To Do
  
 Demographic Table
      sex - other/unknown (working on a general strategy for other and unknown null flavors)
-     Hispanic - Hispanic, non-Hispanic
+     
      race -</rdfs:comment>
-        <dc:title xml:lang="en">RDFized PCORnet CDM</dc:title>
         <dc:contributor>William R. Hogan</dc:contributor>
-        <owl:imports rdf:resource="&obo;omrse.owl"/>
+        <dc:title xml:lang="en">RDFized PCORnet CDM</dc:title>
+        <dc:contributor>Josh Hanna</dc:contributor>
     </owl:Ontology>
     
 
@@ -61,7 +52,7 @@ Demographic Table
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000179 -->
 
-    <rdf:Description rdf:about="&obo;BFO_0000179">
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000179">
         <rdfs:label>BFO OWL specification label</rdfs:label>
         <rdfs:label xml:lang="en">BFO OWL specification label</rdfs:label>
     </rdf:Description>
@@ -70,7 +61,7 @@ Demographic Table
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000180 -->
 
-    <rdf:Description rdf:about="&obo;BFO_0000180">
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000180">
         <rdfs:label>BFO CLIF specification label</rdfs:label>
         <rdfs:label xml:lang="en">BFO CLIF specification label</rdfs:label>
     </rdf:Description>
@@ -79,7 +70,7 @@ Demographic Table
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
 
-    <rdf:Description rdf:about="&obo;IAO_0000112">
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
         <rdfs:label>example of usage</rdfs:label>
         <rdfs:label xml:lang="en">example of usage</rdfs:label>
     </rdf:Description>
@@ -88,28 +79,28 @@ Demographic Table
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
-    <rdf:Description rdf:about="&obo;IAO_0000115">
-        <rdfs:label rdf:datatype="&xsd;string">definition</rdfs:label>
-        <rdfs:label rdf:datatype="&xsd;string">textual definition</rdfs:label>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
         <rdfs:label>definition</rdfs:label>
         <rdfs:label xml:lang="en">definition</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">textual definition</rdfs:label>
     </rdf:Description>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
 
-    <rdf:Description rdf:about="&obo;IAO_0000116">
-        <rdfs:label rdf:datatype="&xsd;string">editor note</rdfs:label>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
         <rdfs:label>editor note</rdfs:label>
         <rdfs:label xml:lang="en">editor note</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">editor note</rdfs:label>
     </rdf:Description>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
 
-    <rdf:Description rdf:about="&obo;IAO_0000412">
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
         <rdfs:label xml:lang="en">imported from</rdfs:label>
     </rdf:Description>
     
@@ -117,7 +108,7 @@ Demographic Table
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000600 -->
 
-    <rdf:Description rdf:about="&obo;IAO_0000600">
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000600">
         <rdfs:label>elucidation</rdfs:label>
         <rdfs:label xml:lang="en">elucidation</rdfs:label>
     </rdf:Description>
@@ -126,7 +117,7 @@ Demographic Table
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000601 -->
 
-    <rdf:Description rdf:about="&obo;IAO_0000601">
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000601">
         <rdfs:label>has associated axiom(nl)</rdfs:label>
         <rdfs:label xml:lang="en">has associated axiom(nl)</rdfs:label>
     </rdf:Description>
@@ -135,78 +126,84 @@ Demographic Table
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000602 -->
 
-    <rdf:Description rdf:about="&obo;IAO_0000602">
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000602">
         <rdfs:label>has associated axiom(fol)</rdfs:label>
         <rdfs:label xml:lang="en">has associated axiom(fol)</rdfs:label>
     </rdf:Description>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000052"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBPROP_0000012 -->
 
-    <rdf:Description rdf:about="&obo;UBPROP_0000012">
-        <rdfs:label rdf:datatype="&xsd;string">external_ontology_notes</rdfs:label>
-    </rdf:Description>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000012">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external_ontology_notes</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
 
-    <rdf:Description rdf:about="&oboInOwl;hasDbXref">
-        <rdfs:label rdf:datatype="&xsd;string">database_cross_reference</rdfs:label>
-    </rdf:Description>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">database_cross_reference</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
 
-    <rdf:Description rdf:about="&oboInOwl;hasExactSynonym">
-        <rdfs:label rdf:datatype="&xsd;string">has_exact_synonym</rdfs:label>
-    </rdf:Description>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_exact_synonym</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym -->
 
-    <rdf:Description rdf:about="&oboInOwl;hasNarrowSynonym">
-        <rdfs:label rdf:datatype="&xsd;string">has_narrow_synonym</rdfs:label>
-    </rdf:Description>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_narrow_synonym</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
 
-    <rdf:Description rdf:about="&oboInOwl;hasOBONamespace">
-        <rdfs:label rdf:datatype="&xsd;string">has_obo_namespace</rdfs:label>
+    <rdf:Description rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_obo_namespace</rdfs:label>
     </rdf:Description>
     
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
 
-    <rdf:Description rdf:about="&oboInOwl;hasRelatedSynonym">
-        <rdfs:label rdf:datatype="&xsd;string">has_related_synonym</rdfs:label>
-    </rdf:Description>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_related_synonym</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#id -->
 
-    <owl:AnnotationProperty rdf:about="&oboInOwl;id"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
     
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
 
-    <rdf:Description rdf:about="&oboInOwl;inSubset">
-        <rdfs:label rdf:datatype="&xsd;string">in_subset</rdfs:label>
+    <rdf:Description rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in_subset</rdfs:label>
     </rdf:Description>
     
 
 
     <!-- http://www.w3.org/2000/01/rdf-schema#label -->
 
-    <rdf:Description rdf:about="&rdfs;label">
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
         <rdfs:label>label</rdfs:label>
     </rdf:Description>
     
@@ -214,8 +211,8 @@ Demographic Table
 
     <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
 
-    <rdf:Description rdf:about="&rdfs;seeAlso">
-        <rdfs:label rdf:datatype="&xsd;string">see also</rdfs:label>
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">see also</rdfs:label>
     </rdf:Description>
     
 
@@ -233,310 +230,220 @@ Demographic Table
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000108 -->
 
-    <owl:ObjectProperty rdf:about="&obo;BFO_0000108">
-        <rdfs:label xml:lang="en">exists at</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000108">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000157"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+        <obo:BFO_0000179>exists-at</obo:BFO_0000179>
+        <obo:BFO_0000180>existsAt</obo:BFO_0000180>
         <obo:IAO_0000116>BFO2 Reference: entity</obo:IAO_0000116>
         <obo:IAO_0000116>BFO2 Reference: temporal region</obo:IAO_0000116>
         <obo:IAO_0000600 xml:lang="en">b exists_at t means: b is an entity which exists at some temporal region t. (axiom label in BFO2 Reference: [118-002])</obo:IAO_0000600>
-        <obo:BFO_0000180>existsAt</obo:BFO_0000180>
-        <obo:BFO_0000179>exists-at</obo:BFO_0000179>
-        <rdfs:domain rdf:resource="&obo;BFO_0000001"/>
-        <rdfs:range rdf:resource="&obo;BFO_0000008"/>
-        <owl:inverseOf rdf:resource="&obo;BFO_0000157"/>
-        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">exists at</rdfs:label>
     </owl:ObjectProperty>
-    <owl:Axiom>
-        <owl:annotatedTarget rdf:resource="&obo;BFO_0000008"/>
-        <owl:annotatedSource rdf:resource="&obo;BFO_0000108"/>
-        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/102"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;range"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedTarget rdf:resource="&obo;BFO_0000001"/>
-        <owl:annotatedSource rdf:resource="&obo;BFO_0000108"/>
-        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/101"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;domain"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedTarget xml:lang="en">b exists_at t means: b is an entity which exists at some temporal region t. (axiom label in BFO2 Reference: [118-002])</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;BFO_0000108"/>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000600"/>
-        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/118-002"/>
-    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000117 -->
 
-    <owl:ObjectProperty rdf:about="&obo;BFO_0000117">
-        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
-        <rdfs:label xml:lang="en">has occurrent part</rdfs:label>
-        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/vo.owl</obo:IAO_0000412>
-        <obo:IAO_0000116>[copied from inverse property &apos;part of occurrent&apos;] BFO 2 Reference: a (continuant or occurrent) part of itself. We appreciate that this is counterintuitive for some users, since it implies for example that President Obama is a part of himself. However it brings benefits in simplifying the logical formalism, and it captures an important feature of identity, namely that it is the limit case of mereological inclusion.</obo:IAO_0000116>
-        <obo:IAO_0000600>[copied from inverse property &apos;part of occurrent&apos;] b occurrent_part_of c =Def. b is a part of c &amp; b and c are occurrents. (axiom label in BFO2 Reference: [003-002])</obo:IAO_0000600>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000117">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000132"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <obo:BFO_0000179>o-has-part</obo:BFO_0000179>
+        <obo:BFO_0000180>hasOccurrentPart</obo:BFO_0000180>
         <obo:IAO_0000112>[copied from inverse property &apos;part of occurrent&apos;] Mary’s 5th birthday occurrent_part_of Mary’s life</obo:IAO_0000112>
         <obo:IAO_0000112>[copied from inverse property &apos;part of occurrent&apos;] The process of a footballer’s heart beating once is an occurrent part but not a temporal_part of a game of football.</obo:IAO_0000112>
-        <obo:BFO_0000179>o-has-part</obo:BFO_0000179>
-        <obo:IAO_0000602>(iff (hasOccurrentPart a b) (occurrentPartOf b a)) // axiom label in BFO2 CLIF: [007-001] </obo:IAO_0000602>
-        <obo:IAO_0000116>[copied from inverse property &apos;part of occurrent&apos;] BFO2 Reference: occurrent</obo:IAO_0000116>
-        <obo:BFO_0000180>hasOccurrentPart</obo:BFO_0000180>
         <obo:IAO_0000112>[copied from inverse property &apos;part of occurrent&apos;] the first set of the tennis match occurrent_part_of the tennis match.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">b has_occurrent_part c = Def. c occurrent_part_of b. (axiom label in BFO2 Reference: [007-001])</obo:IAO_0000115>
-        <rdfs:domain rdf:resource="&obo;BFO_0000003"/>
-        <rdfs:range rdf:resource="&obo;BFO_0000003"/>
-        <owl:inverseOf rdf:resource="&obo;BFO_0000132"/>
-        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
-        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <obo:IAO_0000116>[copied from inverse property &apos;part of occurrent&apos;] BFO 2 Reference: a (continuant or occurrent) part of itself. We appreciate that this is counterintuitive for some users, since it implies for example that President Obama is a part of himself. However it brings benefits in simplifying the logical formalism, and it captures an important feature of identity, namely that it is the limit case of mereological inclusion.</obo:IAO_0000116>
+        <obo:IAO_0000116>[copied from inverse property &apos;part of occurrent&apos;] BFO2 Reference: occurrent</obo:IAO_0000116>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/vo.owl</obo:IAO_0000412>
+        <obo:IAO_0000600>[copied from inverse property &apos;part of occurrent&apos;] b occurrent_part_of c =Def. b is a part of c &amp; b and c are occurrents. (axiom label in BFO2 Reference: [003-002])</obo:IAO_0000600>
+        <obo:IAO_0000602>(iff (hasOccurrentPart a b) (occurrentPartOf b a)) // axiom label in BFO2 CLIF: [007-001] </obo:IAO_0000602>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">has occurrent part</rdfs:label>
     </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000118 -->
 
-    <owl:ObjectProperty rdf:about="&obo;BFO_0000118">
-        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
-        <rdfs:label xml:lang="en">has proper occurrent part</rdfs:label>
-        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/vo.owl</obo:IAO_0000412>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000118">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000138"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <obo:BFO_0000179>o-has-ppart</obo:BFO_0000179>
         <obo:BFO_0000180>hasProperOccurrentPart</obo:BFO_0000180>
         <obo:IAO_0000115>[copied from inverse property &apos;proper part of occurrent&apos;] b proper_occurrent_part_of c =Def. b occurrent_part_of c &amp; b and c are not identical. (axiom label in BFO2 Reference: [005-001])</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">b has_proper_occurrent_part c = Def. c proper_occurrent_part_of b. [XXX-001</obo:IAO_0000115>
-        <rdfs:range rdf:resource="&obo;BFO_0000003"/>
-        <rdfs:domain rdf:resource="&obo;BFO_0000003"/>
-        <rdfs:subPropertyOf rdf:resource="&obo;BFO_0000117"/>
-        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/vo.owl</obo:IAO_0000412>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">has proper occurrent part</rdfs:label>
     </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000121 -->
 
-    <owl:ObjectProperty rdf:about="&obo;BFO_0000121">
-        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
-        <rdfs:label xml:lang="en">has temporal part</rdfs:label>
-        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/vo.owl</obo:IAO_0000412>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000121">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000139"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <obo:BFO_0000179>has-t-part</obo:BFO_0000179>
         <obo:IAO_0000112>[copied from inverse property &apos;temporal part of&apos;] the 4th year of your life is a temporal part of your life\. The first quarter of a game of football is a temporal part of the whole game\. The process of your heart beating from 4pm to 5pm today is a temporal part of the entire process of your heart beating.\ The 4th year of your life is a temporal part of your life</obo:IAO_0000112>
         <obo:IAO_0000112>[copied from inverse property &apos;temporal part of&apos;] the process boundary which separates the 3rd and 4th years of your life.</obo:IAO_0000112>
+        <obo:IAO_0000112>[copied from inverse property &apos;temporal part of&apos;] your heart beating from 4pm to 5pm today is a temporal part of the process of your heart beating</obo:IAO_0000112>
         <obo:IAO_0000115>[copied from inverse property &apos;temporal part of&apos;] b proper_temporal_part_of c =Def. b temporal_part_of c &amp; not (b = c). (axiom label in BFO2 Reference: [116-001])</obo:IAO_0000115>
         <obo:IAO_0000115>[copied from inverse property &apos;temporal part of&apos;] b temporal_part_of c =Def.b occurrent_part_of c &amp; &amp; for some temporal region t, b occupies_temporal_region t &amp; for all occurrents d, t (if d occupies_temporal_region t  &amp; t? occurrent_part_of t then (d occurrent_part_of a iff d occurrent_part_of b)). (axiom label in BFO2 Reference: [078-003])</obo:IAO_0000115>
-        <obo:IAO_0000112>[copied from inverse property &apos;temporal part of&apos;] your heart beating from 4pm to 5pm today is a temporal part of the process of your heart beating</obo:IAO_0000112>
-        <obo:BFO_0000179>has-t-part</obo:BFO_0000179>
-        <rdfs:range rdf:resource="&obo;BFO_0000003"/>
-        <rdfs:domain rdf:resource="&obo;BFO_0000003"/>
-        <rdfs:subPropertyOf rdf:resource="&obo;BFO_0000117"/>
-        <owl:inverseOf rdf:resource="&obo;BFO_0000139"/>
-        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/vo.owl</obo:IAO_0000412>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">has temporal part</rdfs:label>
     </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000132 -->
 
-    <owl:ObjectProperty rdf:about="&obo;BFO_0000132">
-        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
-        <rdfs:label xml:lang="en">part of occurrent</rdfs:label>
-        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/vo.owl</obo:IAO_0000412>
-        <obo:IAO_0000116>BFO2 Reference: occurrent</obo:IAO_0000116>
-        <obo:BFO_0000180>occurrentPartOf</obo:BFO_0000180>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000132">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <obo:BFO_0000179>o-part-of</obo:BFO_0000179>
-        <obo:IAO_0000602>(forall (x y t) (if (and (occurrentPartOf x y t) (not (= x y))) (exists (z) (and (occurrentPartOf z y t) (not (exists (w) (and (occurrentPartOf w x t) (occurrentPartOf w z t)))))))) // axiom label in BFO2 CLIF: [124-001] </obo:IAO_0000602>
-        <obo:IAO_0000602>(forall (x y t) (if (and (occurrentPartOf x y t) (occurrentPartOf y x t)) (= x y))) // axiom label in BFO2 CLIF: [123-001] </obo:IAO_0000602>
-        <obo:IAO_0000115>[copied from inverse property &apos;has occurrent part&apos;] b has_occurrent_part c = Def. c occurrent_part_of b. (axiom label in BFO2 Reference: [007-001])</obo:IAO_0000115>
-        <obo:IAO_0000602>(forall (x) (if (Occurrent x) (occurrentPartOf x x))) // axiom label in BFO2 CLIF: [113-002] </obo:IAO_0000602>
-        <obo:IAO_0000602>(forall (x y z) (if (and (occurrentPartOf x y) (occurrentPartOf y z)) (occurrentPartOf x z))) // axiom label in BFO2 CLIF: [112-001] </obo:IAO_0000602>
-        <obo:IAO_0000602>(forall (x y t) (if (exists (v) (and (occurrentPartOf v x t) (occurrentPartOf v y t))) (exists (z) (forall (u w) (iff (iff (occurrentPartOf w u t) (and (occurrentPartOf w x t) (occurrentPartOf w y t))) (= z u)))))) // axiom label in BFO2 CLIF: [125-001] </obo:IAO_0000602>
-        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: a (continuant or occurrent) part of itself. We appreciate that this is counterintuitive for some users, since it implies for example that President Obama is a part of himself. However it brings benefits in simplifying the logical formalism, and it captures an important feature of identity, namely that it is the limit case of mereological inclusion.</obo:IAO_0000116>
+        <obo:BFO_0000180>occurrentPartOf</obo:BFO_0000180>
         <obo:IAO_0000112 xml:lang="en">Mary’s 5th birthday occurrent_part_of Mary’s life</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">The process of a footballer’s heart beating once is an occurrent part but not a temporal_part of a game of football.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the first set of the tennis match occurrent_part_of the tennis match.</obo:IAO_0000112>
+        <obo:IAO_0000115>[copied from inverse property &apos;has occurrent part&apos;] b has_occurrent_part c = Def. c occurrent_part_of b. (axiom label in BFO2 Reference: [007-001])</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: a (continuant or occurrent) part of itself. We appreciate that this is counterintuitive for some users, since it implies for example that President Obama is a part of himself. However it brings benefits in simplifying the logical formalism, and it captures an important feature of identity, namely that it is the limit case of mereological inclusion.</obo:IAO_0000116>
+        <obo:IAO_0000116>BFO2 Reference: occurrent</obo:IAO_0000116>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/vo.owl</obo:IAO_0000412>
         <obo:IAO_0000600 xml:lang="en">b occurrent_part_of c =Def. b is a part of c &amp; b and c are occurrents. (axiom label in BFO2 Reference: [003-002])</obo:IAO_0000600>
         <obo:IAO_0000601 xml:lang="en">occurrent_part_of is antisymmetric. (axiom label in BFO2 Reference: [123-001])</obo:IAO_0000601>
         <obo:IAO_0000601 xml:lang="en">occurrent_part_of is reflexive (every occurrent entity is an occurrent_part_of itself). (axiom label in BFO2 Reference: [113-002])</obo:IAO_0000601>
         <obo:IAO_0000601 xml:lang="en">occurrent_part_of is transitive. (axiom label in BFO2 Reference: [112-001])</obo:IAO_0000601>
         <obo:IAO_0000601 xml:lang="en">occurrent_part_of satisfies unique product. (axiom label in BFO2 Reference: [125-001])</obo:IAO_0000601>
         <obo:IAO_0000601 xml:lang="en">occurrent_part_of satisfies weak supplementation. (axiom label in BFO2 Reference: [124-001])</obo:IAO_0000601>
-        <obo:IAO_0000112 xml:lang="en">the first set of the tennis match occurrent_part_of the tennis match.</obo:IAO_0000112>
-        <rdfs:range rdf:resource="&obo;BFO_0000003"/>
-        <rdfs:domain rdf:resource="&obo;BFO_0000003"/>
-        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
-        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <obo:IAO_0000602>(forall (x y t) (if (and (occurrentPartOf x y t) (not (= x y))) (exists (z) (and (occurrentPartOf z y t) (not (exists (w) (and (occurrentPartOf w x t) (occurrentPartOf w z t)))))))) // axiom label in BFO2 CLIF: [124-001] </obo:IAO_0000602>
+        <obo:IAO_0000602>(forall (x y t) (if (and (occurrentPartOf x y t) (occurrentPartOf y x t)) (= x y))) // axiom label in BFO2 CLIF: [123-001] </obo:IAO_0000602>
+        <obo:IAO_0000602>(forall (x y t) (if (exists (v) (and (occurrentPartOf v x t) (occurrentPartOf v y t))) (exists (z) (forall (u w) (iff (iff (occurrentPartOf w u t) (and (occurrentPartOf w x t) (occurrentPartOf w y t))) (= z u)))))) // axiom label in BFO2 CLIF: [125-001] </obo:IAO_0000602>
+        <obo:IAO_0000602>(forall (x y z) (if (and (occurrentPartOf x y) (occurrentPartOf y z)) (occurrentPartOf x z))) // axiom label in BFO2 CLIF: [112-001] </obo:IAO_0000602>
+        <obo:IAO_0000602>(forall (x) (if (Occurrent x) (occurrentPartOf x x))) // axiom label in BFO2 CLIF: [113-002] </obo:IAO_0000602>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">part of occurrent</rdfs:label>
     </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000138 -->
 
-    <owl:ObjectProperty rdf:about="&obo;BFO_0000138">
-        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
-        <rdfs:label xml:lang="en">proper part of occurrent</rdfs:label>
-        <obo:IAO_0000115>[copied from inverse property &apos;has proper occurrent part&apos;] b has_proper_occurrent_part c = Def. c proper_occurrent_part_of b. [XXX-001</obo:IAO_0000115>
-        <obo:BFO_0000180>properOccurrentPartOf</obo:BFO_0000180>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000138">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000132"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <obo:BFO_0000179>o-ppart-of</obo:BFO_0000179>
-        <obo:IAO_0000602>(iff (properOccurrentPartOf a b) (and (occurrentPartOf a b) (not (= a b)))) // axiom label in BFO2 CLIF: [005-001] </obo:IAO_0000602>
+        <obo:BFO_0000180>properOccurrentPartOf</obo:BFO_0000180>
+        <obo:IAO_0000115>[copied from inverse property &apos;has proper occurrent part&apos;] b has_proper_occurrent_part c = Def. c proper_occurrent_part_of b. [XXX-001</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">b proper_occurrent_part_of c =Def. b occurrent_part_of c &amp; b and c are not identical. (axiom label in BFO2 Reference: [005-001])</obo:IAO_0000115>
-        <rdfs:range rdf:resource="&obo;BFO_0000003"/>
-        <rdfs:domain rdf:resource="&obo;BFO_0000003"/>
-        <owl:inverseOf rdf:resource="&obo;BFO_0000118"/>
-        <rdfs:subPropertyOf rdf:resource="&obo;BFO_0000132"/>
-        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
+        <obo:IAO_0000602>(iff (properOccurrentPartOf a b) (and (occurrentPartOf a b) (not (= a b)))) // axiom label in BFO2 CLIF: [005-001] </obo:IAO_0000602>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">proper part of occurrent</rdfs:label>
     </owl:ObjectProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="&obo;BFO_0000138"/>
-        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/117"/>
-        <owl:annotatedProperty rdf:resource="&rdf;type"/>
-        <owl:annotatedTarget rdf:resource="&owl;TransitiveProperty"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedTarget>(iff (properOccurrentPartOf a b) (and (occurrentPartOf a b) (not (= a b)))) // axiom label in BFO2 CLIF: [005-001] </owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;BFO_0000138"/>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000602"/>
-        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/005-001"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedTarget rdf:resource="&obo;BFO_0000003"/>
-        <owl:annotatedSource rdf:resource="&obo;BFO_0000138"/>
-        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/114"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;domain"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedTarget rdf:resource="&obo;BFO_0000003"/>
-        <owl:annotatedSource rdf:resource="&obo;BFO_0000138"/>
-        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/115"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;range"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedTarget xml:lang="en">b proper_occurrent_part_of c =Def. b occurrent_part_of c &amp; b and c are not identical. (axiom label in BFO2 Reference: [005-001])</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;BFO_0000138"/>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
-        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/005-001"/>
-    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000139 -->
 
-    <owl:ObjectProperty rdf:about="&obo;BFO_0000139">
-        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
-        <rdfs:label xml:lang="en">temporal part of</rdfs:label>
-        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/vo.owl</obo:IAO_0000412>
-        <obo:IAO_0000602>(iff (properTemporalPartOf a b) (and (temporalPartOf a b) (not (= a b)))) // axiom label in BFO2 CLIF: [116-001] </obo:IAO_0000602>
-        <obo:IAO_0000602>(forall (x y) (if (properTemporalPartOf x y) (exists (z) (and (properTemporalPartOf z y) (not (exists (w) (and (temporalPartOf w x) (temporalPartOf w z)))))))) // axiom label in BFO2 CLIF: [117-002] </obo:IAO_0000602>
-        <obo:BFO_0000180>temporalPartOf</obo:BFO_0000180>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000139">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000132"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <obo:BFO_0000179>t-part-of</obo:BFO_0000179>
-        <obo:IAO_0000602>(iff (temporalPartOf a b) (and (occurrentPartOf a b) (exists (t) (and (TemporalRegion t) (occupiesSpatioTemporalRegion a t))) (forall (c t_1) (if (and (Occurrent c) (occupiesSpatioTemporalRegion c t_1) (occurrentPartOf t_1 r)) (iff (occurrentPartOf c a) (occurrentPartOf c b)))))) // axiom label in BFO2 CLIF: [078-003] </obo:IAO_0000602>
-        <obo:IAO_0000115 xml:lang="en">b proper_temporal_part_of c =Def. b temporal_part_of c &amp; not (b = c). (axiom label in BFO2 Reference: [116-001])</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">b temporal_part_of c =Def.b occurrent_part_of c &amp; &amp; for some temporal region t, b occupies_temporal_region t &amp; for all occurrents d, t (if d occupies_temporal_region t  &amp; t? occurrent_part_of t then (d occurrent_part_of a iff d occurrent_part_of b)). (axiom label in BFO2 Reference: [078-003])</obo:IAO_0000115>
-        <obo:IAO_0000601 xml:lang="en">if b proper_temporal_part_of c, then there is some d which is a proper_temporal_part_of c and which shares no parts with b. (axiom label in BFO2 Reference: [117-002])</obo:IAO_0000601>
+        <obo:BFO_0000180>temporalPartOf</obo:BFO_0000180>
         <obo:IAO_0000112 xml:lang="en">the 4th year of your life is a temporal part of your life\. The first quarter of a game of football is a temporal part of the whole game\. The process of your heart beating from 4pm to 5pm today is a temporal part of the entire process of your heart beating.\ The 4th year of your life is a temporal part of your life</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the process boundary which separates the 3rd and 4th years of your life.</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">your heart beating from 4pm to 5pm today is a temporal part of the process of your heart beating</obo:IAO_0000112>
-        <rdfs:domain rdf:resource="&obo;BFO_0000003"/>
-        <rdfs:range rdf:resource="&obo;BFO_0000003"/>
-        <rdfs:subPropertyOf rdf:resource="&obo;BFO_0000132"/>
-        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
+        <obo:IAO_0000115 xml:lang="en">b proper_temporal_part_of c =Def. b temporal_part_of c &amp; not (b = c). (axiom label in BFO2 Reference: [116-001])</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">b temporal_part_of c =Def.b occurrent_part_of c &amp; &amp; for some temporal region t, b occupies_temporal_region t &amp; for all occurrents d, t (if d occupies_temporal_region t  &amp; t? occurrent_part_of t then (d occurrent_part_of a iff d occurrent_part_of b)). (axiom label in BFO2 Reference: [078-003])</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/vo.owl</obo:IAO_0000412>
+        <obo:IAO_0000601 xml:lang="en">if b proper_temporal_part_of c, then there is some d which is a proper_temporal_part_of c and which shares no parts with b. (axiom label in BFO2 Reference: [117-002])</obo:IAO_0000601>
+        <obo:IAO_0000602>(forall (x y) (if (properTemporalPartOf x y) (exists (z) (and (properTemporalPartOf z y) (not (exists (w) (and (temporalPartOf w x) (temporalPartOf w z)))))))) // axiom label in BFO2 CLIF: [117-002] </obo:IAO_0000602>
+        <obo:IAO_0000602>(iff (properTemporalPartOf a b) (and (temporalPartOf a b) (not (= a b)))) // axiom label in BFO2 CLIF: [116-001] </obo:IAO_0000602>
+        <obo:IAO_0000602>(iff (temporalPartOf a b) (and (occurrentPartOf a b) (exists (t) (and (TemporalRegion t) (occupiesSpatioTemporalRegion a t))) (forall (c t_1) (if (and (Occurrent c) (occupiesSpatioTemporalRegion c t_1) (occurrentPartOf t_1 r)) (iff (occurrentPartOf c a) (occurrentPartOf c b)))))) // axiom label in BFO2 CLIF: [078-003] </obo:IAO_0000602>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">temporal part of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000155 -->
 
-    <owl:ObjectProperty rdf:about="&obo;BFO_0000155">
-        <rdfs:label xml:lang="en">occupies temporal region</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000155">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000108"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000156"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
         <obo:BFO_0000179>spans</obo:BFO_0000179>
         <obo:BFO_0000180>occupiesTemporalRegion</obo:BFO_0000180>
         <obo:IAO_0000600 xml:lang="en">p occupies_temporal_region t. This is a primitive relation between an occurrent p and the temporal region t upon which the spatiotemporal region p occupies_spatiotemporal_region projects. (axiom label in BFO2 Reference: [132-001])</obo:IAO_0000600>
-        <rdfs:domain rdf:resource="&obo;BFO_0000003"/>
-        <rdfs:range rdf:resource="&obo;BFO_0000008"/>
-        <rdfs:subPropertyOf rdf:resource="&obo;BFO_0000108"/>
-        <owl:inverseOf rdf:resource="&obo;BFO_0000156"/>
-        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">occupies temporal region</rdfs:label>
     </owl:ObjectProperty>
-    <owl:Axiom>
-        <owl:annotatedTarget xml:lang="en">p occupies_temporal_region t. This is a primitive relation between an occurrent p and the temporal region t upon which the spatiotemporal region p occupies_spatiotemporal_region projects. (axiom label in BFO2 Reference: [132-001])</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;BFO_0000155"/>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000600"/>
-        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/132-001"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedTarget rdf:resource="&obo;BFO_0000008"/>
-        <owl:annotatedSource rdf:resource="&obo;BFO_0000155"/>
-        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/540"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;range"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedTarget rdf:resource="&obo;BFO_0000003"/>
-        <owl:annotatedSource rdf:resource="&obo;BFO_0000155"/>
-        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/539"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;domain"/>
-    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000156 -->
 
-    <owl:ObjectProperty rdf:about="&obo;BFO_0000156">
-        <rdfs:label xml:lang="en">has temporal occupant</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000156">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000157"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <obo:BFO_0000179>span-of</obo:BFO_0000179>
-        <obo:IAO_0000600>[copied from inverse property &apos;occupies temporal region&apos;] p occupies_temporal_region t. This is a primitive relation between an occurrent p and the temporal region t upon which the spatiotemporal region p occupies_spatiotemporal_region projects. (axiom label in BFO2 Reference: [132-001])</obo:IAO_0000600>
         <obo:BFO_0000180>spanOf</obo:BFO_0000180>
-        <rdfs:range rdf:resource="&obo;BFO_0000003"/>
-        <rdfs:domain rdf:resource="&obo;BFO_0000008"/>
-        <rdfs:subPropertyOf rdf:resource="&obo;BFO_0000157"/>
-        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
+        <obo:IAO_0000600>[copied from inverse property &apos;occupies temporal region&apos;] p occupies_temporal_region t. This is a primitive relation between an occurrent p and the temporal region t upon which the spatiotemporal region p occupies_spatiotemporal_region projects. (axiom label in BFO2 Reference: [132-001])</obo:IAO_0000600>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">has temporal occupant</rdfs:label>
     </owl:ObjectProperty>
-    <owl:Axiom>
-        <owl:annotatedTarget rdf:resource="&obo;BFO_0000003"/>
-        <owl:annotatedSource rdf:resource="&obo;BFO_0000156"/>
-        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/539"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;range"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedTarget rdf:resource="&obo;BFO_0000008"/>
-        <owl:annotatedSource rdf:resource="&obo;BFO_0000156"/>
-        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/540"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;domain"/>
-    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000157 -->
 
-    <owl:ObjectProperty rdf:about="&obo;BFO_0000157">
-        <rdfs:label xml:lang="en">during which exists</rdfs:label>
-        <obo:IAO_0000116>[copied from inverse property &apos;exists at&apos;] BFO2 Reference: entity</obo:IAO_0000116>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000157">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <obo:BFO_0000179>during-which-exists</obo:BFO_0000179>
+        <obo:IAO_0000116>[copied from inverse property &apos;exists at&apos;] BFO2 Reference: entity</obo:IAO_0000116>
         <obo:IAO_0000116>[copied from inverse property &apos;exists at&apos;] BFO2 Reference: temporal region</obo:IAO_0000116>
         <obo:IAO_0000600>[copied from inverse property &apos;exists at&apos;] b exists_at t means: b is an entity which exists at some temporal region t. (axiom label in BFO2 Reference: [118-002])</obo:IAO_0000600>
-        <rdfs:range rdf:resource="&obo;BFO_0000001"/>
-        <rdfs:domain rdf:resource="&obo;BFO_0000008"/>
-        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">during which exists</rdfs:label>
     </owl:ObjectProperty>
-    <owl:Axiom>
-        <owl:annotatedTarget rdf:resource="&obo;BFO_0000008"/>
-        <owl:annotatedSource rdf:resource="&obo;BFO_0000157"/>
-        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/102"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;domain"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedTarget rdf:resource="&obo;BFO_0000001"/>
-        <owl:annotatedSource rdf:resource="&obo;BFO_0000157"/>
-        <obo:IAO_0010000 rdf:resource="&obo;bfo/axiom/101"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;range"/>
-    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000295 -->
 
-    <owl:ObjectProperty rdf:about="&obo;OBI_0000295">
-        <rdfs:label xml:lang="en">is_specified_input_of</rdfs:label>
-        <obo:IAO_0000117 rdf:datatype="&xsd;string">PERSON:Bjoern Peters</obo:IAO_0000117>
-        <obo:IAO_0000115 xml:lang="en">A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000295">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000111 xml:lang="en">is_specified_input_of</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">some Autologous EBV(Epstein-Barr virus)-transformed B-LCL (B lymphocyte cell line) is_input_for instance of Chromum Release Assay described at https://wiki.cbil.upenn.edu/obiwiki/index.php/Chromium_Release_assay</obo:IAO_0000112>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
-        <rdfs:range rdf:resource="&obo;OBI_0000011"/>
-        <rdfs:subPropertyOf rdf:resource="&obo;RO_0000056"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Bjoern Peters</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">is_specified_input_of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -554,38 +461,69 @@ Demographic Table
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
 
-    <rdf:Description rdf:about="&obo;IAO_0000027">
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000001"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000650 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000650">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111 xml:lang="en">database extract, transform, and load process</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A planned process which takes as input a database and fills another database by extracting concretizations of information entities from the first, transforming them, and loading the transformed concretizations into the second.</obo:IAO_0000115>
+        <obo:IAO_0000116>Alan Ruttenberg 12/21/16: Maybe this definition instead: A planned process which takes as input a database and copies concretizations from the first, optionally transforms then copies the result to the second</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Alan Ruttenberg 12/21/16: We don&apos;t define database in IAO, currently, as the bare word is ambiguous. Reasonable interpretations of the word might be the material entity, an information structure, an information content entity. However this definition commits, at least, to there being some material thing which bear concretizations of information entities and that there are new concretizations created during the process.  We consider the ETL process in terms of information entities rather than the concretizations. No committment is made as to whether the specified output.</obo:IAO_0000116>
+        <obo:IAO_0000117>PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">ETL</obo:IAO_0000118>
+        <obo:IAO_0000119>WEB:https://en.wikipedia.org/wiki/Extract,_transform,_load</obo:IAO_0000119>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/187"/>
+        <rdfs:isDefinedBy rdf:resource="https://github.com/information-artifact-ontology/IAO"/>
+        <rdfs:label xml:lang="en">database extract, transform, and load process</rdfs:label>
+        <foaf:page rdf:resource="https://en.wikipedia.org/wiki/Extract,_transform,_load"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000132 -->
 
-    <rdf:Description rdf:about="&obo;OMRSE_00000132">
-        <rdfs:subClassOf rdf:resource="&obo;PCORnet_00000007"/>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000132">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000007"/>
     </rdf:Description>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000134 -->
 
-    <rdf:Description rdf:about="&obo;OMRSE_00000134">
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000134">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;PCORnet_00000009"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -594,207 +532,207 @@ Demographic Table
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000047 -->
 
-    <owl:Class rdf:about="&obo;PATO_0000047">
-        <rdfs:label rdf:datatype="&xsd;string">biological sex</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;PATO_0001995"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">An organismal quality inhering in a bearer by virtue of the bearer&apos;s ability to undergo sexual reproduction in order to differentiate the individuals or types involved.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="&xsd;string">PATO:0000047</oboInOwl:id>
-        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/pato.owl</obo:IAO_0000412>
-        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:inSubset rdf:resource="&obo;pato#attribute_slim"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001995"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organismal quality inhering in a bearer by virtue of the bearer&apos;s ability to undergo sexual reproduction in order to differentiate the individuals or types involved.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/pato.owl</obo:IAO_0000412>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0000047</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological sex</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000383 -->
 
-    <owl:Class rdf:about="&obo;PATO_0000383">
-        <rdfs:label rdf:datatype="&xsd;string">female</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;PATO_0001894"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A biological sex quality inhering in an individual or a population that only produces gametes that can be fertilised by male gametes.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="&xsd;string">PATO:0000383</oboInOwl:id>
-        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/pato.owl</obo:IAO_0000412>
-        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:inSubset rdf:resource="&obo;pato#mpath_slim"/>
-        <oboInOwl:inSubset rdf:resource="&obo;pato#value_slim"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000383">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001894"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A biological sex quality inhering in an individual or a population that only produces gametes that can be fertilised by male gametes.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/pato.owl</obo:IAO_0000412>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0000383</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">female</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000384 -->
 
-    <owl:Class rdf:about="&obo;PATO_0000384">
-        <rdfs:label rdf:datatype="&xsd;string">male</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;PATO_0001894"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A biological sex quality inhering in an individual or a population whose sex organs contain only male gametes.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="&xsd;string">PATO:0000384</oboInOwl:id>
-        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/pato.owl</obo:IAO_0000412>
-        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:inSubset rdf:resource="&obo;pato#mpath_slim"/>
-        <oboInOwl:inSubset rdf:resource="&obo;pato#value_slim"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000384">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001894"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A biological sex quality inhering in an individual or a population whose sex organs contain only male gametes.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/pato.owl</obo:IAO_0000412>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0000384</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">male</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001894 -->
 
-    <owl:Class rdf:about="&obo;PATO_0001894">
-        <rdfs:label rdf:datatype="&xsd;string">phenotypic sex</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;PATO_0000047"/>
-        <oboInOwl:id rdf:datatype="&xsd;string">PATO:0001894</oboInOwl:id>
-        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/pato.owl</obo:IAO_0000412>
-        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:inSubset rdf:resource="&obo;pato#attribute_slim"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001894">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000047"/>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/pato.owl</obo:IAO_0000412>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001894</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phenotypic sex</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001995 -->
 
-    <owl:Class rdf:about="&obo;PATO_0001995">
-        <rdfs:label rdf:datatype="&xsd;string">organismal quality</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A quality that inheres in an entire organism or part of an organism.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="&xsd;string">PATO:0001995</oboInOwl:id>
-        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/pato.owl</obo:IAO_0000412>
-        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">quality</oboInOwl:hasOBONamespace>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001995">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality that inheres in an entire organism or part of an organism.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/pato.owl</obo:IAO_0000412>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organismal quality</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PCORnet_00000007 -->
 
-    <owl:Class rdf:about="&obo;PCORnet_00000007">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000008"/>
         <rdfs:label xml:lang="en">answer to ID question</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;PCORnet_00000008"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PCORnet_00000008 -->
 
-    <owl:Class rdf:about="&obo;PCORnet_00000008">
-        <rdfs:label xml:lang="en">response to an ID question asking process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;PCORnet_00000011"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000056"/>
-                <owl:someValuesFrom rdf:resource="&obo;PCORnet_00000009"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">response to an ID question asking process</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PCORnet_00000009 -->
 
-    <owl:Class rdf:about="&obo;PCORnet_00000009">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000001"/>
         <rdfs:label xml:lang="en">ID question asking process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;PCORnet/PCORnet_00000001"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PCORnet_00000010 -->
 
-    <owl:Class rdf:about="&obo;PCORnet_00000010">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000011"/>
         <rdfs:label xml:lang="en">refusal to answer datum</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;PCORnet_00000011"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PCORnet_00000011 -->
 
-    <owl:Class rdf:about="&obo;PCORnet_00000011">
-        <rdfs:label xml:lang="en">response to a question asking process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000056"/>
-                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000001"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">response to a question asking process</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PCORnet_00000013 -->
 
-    <owl:Class rdf:about="&obo;PCORnet_00000013">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000009"/>
         <rdfs:label xml:lang="en">ethnic ID question asking process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;PCORnet_00000009"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PCORnet_00000021 -->
 
-    <owl:Class rdf:about="&obo;PCORnet_00000021">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000009"/>
         <rdfs:label xml:lang="en">race ID question asking process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;PCORnet_00000009"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PCORnet_00000037 -->
 
-    <owl:Class rdf:about="&obo;PCORnet_00000037">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000099"/>
         <rdfs:label xml:lang="en">PCORnet racial identification process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000099"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0000000 -->
 
-    <owl:Class rdf:about="&obo;UBERON_0000000">
-        <rdfs:label rdf:datatype="&xsd;string">processual entity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">An occurrent [span:Occurrent] that exists in time by occurring or happening, has temporal parts and always involves and depends on some entity.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0000000</oboInOwl:id>
-        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
-        <oboInOwl:inSubset rdf:resource="&obo;uberon/core#upper_level"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An occurrent [span:Occurrent] that exists in time by occurring or happening, has temporal parts and always involves and depends on some entity.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000000</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#upper_level"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">processual entity</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0000071 -->
 
-    <owl:Class rdf:about="&obo;UBERON_0000071">
-        <rdfs:label rdf:datatype="&xsd;string">death stage</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000105"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">End of the life of an organism.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0000071</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">XAO:0000437</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">XtroDO:0000085</oboInOwl:hasDbXref>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">death</oboInOwl:hasRelatedSynonym>
-        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/uberon.owl</obo:IAO_0000412>
-        <obo:UBPROP_0000012 rdf:datatype="&xsd;string">ncit:Death is an outcome</obo:UBPROP_0000012>
-        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000071">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">End of the life of an organism.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/uberon.owl</obo:IAO_0000412>
+        <obo:UBPROP_0000012 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ncit:Death is an outcome</obo:UBPROP_0000012>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAO:0000437</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XtroDO:0000085</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">death</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000071</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">death stage</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0000104 -->
 
-    <owl:Class rdf:about="&obo;UBERON_0000104">
-        <rdfs:label rdf:datatype="&xsd;string">life cycle</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000182"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">An entire span of an organism&apos;s life, commencing with the zygote stage and ending in the death of the organism.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FBdv:00000000</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">HsapDv:0000001</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MmusDv:0000001</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OGES:000011</oboInOwl:hasDbXref>
-        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0000104</oboInOwl:id>
-        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">entire life cycle</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">entire lifespan</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/uberon.owl</obo:IAO_0000412>
-        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">life</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">lifespan</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ncithesaurus:Life</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
-        <oboInOwl:inSubset rdf:resource="&obo;uberon/core#upper_level"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000104">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000182"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An entire span of an organism&apos;s life, commencing with the zygote stage and ending in the death of the organism.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/uberon.owl</obo:IAO_0000412>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBdv:00000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HsapDv:0000001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MmusDv:0000001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OGES:000011</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ncithesaurus:Life</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">entire life cycle</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">entire lifespan</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">life</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lifespan</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000104</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#upper_level"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">life cycle</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/obophenotype/uberon/issues/532"/>
     </owl:Class>
     
@@ -802,66 +740,66 @@ Demographic Table
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0000105 -->
 
-    <owl:Class rdf:about="&obo;UBERON_0000105">
-        <rdfs:label rdf:datatype="&xsd;string">life cycle stage</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000011"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A spatiotemporal region encompassing some part of the life cycle of an organism.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BILS:0000105</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EFO:0000399</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FBdv:00007012</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:24120</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">HsapDv:0000000</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MmusDv:0000000</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OlatDv:0000010</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PdumDv:0000090</oboInOwl:hasDbXref>
-        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0000105</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">WBls:0000002</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">XAO:1000000</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ZFS:0000000</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ZFS:0100000</oboInOwl:hasDbXref>
-        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">developmental stage</oboInOwl:hasNarrowSynonym>
-        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/uberon.owl</obo:IAO_0000412>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ncithesaurus:Developmental_Stage</oboInOwl:hasDbXref>
-        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">stage</oboInOwl:hasNarrowSynonym>
-        <obo:UBPROP_0000012 rdf:datatype="&xsd;string">the WBls class &apos;all stages&apos; belongs here as it is the superclass of other WBls stages</obo:UBPROP_0000012>
-        <obo:IAO_0000116 rdf:datatype="&xsd;string">this class represents a proper part of the life cycle of an organism. The class &apos;life cycle&apos; should not be placed here</obo:IAO_0000116>
-        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
-        <obo:UBPROP_0000012 rdf:datatype="&xsd;string">we map the ZFS unknown stage here as it is logically equivalent to saying *some* life cycle stage</obo:UBPROP_0000012>
-        <oboInOwl:inSubset rdf:resource="&obo;uberon/core#efo_slim"/>
-        <oboInOwl:inSubset rdf:resource="&obo;uberon/core#upper_level"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000105">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A spatiotemporal region encompassing some part of the life cycle of an organism.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">this class represents a proper part of the life cycle of an organism. The class &apos;life cycle&apos; should not be placed here</obo:IAO_0000116>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/uberon.owl</obo:IAO_0000412>
+        <obo:UBPROP_0000012 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">the WBls class &apos;all stages&apos; belongs here as it is the superclass of other WBls stages</obo:UBPROP_0000012>
+        <obo:UBPROP_0000012 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">we map the ZFS unknown stage here as it is logically equivalent to saying *some* life cycle stage</obo:UBPROP_0000012>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BILS:0000105</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0000399</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBdv:00007012</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:24120</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HsapDv:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MmusDv:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000010</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PdumDv:0000090</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WBls:0000002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAO:1000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFS:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFS:0100000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ncithesaurus:Developmental_Stage</oboInOwl:hasDbXref>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">developmental stage</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stage</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000105</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#efo_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#upper_level"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">life cycle stage</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0007221 -->
 
-    <owl:Class rdf:about="&obo;UBERON_0007221">
-        <rdfs:label rdf:datatype="&xsd;string">neonate stage</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000105"/>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0001762</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EV:0300037</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">HsapDv:0000082</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MmusDv:0000096</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NIF_Organism:birnlex_695</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OGES:000025</oboInOwl:hasDbXref>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">Of or pertaining to the period of time immediately following birth, or to the newborn.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0007221</oboInOwl:id>
-        <obo:IAO_0000116 rdf:datatype="&xsd;string">consider splitting infant/newborn</obo:IAO_0000116>
-        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">fledgling stage</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">hatchling</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">hatchling stage</oboInOwl:hasNarrowSynonym>
-        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/uberon.owl</obo:IAO_0000412>
-        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">infant stage</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">neonatal stage</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">nestling stage</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">newborn stage</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">pouch stage</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">puggle</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">puggle stage</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0007221">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Of or pertaining to the period of time immediately following birth, or to the newborn.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">consider splitting infant/newborn</obo:IAO_0000116>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/uberon.owl</obo:IAO_0000412>
         <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Infant"/>
         <oboInOwl:hasDbXref rdf:resource="http://neurolex.org/wiki/Category:Infant_organism"/>
         <oboInOwl:hasDbXref rdf:resource="http://neurolex.org/wiki/Category:Newborn_organism"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0001762</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EV:0300037</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HsapDv:0000082</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MmusDv:0000096</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIF_Organism:birnlex_695</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OGES:000025</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neonatal stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fledgling stage</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hatchling</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hatchling stage</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">infant stage</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nestling stage</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pouch stage</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">puggle</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">puggle stage</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">newborn stage</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0007221</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neonate stage</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/obophenotype/uberon/issues/350"/>
     </owl:Class>
     
@@ -869,318 +807,318 @@ Demographic Table
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0035943 -->
 
-    <owl:Class rdf:about="&obo;UBERON_0035943">
-        <rdfs:label rdf:datatype="&xsd;string">life cycle temporal boundary</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000000"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A temporal boundary connecting two life cycle stages that follow in immediate succession. A temporal boundary is an abstract, instantaneous entity.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0035943</oboInOwl:id>
-        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
-        <oboInOwl:inSubset rdf:resource="&obo;uberon/core#upper_level"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0035943">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000000"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A temporal boundary connecting two life cycle stages that follow in immediate succession. A temporal boundary is an abstract, instantaneous entity.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0035943</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#upper_level"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">life cycle temporal boundary</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0035944 -->
 
-    <owl:Class rdf:about="&obo;UBERON_0035944">
-        <rdfs:label rdf:datatype="&xsd;string">life-death temporal boundary</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;UBERON_0035943"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A life cycle temporal boundary that marks the end of the life cycle of the organism.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0035944</oboInOwl:id>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">death</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">end of life</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">end of life cycle</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">moment of death</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">time of death</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0035944">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0035943"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A life cycle temporal boundary that marks the end of the life cycle of the organism.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">end of life cycle</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">moment of death</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">time of death</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">death</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">end of life</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0035944</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">life-death temporal boundary</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0035946 -->
 
-    <owl:Class rdf:about="&obo;UBERON_0035946">
-        <rdfs:label rdf:datatype="&xsd;string">start of neonate stage</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;UBERON_0035943"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A life cycle temporal boundary that marks the start of the neonate stage of the organism.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0035946</oboInOwl:id>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">birth</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">moment of birth</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">time of birth</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0035946">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0035943"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A life cycle temporal boundary that marks the start of the neonate stage of the organism.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">moment of birth</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">time of birth</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">birth</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0035946</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">start of neonate stage</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000000 -->
 
-    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000000">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000012"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">PROMIS response data item</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000012"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000010"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000001 -->
 
-    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000001">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000008"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">question asking process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0021003"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000008"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000003 -->
 
-    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000003">
-        <rdfs:label xml:lang="en">PCORnet racial identity datum</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000098"/>
-        <rdfs:comment xml:lang="en">A racial identity that is the output of a racial identification process that uses the PCORnet CDM race or terminology. PCORnet CDM claims to use the OMB racial classification, but the crucial difference is that PCORnet CDM requires persons to identify with only one category whereas the OMB allows for multiple racial identities as outputs of an identification process.</rdfs:comment>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000098"/>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">A racial identity that is the output of a racial identification process that uses the PCORnet CDM race or terminology. PCORnet CDM claims to use the OMB racial classification, but the crucial difference is that PCORnet CDM requires persons to identify with only one category whereas the OMB allows for multiple racial identities as outputs of an identification process.</rdfs:comment>
+        <rdfs:label xml:lang="en">PCORnet racial identity datum</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000004 -->
 
-    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000004">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:label xml:lang="en">question text</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000005 -->
 
-    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000005">
-        <rdfs:label xml:lang="en">answer set</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002351"/>
-                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000012"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002351"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000012"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">answer set</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000006 -->
 
-    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000006">
-        <rdfs:label xml:lang="en">PCORnet American Indian or Alaska Native identity datum</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;PCORnet/PCORnet_00000003"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000003"/>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">PCORnet American Indian or Alaska Native identity datum</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000007 -->
 
-    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000007">
-        <rdfs:label xml:lang="en">PCORnet Asian identity datum</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;PCORnet/PCORnet_00000003"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000003"/>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">PCORnet Asian identity datum</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000008 -->
 
-    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000008">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000004"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000005"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">material information bearer of question text plus answer set</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000053"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;BFO_0000020"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;RO_0000059"/>
-                                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000005"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000053"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;BFO_0000020"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;RO_0000059"/>
-                                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000004"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000009 -->
 
-    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000009">
-        <rdfs:label xml:lang="en">PCORnet black or African American identity datum</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;PCORnet/PCORnet_00000003"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000003"/>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">PCORnet black or African American identity datum</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000010 -->
 
-    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000010">
-        <rdfs:label xml:lang="en">PCORnet CDM item identifier</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0020012"/>
-                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000011"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0020012"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000011"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">PCORnet CDM item identifier</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000011 -->
 
-    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000011">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">PCORnet item</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000004"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000005"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000012 -->
 
-    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000012">
-        <rdfs:label xml:lang="en">option as memeber of answer set</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002350"/>
-                <owl:someValuesFrom rdf:resource="&obo;PCORnet/PCORnet_00000005"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">option as memeber of answer set</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000013 -->
 
-    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000013">
-        <rdfs:label xml:lang="en">PCORnet Native Hawaiian or other Pacific Islander identity datum</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;PCORnet/PCORnet_00000003"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000003"/>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">PCORnet Native Hawaiian or other Pacific Islander identity datum</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000014 -->
 
-    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000014">
-        <rdfs:label xml:lang="en">PCORnet white identity datum</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;PCORnet/PCORnet_00000003"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000003"/>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">PCORnet white identity datum</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000015 -->
 
-    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000015">
-        <rdfs:label xml:lang="en">PCORnet multiple race identity datum</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;PCORnet/PCORnet_00000003"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000003"/>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">PCORnet multiple race identity datum</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000016 -->
 
-    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000016">
-        <rdfs:label xml:lang="en">PCORnet Hispanic</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000127"/>
-        <rdfs:subClassOf rdf:resource="&obo;PCORnet/PCORnet_00000018"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000127"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000018"/>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
         <rdfs:comment xml:lang="en">From PCORnet CDM &quot;A person of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race.&quot;</rdfs:comment>
+        <rdfs:label xml:lang="en">PCORnet Hispanic identity datum</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000017 -->
 
-    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000017">
-        <rdfs:label xml:lang="en">PCORnet Not Hispanic</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000128"/>
-        <rdfs:subClassOf rdf:resource="&obo;PCORnet/PCORnet_00000018"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000128"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000018"/>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">PCORnet not Hispanic identity datum</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000018 -->
 
-    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000018">
-        <rdfs:label xml:lang="en">PCORnet ethnic identity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000100"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000100"/>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">PCORnet ethnic identity datum</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000019 -->
 
-    <owl:Class rdf:about="&obo;PCORnet/PCORnet_00000019">
-        <rdfs:label xml:lang="en">PCORnet patient identifier</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000578"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
         <obo:IAO_0000115 xml:lang="en">A centrally registered identifier that denotes a person in a PCORnet data mart and is used to link across tables. This identifier is not necessarily unique within PCORnet.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">PCORnet patient identifier</rdfs:label>
     </owl:Class>
     
 
@@ -1198,49 +1136,49 @@ Demographic Table
 
     <!-- http://purl.obolibrary.org/obo/PCORnet_00000001 -->
 
-    <owl:NamedIndividual rdf:about="&obo;PCORnet_00000001">
-        <rdf:type rdf:resource="&obo;NCBITaxon_9606"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000001">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <obo:RO_0000056 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000004"/>
         <rdfs:label xml:lang="en">John Doe</rdfs:label>
-        <obo:RO_0000056 rdf:resource="&obo;PCORnet_00000004"/>
     </owl:NamedIndividual>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PCORnet_00000002 -->
 
-    <owl:NamedIndividual rdf:about="&obo;PCORnet_00000002">
-        <rdf:type rdf:resource="&obo;UBERON_0035946"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000002">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/UBERON_0035946"/>
+        <obo:BFO_0000155 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000003"/>
         <rdfs:label xml:lang="en">John Doe&apos;s birth</rdfs:label>
-        <obo:BFO_0000155 rdf:resource="&obo;PCORnet_00000003"/>
     </owl:NamedIndividual>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PCORnet_00000003 -->
 
-    <owl:NamedIndividual rdf:about="&obo;PCORnet_00000003">
-        <rdf:type rdf:resource="&obo;BFO_0000148"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000003">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000148"/>
+        <obo:BFO_0000139 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000004"/>
+        <obo:BFO_0000139 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000006"/>
         <rdfs:label>23:59</rdfs:label>
-        <obo:BFO_0000139 rdf:resource="&obo;PCORnet_00000004"/>
-        <obo:BFO_0000139 rdf:resource="&obo;PCORnet_00000006"/>
     </owl:NamedIndividual>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PCORnet_00000004 -->
 
-    <owl:NamedIndividual rdf:about="&obo;PCORnet_00000004">
-        <rdf:type rdf:resource="&obo;UBERON_0007221"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000004">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007221"/>
+        <obo:BFO_0000155 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000005"/>
         <rdfs:label xml:lang="en">John Doe&apos;s neonate stage</rdfs:label>
-        <obo:BFO_0000155 rdf:resource="&obo;PCORnet_00000005"/>
     </owl:NamedIndividual>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PCORnet_00000005 -->
 
-    <owl:NamedIndividual rdf:about="&obo;PCORnet_00000005">
-        <rdf:type rdf:resource="&obo;BFO_0000038"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000005">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
         <rdfs:label xml:lang="en">1D temporal interval occuped by John Doe&apos;s neonate stage</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1248,8 +1186,8 @@ Demographic Table
 
     <!-- http://purl.obolibrary.org/obo/PCORnet_00000006 -->
 
-    <owl:NamedIndividual rdf:about="&obo;PCORnet_00000006">
-        <rdf:type rdf:resource="&obo;BFO_0000038"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000006">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
         <rdfs:label xml:lang="en">2000-02-02</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1257,19 +1195,19 @@ Demographic Table
 
     <!-- http://purl.obolibrary.org/obo/PCORnet_00000012 -->
 
-    <owl:NamedIndividual rdf:about="&obo;PCORnet_00000012">
-        <rdf:type rdf:resource="&obo;PCORnet_00000010"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000012">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000010"/>
+        <obo:RO_0000056 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000014"/>
+        <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000015"/>
         <rdfs:label xml:lang="en">rta1</rdfs:label>
-        <obo:RO_0000056 rdf:resource="&obo;PCORnet_00000014"/>
-        <obo:IAO_0000136 rdf:resource="&obo;PCORnet_00000015"/>
     </owl:NamedIndividual>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PCORnet_00000014 -->
 
-    <owl:NamedIndividual rdf:about="&obo;PCORnet_00000014">
-        <rdf:type rdf:resource="&obo;PCORnet_00000013"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000014">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000013"/>
         <rdfs:label xml:lang="en">eiqap1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1277,28 +1215,28 @@ Demographic Table
 
     <!-- http://purl.obolibrary.org/obo/PCORnet_00000015 -->
 
-    <owl:NamedIndividual rdf:about="&obo;PCORnet_00000015">
-        <rdf:type rdf:resource="&obo;NCBITaxon_9606"/>
-        <rdfs:label xml:lang="en">p3</rdfs:label>
-        <obo:RO_0000056 rdf:resource="&obo;PCORnet_00000014"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000015">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <obo:RO_0000056 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000014"/>
+        <rdfs:label xml:lang="en">Jane Doe</rdfs:label>
     </owl:NamedIndividual>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PCORnet_00000016 -->
 
-    <owl:NamedIndividual rdf:about="&obo;PCORnet_00000016">
-        <rdf:type rdf:resource="&obo;IAO_0020000"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000016">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+        <obo:IAO_0020012 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000001"/>
         <rdfs:label xml:lang="en">g</rdfs:label>
-        <obo:IAO_0020012 rdf:resource="&obo;PCORnet_00000001"/>
     </owl:NamedIndividual>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PCORnet_00000017 -->
 
-    <owl:NamedIndividual rdf:about="&obo;PCORnet_00000017">
-        <rdf:type rdf:resource="&obo;NCBITaxon_9606"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000017">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <rdfs:label xml:lang="en">p4</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1306,18 +1244,18 @@ Demographic Table
 
     <!-- http://purl.obolibrary.org/obo/PCORnet_00000018 -->
 
-    <owl:NamedIndividual rdf:about="&obo;PCORnet_00000018">
-        <rdf:type rdf:resource="&obo;PATO_0000383"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000018">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/PATO_0000383"/>
+        <obo:RO_0000052 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000017"/>
         <rdfs:label xml:lang="en">f1</rdfs:label>
-        <obo:RO_0000052 rdf:resource="&obo;PCORnet_00000017"/>
     </owl:NamedIndividual>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PCORnet_00000019 -->
 
-    <owl:NamedIndividual rdf:about="&obo;PCORnet_00000019">
-        <rdf:type rdf:resource="&obo;NCBITaxon_9606"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000019">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <rdfs:label xml:lang="en">p5</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1325,18 +1263,18 @@ Demographic Table
 
     <!-- http://purl.obolibrary.org/obo/PCORnet_00000020 -->
 
-    <owl:NamedIndividual rdf:about="&obo;PCORnet_00000020">
-        <rdf:type rdf:resource="&obo;PATO_0000384"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000020">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/PATO_0000384"/>
+        <obo:RO_0000052 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000019"/>
         <rdfs:label xml:lang="en">m1</rdfs:label>
-        <obo:RO_0000052 rdf:resource="&obo;PCORnet_00000019"/>
     </owl:NamedIndividual>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PCORnet_00000022 -->
 
-    <owl:NamedIndividual rdf:about="&obo;PCORnet_00000022">
-        <rdf:type rdf:resource="&obo;PCORnet_00000021"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000022">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000021"/>
         <rdfs:label xml:lang="en">ridqap1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1344,25 +1282,115 @@ Demographic Table
 
     <!-- http://purl.obolibrary.org/obo/PCORnet_00000024 -->
 
-    <owl:NamedIndividual rdf:about="&obo;PCORnet_00000024">
-        <rdf:type rdf:resource="&obo;NCBITaxon_9606"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000024">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <obo:RO_0000056 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000022"/>
         <rdfs:label xml:lang="en">p6</rdfs:label>
-        <obo:RO_0000056 rdf:resource="&obo;PCORnet_00000022"/>
     </owl:NamedIndividual>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PCORnet_00000025 -->
 
-    <owl:NamedIndividual rdf:about="&obo;PCORnet_00000025">
-        <rdf:type rdf:resource="&obo;PCORnet_00000010"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000025">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000010"/>
+        <obo:RO_0000056 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000022"/>
+        <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000024"/>
         <rdfs:label xml:lang="en">rta2</rdfs:label>
-        <obo:RO_0000056 rdf:resource="&obo;PCORnet_00000022"/>
-        <obo:IAO_0000136 rdf:resource="&obo;PCORnet_00000024"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000101 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000101">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000127"/>
+        <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000001"/>
+        <obo:OBI_0000295 rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000104"/>
+        <obo:OBI_0000312 rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000102"/>
+        <rdfs:label xml:lang="en">John Doe&apos;s Hispanic or Latino identity datum</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000102 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000102">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000101"/>
+        <rdfs:label xml:lang="en">John Doe’s ethnic identification process</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000103 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000103">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000016"/>
+        <obo:OBI_0000295 rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000104"/>
+        <obo:OBI_0000312 rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000104"/>
+        <rdfs:label xml:lang="en">John Doe’s PCORnet Hispanic identity datum</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000104 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000104">
+        <rdfs:label xml:lang="en">ETL process of John Doe’s ethnic identity datum</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000105 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000105">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000128"/>
+        <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000015"/>
+        <obo:OBI_0000295 rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000109"/>
+        <obo:OBI_0000312 rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000106"/>
+        <rdfs:label xml:lang="en">Jane Doe&apos;s not Hispanic or Latino identity datum</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000106 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000106">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000101"/>
+        <rdfs:label xml:lang="en">Jane Doe’s ethnic identification process</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000107 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000107">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000017"/>
+        <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000015"/>
+        <obo:OBI_0000312 rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000109"/>
+        <rdfs:label xml:lang="en">Jane Doe’s PCORnet not Hispanic identity datum</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000108 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000108">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000650"/>
+        <rdfs:label xml:lang="en">ETL process of John Doe’s ethnic identity datum</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000109 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000109">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000650"/>
+        <rdfs:label xml:lang="en">ETL process of Jane Doe’s ethnic identity datum</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
 
