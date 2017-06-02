@@ -41,5 +41,26 @@ PCORowl:{"symbol"}
 		]
 .
 
+# male
+PCORowl:{"p_pheno_sex"} a ns0:PATO_0000384; 
+	 ns0:RO_0000052 "{\"person\"}";
+ sm:map [
+	 sm:query """
+		  SELECT p_uri AS person, p_pheno_sex
+		  FROM SANDBOX.pcori_cdmv3.demographic
+		  WHERE sex='M'
+		  """ ;
+		]
+.
 
-
+# female
+PCORowl:{"p_pheno_sex"} a ns0:PATO_0000383;
+	ns0:RO_0000052 "{\"person\"}";
+ sm:map [
+	 sm:query """
+		  SELECT p_uri AS person
+		  FROM SANDBOX.pcori_cdmv3.demographic
+		  WHERE sex='F'
+		  """ ;
+		]
+.
