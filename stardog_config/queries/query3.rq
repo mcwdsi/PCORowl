@@ -1,0 +1,20 @@
+PREFIX pcornet: <http://purl.obolibrary.org/obo/PCORnet/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+
+SELECT  ?pspatid ?patid ?patid_text ?organism ?phenosex  ?sex
+{
+        GRAPH <virtual://PCORowl>
+        {
+                # PCORnet_00000019 'patient identifier'
+                ?pspatid a pcornet:PCORnet_00000019 .
+                ?pspatid obo:BFO_0000051 ?patid .
+                ?patid rdfs:label ?patid_text .
+                ?pspatid obo:IAO_0000219 ?organism .
+                ?phenosex obo:RO_0000052 ?organism .
+                {  ?phenosex a obo:PATO_0000384 . }
+                UNION
+                {  ?phenosex a obo:PATO_0000383 . }
+				?phenosex a ?sex .
+        }
+}
+#ORDER BY ?pspatid 
