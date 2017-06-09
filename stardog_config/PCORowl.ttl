@@ -43,7 +43,7 @@ PCORowl:{"symbol"}
 
 # male
 PCORowl:{"p_pheno_sex"} a ns0:PATO_0000384; 
-	 ns0:RO_0000052 "{\"person\"}";
+	 ns0:RO_0000052 PCORowl:{"person"};
  sm:map [
 	 sm:query """
 		  SELECT p_uri AS person, p_pheno_sex
@@ -55,7 +55,7 @@ PCORowl:{"p_pheno_sex"} a ns0:PATO_0000384;
 
 # female
 PCORowl:{"p_pheno_sex"} a ns0:PATO_0000383;
-	ns0:RO_0000052 "{\"person\"}";
+	ns0:RO_0000052 PCORowl:{"person"};
  sm:map [
 	 sm:query """
 		  SELECT p_uri AS person
@@ -63,4 +63,80 @@ PCORowl:{"p_pheno_sex"} a ns0:PATO_0000383;
 		  WHERE sex='F'
 		  """ ;
 		]
+.
+
+# organism and homo sapiens
+PCORowl:{"organism"} a ns0:OBI_0100026;
+	a ns0:NCBITaxon_9606;
+ sm:map [
+	 sm:query """
+		   SELECT p_uri AS organism
+		   FROM SANDBOX.pcori_cdmv3.demographic
+		  """;
+	]
+.
+
+# person to neonate stage
+PCORowl:{"p_uri"} ns0:RO_0000056 PCORowl:{"p_neonate_stage_uri"};
+ sm:map [
+	 sm:query """
+		   SELECT p_uri, p_neonate_stage_uri
+			  FROM SANDBOX.pcori_cdmv3.demographic
+		""";
+	]
+.
+
+# neonate stage
+PCORowl:{"p_neonate_stage_uri"} a ns0:UBERON_0000105;
+ ns0:BFO_0000155 PCORowl:{"tr2_uri"};
+ sm:map [
+	sm:query """
+		  SELECT p_neonate_stage_uri, tr2_uri
+			FROM SANDBOX.pcori_cdmv3.demographic
+		""";
+	]
+.
+
+#  birth
+PCORowl:{"p_birth_uri"} a ns0:UBERON_0035946;
+ ns0:BFO_0000155 PCORowl:{"t1_uri"};
+ sm:map [
+	 sm:query """
+		   SELECT p_birth_uri, t1_uri
+		 	FROM SANDBOX.pcori_cdmv3.demographic
+		  """;
+	]
+.
+
+# 0d temporal region
+PCORowl:{"t1_uri"} a ns0:BFO_0000048;
+ ns0:BFO_0000139 PCORowl:{"tr2_uri"};
+ ns0:BFO_0000139 PCORowl:{"tr3_uri"};
+ sm:map [
+	 sm:query """
+		   SELECT t1_uri, tr2_uri, tr3_uri
+			FROM SANDBOX.pcori_cdmv3.demographic
+		""";
+	]
+.
+
+# 1d temporal region t2
+PCORowl:{"tr2_uri"} a ns0:BFO_0000038;
+ sm:map [
+	 sm:query """
+		   SELECT tr2_uri
+		   	FROM SANDBOX.pcori_cdmv3.demographic
+		  """;
+	]
+.
+
+# 1d temporal region tr3
+PCORowl:{"tr3_uri"} a ns0:BFO_0000038;
+ rdfs:label "{\"birth_date\"}";
+ sm:map [
+	sm:query """
+		SELECT tr3_uri, birth_date
+			FROM SANDBOX.pcori_cdmv3.demographic
+		""";
+	]
 .
