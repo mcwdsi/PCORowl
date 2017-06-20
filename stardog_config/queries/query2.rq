@@ -11,6 +11,7 @@ SELECT ?patientspatid ?patid ?patid_text
 		?patientspatid a pcornet:PCORnet_00000019 .
 		# BFO_0000051 has_part
 		?patientspatid bfo:BFO_0000051 ?patid .
+		?patid a bfo:IAO_0000028 .
 		?patid rdfs:label ?patid_text .
 	}
 }
