@@ -4,6 +4,7 @@
 @prefix sm: <tag:stardog:api:mapping:> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
+# START PATID BLOCK
 # patient_role pr1
 PCORowl:{"patient_role"}
   a <http://purl.obolibrary.org/obo/OMRSE_00000011> ;
@@ -40,7 +41,9 @@ PCORowl:{"symbol"}
 		 """ ;
 		]
 .
+# END PATID BLOCK
 
+# START PHENOTYPIC SEX BLOCK
 # male
 PCORowl:{"p_pheno_sex"} a ns0:PATO_0000384; 
 	 ns0:RO_0000052 PCORowl:{"person"};
@@ -64,7 +67,9 @@ PCORowl:{"p_pheno_sex"} a ns0:PATO_0000383;
 		  """ ;
 		]
 .
+# END PHENOTYPIC SEX BLOCK
 
+# START BIRTH_DATE BLOCK
 # organism and homo sapiens
 PCORowl:{"organism"} a ns0:OBI_0100026;
 	a ns0:NCBITaxon_9606;
@@ -131,7 +136,9 @@ PCORowl:{"tr2_uri"} a ns0:BFO_0000038;
 		  """;
 	]
 .
+# END BIRTH_DATE BLOCK
 
+# START BIRTH_TIME BLOCK
 ## 1d temporal region tr3
 PCORowl:{"tr3_uri"} a ns0:BFO_0000038;
  rdfs:label "{\"birth_date_string\"}";
@@ -142,7 +149,9 @@ PCORowl:{"tr3_uri"} a ns0:BFO_0000038;
 	""";
 	]
 .
+# END BIRTH_TIME BLOCK
 
+# START HISPANIC BLOCK
 ## hispanic or latino identity datum
 PCORowl:{"hlid1_uri"} a ns0:OMRSE_00000127;
  # is about
@@ -226,7 +235,7 @@ PCORowl:{"etl1_uri"} a ns0:IAO_0000650;
 	""";
 	]
 .
-
+# END HISPANIC BLOCK
 
 
 
