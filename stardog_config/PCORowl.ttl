@@ -237,5 +237,41 @@ PCORowl:{"etl1_uri"} a ns0:IAO_0000650;
 .
 # END HISPANIC BLOCK
 
+# START REFUSE TO ANSWER
+## PCORnet refusal to answer datum
+PCORowl:{"rta2_uri"} a PCORowl:PCORnet_00000010;
+ # participates in
+ ns0:RO_0000056 PCORowl:{"ridqap1_uri"};
+ # is about
+ ns0:IAO_0000136 PCORowl:{"p_uri"};
+ sm:map [
+	sm:query """
+		SELECT rta2_uri, ridqap1_uri, p_uri
+			FROM SANDBOX.pcori_cdmv3.demographic
+			WHERE rta2_uri IS NOT NULL AND ridqap1_uri IS NOT NULL
+	""";
+	]
+.
 
+## race ID question asking process
+PCORowl:{"ridqap1_uri"} a PCORowl:PCORnet_00000021;
+ sm:map [
+	sm:query """
+		SELECT ridqap1_uri
+			FROM SANDBOX.pcori_cdmv3.demographic
+			WHERE ridqap1_uri IS NOT NULL
+	""";
+	]
+.
 
+## homo sapiens participates in
+PCORowl:{"p_uri"} ns0:RO_0000056 PCORowl:{"ridqap1_uri"};
+ sm:map [
+	sm:query """
+		SELECT p_uri, ridqap1_uri
+			FROM SANDBOX.pcori_cdmv3.demographic
+			WHERE ridqap1_uri IS NOT NULL
+	""";
+	]
+.
+# END REFUSE TO ANSWER BLOCK
