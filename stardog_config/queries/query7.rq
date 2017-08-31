@@ -1,0 +1,16 @@
+# select all persons who refuse to answer, race id question asking process, refusal to answer datum 
+PREFIX pcornet: <http://purl.obolibrary.org/obo/PCORnet/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX PCORowl: <http://onefloridaconsortium.org/PCORowl_>
+
+SELECT ?p ?ridqap ?rta
+{
+        GRAPH <virtual://PCORowl>
+        {
+		?p 	a 	obo:NCBITaxon_9606;
+			obo:RO_0000056 ?ridqap .
+		?rta	a PCORowl:PCORnet_00000010; 
+			obo:RO_0000056 ?ridqap .
+        }
+}
