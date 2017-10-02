@@ -1,3 +1,4 @@
+# get patients, patids, organism object, phenotypic sex object, and sex
 PREFIX pcornet: <http://purl.obolibrary.org/obo/PCORnet/>
 PREFIX obo: <http://purl.obolibrary.org/obo/>
 

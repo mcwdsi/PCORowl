@@ -1,0 +1,18 @@
+# select all hispanic, both identity datums, EIP, ETL
+PREFIX pcornet: <http://purl.obolibrary.org/obo/PCORnet/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+
+SELECT ?p ?hlid ?pnhid ?eip ?etl 
+{
+        GRAPH <virtual://PCORowl>
+        {
+		?hlid 	a 	obo:OMRSE_00000127;
+			obo:IAO_0000136 ?p;
+			obo:OBI_0000925 ?etl;
+			obo:OBI_0000312 ?eip .
+		?pnhid	obo:OBI_0000312 ?etl .
+		
+				
+        }
+}

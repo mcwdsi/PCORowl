@@ -4,6 +4,7 @@
 @prefix sm: <tag:stardog:api:mapping:> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
+# START PATID BLOCK
 # patient_role pr1
 PCORowl:{"patient_role"}
   a <http://purl.obolibrary.org/obo/OMRSE_00000011> ;
@@ -40,7 +41,9 @@ PCORowl:{"symbol"}
 		 """ ;
 		]
 .
+# END PATID BLOCK
 
+# START PHENOTYPIC SEX BLOCK
 # male
 PCORowl:{"p_pheno_sex"} a ns0:PATO_0000384; 
 	 ns0:RO_0000052 PCORowl:{"person"};
@@ -64,7 +67,9 @@ PCORowl:{"p_pheno_sex"} a ns0:PATO_0000383;
 		  """ ;
 		]
 .
+# END PHENOTYPIC SEX BLOCK
 
+# START BIRTH_DATE BLOCK
 # organism and homo sapiens
 PCORowl:{"organism"} a ns0:OBI_0100026;
 	a ns0:NCBITaxon_9606;
@@ -131,7 +136,9 @@ PCORowl:{"tr2_uri"} a ns0:BFO_0000038;
 		  """;
 	]
 .
+# END BIRTH_DATE BLOCK
 
+# START BIRTH_TIME BLOCK
 ## 1d temporal region tr3
 PCORowl:{"tr3_uri"} a ns0:BFO_0000038;
  rdfs:label "{\"birth_date_string\"}";
@@ -142,3 +149,129 @@ PCORowl:{"tr3_uri"} a ns0:BFO_0000038;
 	""";
 	]
 .
+# END BIRTH_TIME BLOCK
+
+# START HISPANIC BLOCK
+## hispanic or latino identity datum
+PCORowl:{"hlid1_uri"} a ns0:OMRSE_00000127;
+ # is about
+ ns0:IAO_0000136 PCORowl:{"p_uri"};
+ # is specified input of
+ ns0:OBI_0000925 PCORowl:{"etl1_uri"};
+ # is specified output of 
+ ns0:OBI_0000312 PCORowl:{"eip1_uri"};
+ sm:map [
+	sm:query """
+		SELECT hlid1_uri, p_uri, etl1_uri, eip1_uri
+			FROM SANDBOX.pcori_cdmv3.demographic
+			WHERE hispanic = 'Y'
+	""";
+	]
+.
+
+## not hispanic or latino identity datum
+PCORowl:{"hlid1_uri"} a ns0:OMRSE_00000128;
+ # is about
+ ns0:IAO_0000136 PCORowl:{"p_uri"};
+ # is specified input of
+ ns0:OBI_0000925 PCORowl:{"etl1_uri"};
+ # is specified output of 
+ ns0:OBI_0000312 PCORowl:{"eip1_uri"};
+ sm:map [
+	sm:query """
+		SELECT hlid1_uri, p_uri, etl1_uri, eip1_uri
+			FROM SANDBOX.pcori_cdmv3.demographic
+			WHERE hispanic = 'N'
+	""";
+	]
+.
+
+## PCORnet hispanic identity datum
+PCORowl:{"pnhid1_uri"} a PCORowl:PCORnet_00000016;
+ # is specified output of
+ ns0:OBI_0000312 PCORowl:{"etl1_uri"};
+ # is about
+ ns0:IAO_000136 PCORowl:{"p_uri"};
+ sm:map [
+	sm:query """
+		SELECT pnhid1_uri, etl1_uri, p_uri
+			FROM SANDBOX.pcori_cdmv3.demographic
+			WHERE hispanic = 'Y'
+	""";
+	]
+.
+
+## PCORnet not hispanic identity datum
+PCORowl:{"pnhid1_uri"} a PCORowl:PCORnet_00000017;
+ # is specified output of
+ ns0:OBI_0000312 PCORowl:{"etl1_uri"};
+ # is about
+ ns0:IAO_000136 PCORowl:{"p_uri"};
+ sm:map [
+	sm:query """
+		SELECT pnhid1_uri, etl1_uri, p_uri
+			FROM SANDBOX.pcori_cdmv3.demographic
+			WHERE hispanic = 'N'
+	""";
+	]
+.
+
+## ethnic identification process
+PCORowl:{"eip1_uri"} a ns0:OMRSE_00000101;
+ sm:map [
+	sm:query """
+		SELECT eip1_uri
+			FROM SANDBOX.pcori_cdmv3.demographic
+	""";	
+	]
+.
+
+# ETL
+PCORowl:{"etl1_uri"} a ns0:IAO_0000650;
+ sm:map [
+	sm:query """
+		SELECT etl1_uri
+			FROM SANDBOX.pcori_cdmv3.demographic
+	""";
+	]
+.
+# END HISPANIC BLOCK
+
+# START REFUSE TO ANSWER
+## PCORnet refusal to answer datum
+PCORowl:{"rta2_uri"} a PCORowl:PCORnet_00000010;
+ # participates in
+ ns0:RO_0000056 PCORowl:{"ridqap1_uri"};
+ # is about
+ ns0:IAO_0000136 PCORowl:{"p_uri"};
+ sm:map [
+	sm:query """
+		SELECT rta2_uri, ridqap1_uri, p_uri
+			FROM SANDBOX.pcori_cdmv3.demographic
+			WHERE rta2_uri IS NOT NULL AND ridqap1_uri IS NOT NULL
+	""";
+	]
+.
+
+## race ID question asking process
+PCORowl:{"ridqap1_uri"} a PCORowl:PCORnet_00000021;
+ sm:map [
+	sm:query """
+		SELECT ridqap1_uri
+			FROM SANDBOX.pcori_cdmv3.demographic
+			WHERE ridqap1_uri IS NOT NULL
+	""";
+	]
+.
+
+## homo sapiens participates in
+PCORowl:{"p_uri"} ns0:RO_0000056 PCORowl:{"ridqap1_uri"};
+ sm:map [
+	sm:query """
+		SELECT p_uri, ridqap1_uri
+			FROM SANDBOX.pcori_cdmv3.demographic
+			WHERE ridqap1_uri IS NOT NULL
+	""";
+	]
+.
+# END REFUSE TO ANSWER BLOCK
