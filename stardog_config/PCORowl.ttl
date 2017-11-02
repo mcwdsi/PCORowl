@@ -183,7 +183,7 @@ PCORowl:{"hlid1_uri"} a ns0:OMRSE_00000127;
 .
 
 ## not hispanic or latino identity datum
-PCORowl:{"hlid1_uri"} a ns0:OMRSE_00000128;
+PCORowl:{"nhlid_uri"} a ns0:OMRSE_00000128;
  # is about
  ns0:IAO_0000136 PCORowl:{"p_uri"};
  # is specified input of
@@ -192,7 +192,7 @@ PCORowl:{"hlid1_uri"} a ns0:OMRSE_00000128;
  ns0:OBI_0000312 PCORowl:{"eip1_uri"};
  sm:map [
 	sm:query """
-		SELECT hlid1_uri, p_uri, etl1_uri, eip1_uri
+		SELECT hlid1_uri AS nhlid_uri, p_uri, etl1_uri, eip1_uri
 			FROM SANDBOX.pcori_cdmv3.demographic
 			WHERE hispanic = 'N'
 	""";
@@ -250,6 +250,178 @@ PCORowl:{"etl1_uri"} a ns0:IAO_0000650;
 .
 # END HISPANIC BLOCK
 
+# START RACE
+## racial identification process
+PCORowl:{"rip1_uri"} a ns0:OMRSE_00000099;
+ sm:map [
+	sm:query """
+		SELECT rip1_uri
+			FROM SANDBOX.pcori_cdmv3.demographic
+	""";
+	]
+.
+
+## PCORnet 01 'American Indian or Alaska Native'
+PCORowl:{"hlid2_uri"} a ns0:OMRSE_00000180;
+ # is about
+ ns0:IAO_0000136 PCORowl:{"p_uri"};
+ # is specified input of
+ ns0:OBI_0000925 PCORowl:{"etl1_uri"};
+ # is specified output of
+ ns0:OBI_0000312 PCORowl:{"rip1_uri"};
+ sm:map [
+	sm:query """
+		SELECT hlid2_uri, p_uri, etl1_uri, eip1_uri
+			FROM SANDBOX.pcori_cdmv3.demographic
+			WHERE race = '01'
+	""";
+	]
+.
+
+## PCORnet American Indian or Alaska Native identity datum
+PCORowl:{"pnhid2_uri"} a PCORowl:PCORnet_00000006;
+ # is specified output of
+ ns0:OBI_0000312 PCORowl:{"etl1_uri"};
+ # is about
+ ns0:IAO_000136 PCORowl:{"p_uri"};
+ sm:map [
+	sm:query """
+		SELECT pnhid2_uri, etl1_uri, p_uri
+			FROM SANDBOX.pcori_cdmv3.demographic
+            WHERE race = '01'
+	""";
+	]
+.
+
+## PCORnet 02 'Asian'
+PCORowl:{"hlid2_uri"} a ns0:OMRSE_00000181;
+ # is about
+ ns0:IAO_0000136 PCORowl:{"p_uri"};
+ # is specified input of
+ ns0:OBI_0000925 PCORowl:{"etl1_uri"};
+ # is specified output of
+ ns0:OBI_0000312 PCORowl:{"rip1_uri"};
+ sm:map [
+	sm:query """
+		SELECT hlid2_uri, p_uri, etl1_uri, eip1_uri
+			FROM SANDBOX.pcori_cdmv3.demographic
+			WHERE race = '02'
+	""";
+	]
+.
+
+## PCORnet Asian identity datum
+PCORowl:{"pnhid2_uri"} a PCORowl:PCORnet_00000007;
+ # is specified output of
+ ns0:OBI_0000312 PCORowl:{"etl1_uri"};
+ # is about
+ ns0:IAO_000136 PCORowl:{"p_uri"};
+ sm:map [
+	sm:query """
+		SELECT pnhid2_uri, etl1_uri, p_uri
+			FROM SANDBOX.pcori_cdmv3.demographic
+            WHERE race = '02'
+	""";
+	]
+.
+
+## PCORnet 03 'Black or African American'
+PCORowl:{"hlid2_uri"} a ns0:OMRSE_00000182;
+ # is about
+ ns0:IAO_0000136 PCORowl:{"p_uri"};
+ # is specified input of
+ ns0:OBI_0000925 PCORowl:{"etl1_uri"};
+ # is specified output of
+ ns0:OBI_0000312 PCORowl:{"rip1_uri"};
+ sm:map [
+	sm:query """
+		SELECT hlid2_uri, p_uri, etl1_uri, eip1_uri
+			FROM SANDBOX.pcori_cdmv3.demographic
+			WHERE race = '03'
+	""";
+	]
+.
+
+## PCORnet Black or African American identity datum
+PCORowl:{"pnhid2_uri"} a PCORowl:PCORnet_00000009;
+ # is specified output of
+ ns0:OBI_0000312 PCORowl:{"etl1_uri"};
+ # is about
+ ns0:IAO_000136 PCORowl:{"p_uri"};
+ sm:map [
+	sm:query """
+		SELECT pnhid2_uri, etl1_uri, p_uri
+			FROM SANDBOX.pcori_cdmv3.demographic
+            WHERE race = '03'
+	""";
+	]
+.
+
+## PCORnet 04 'Native Hawaiian or Other Pacific Islander'
+PCORowl:{"hlid2_uri"} a ns0:OMRSE_00000183;
+ # is about
+ ns0:IAO_0000136 PCORowl:{"p_uri"};
+ # is specified input of
+ ns0:OBI_0000925 PCORowl:{"etl1_uri"};
+ # is specified output of
+ ns0:OBI_0000312 PCORowl:{"rip1_uri"};
+ sm:map [
+	sm:query """
+		SELECT hlid2_uri, p_uri, etl1_uri, eip1_uri
+			FROM SANDBOX.pcori_cdmv3.demographic
+			WHERE race = '04'
+	""";
+	]
+.
+
+## PCORnet ANative Hawaiian or Other Pacific Islander identity datum
+PCORowl:{"pnhid2_uri"} a PCORowl:PCORnet_00000013;
+ # is specified output of
+ ns0:OBI_0000312 PCORowl:{"etl1_uri"};
+ # is about
+ ns0:IAO_000136 PCORowl:{"p_uri"};
+ sm:map [
+	sm:query """
+		SELECT pnhid2_uri, etl1_uri, p_uri
+			FROM SANDBOX.pcori_cdmv3.demographic
+            WHERE race = '04'
+	""";
+	]
+.
+
+## PCORnet 05 'White'
+PCORowl:{"hlid2_uri"} a ns0:OMRSE_00000184;
+ # is about
+ ns0:IAO_0000136 PCORowl:{"p_uri"};
+ # is specified input of
+ ns0:OBI_0000925 PCORowl:{"etl1_uri"};
+ # is specified output of
+ ns0:OBI_0000312 PCORowl:{"rip1_uri"};
+ sm:map [
+	sm:query """
+		SELECT hlid2_uri, p_uri, etl1_uri, eip1_uri
+			FROM SANDBOX.pcori_cdmv3.demographic
+			WHERE race = '05'
+	""";
+	]
+.
+
+## PCORnet White identity datum
+PCORowl:{"pnhid2_uri"} a PCORowl:PCORnet_00000014;
+ # is specified output of
+ ns0:OBI_0000312 PCORowl:{"etl1_uri"};
+ # is about
+ ns0:IAO_000136 PCORowl:{"p_uri"};
+ sm:map [
+	sm:query """
+		SELECT pnhid2_uri, etl1_uri, p_uri
+			FROM SANDBOX.pcori_cdmv3.demographic
+            WHERE race = '05'
+	""";
+	]
+.
+
+## END RACE BLOCK
 # START REFUSE TO ANSWER
 ## PCORnet refusal to answer datum
 PCORowl:{"rta2_uri"} a PCORowl:PCORnet_00000010;
