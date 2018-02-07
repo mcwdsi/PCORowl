@@ -12,7 +12,6 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/PCORnet/">
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/omrse.owl"/>
         <dc:contributor>Amanda Hicks</dc:contributor>
         <rdfs:comment xml:lang="en">An RDF/OWL representation of the PCORnet Common Data Model Version 3.0
 
@@ -52,84 +51,120 @@ Demographic Table
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000179 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000179">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000179">
         <rdfs:label>BFO OWL specification label</rdfs:label>
         <rdfs:label xml:lang="en">BFO OWL specification label</rdfs:label>
-    </rdf:Description>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000180 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000180">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000180">
         <rdfs:label>BFO CLIF specification label</rdfs:label>
         <rdfs:label xml:lang="en">BFO CLIF specification label</rdfs:label>
-    </rdf:Description>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
         <rdfs:label>example of usage</rdfs:label>
         <rdfs:label xml:lang="en">example of usage</rdfs:label>
-    </rdf:Description>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
         <rdfs:label>definition</rdfs:label>
         <rdfs:label xml:lang="en">definition</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">textual definition</rdfs:label>
-    </rdf:Description>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
         <rdfs:label>editor note</rdfs:label>
         <rdfs:label xml:lang="en">editor note</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">editor note</rdfs:label>
-    </rdf:Description>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000233 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000233"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
         <rdfs:label xml:lang="en">imported from</rdfs:label>
-    </rdf:Description>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000600 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000600">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000600">
         <rdfs:label>elucidation</rdfs:label>
         <rdfs:label xml:lang="en">elucidation</rdfs:label>
-    </rdf:Description>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000601 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000601">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000601">
         <rdfs:label>has associated axiom(nl)</rdfs:label>
         <rdfs:label xml:lang="en">has associated axiom(nl)</rdfs:label>
-    </rdf:Description>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000602 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000602">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000602">
         <rdfs:label>has associated axiom(fol)</rdfs:label>
         <rdfs:label xml:lang="en">has associated axiom(fol)</rdfs:label>
-    </rdf:Description>
+    </owl:AnnotationProperty>
     
 
 
@@ -173,9 +208,9 @@ Demographic Table
 
     <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
 
-    <rdf:Description rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_obo_namespace</rdfs:label>
-    </rdf:Description>
+    </owl:AnnotationProperty>
     
 
 
@@ -195,9 +230,9 @@ Demographic Table
 
     <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
 
-    <rdf:Description rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset">
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in_subset</rdfs:label>
-    </rdf:Description>
+    </owl:AnnotationProperty>
     
 
 
@@ -217,6 +252,12 @@ Demographic Table
     
 
 
+    <!-- http://xmlns.com/foaf/0.1/page -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/page"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -225,6 +266,12 @@ Demographic Table
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
     
 
 
@@ -432,6 +479,24 @@ Demographic Table
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020012 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0020012"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000293 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000293"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000295 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000295">
@@ -448,6 +513,54 @@ Demographic Table
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000299"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000053 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000053"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000056 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000056"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000057 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000057"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000059 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000059"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002350 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002350"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002351 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002351"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -459,9 +572,75 @@ Demographic Table
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000003"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000008"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000011"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000038"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000148 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000148"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000182 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000182"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
@@ -474,7 +653,25 @@ Demographic Table
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </rdf:Description>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000028"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000578 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000578"/>
     
 
 
@@ -509,24 +706,96 @@ Demographic Table
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0020000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020000"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021003"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9606 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000011"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000098 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000098"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000099 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000099"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000100 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000100"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000101 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000101"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000127 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000127"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000128 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000128"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000132 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000132">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000132">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000007"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000134 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000134">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000134">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </rdf:Description>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000180 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000180"/>
     
 
 
@@ -1281,6 +1550,15 @@ Demographic Table
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000023 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000023">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000180"/>
+        <rdfs:label xml:lang="en">Jane Doe&apos;s American Indian or Alaska Native identity datum</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PCORnet_00000024 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000024">
@@ -1298,6 +1576,24 @@ Demographic Table
         <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000024"/>
         <obo:RO_0000056 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000022"/>
         <rdfs:label xml:lang="en">rta2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000026 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000026">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000099"/>
+        <rdfs:label xml:lang="en">Jane Doe&apos;s racial identification process</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000029 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000029">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000650"/>
+        <rdfs:label xml:lang="en">ETL process of Jane Doe’s racial identity datum</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1356,6 +1652,7 @@ Demographic Table
     <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000104 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000104">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000650"/>
         <rdfs:label xml:lang="en">ETL process of John Doe’s ethnic identity datum</rdfs:label>
     </owl:NamedIndividual>
     
