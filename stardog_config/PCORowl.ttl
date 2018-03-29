@@ -154,7 +154,7 @@ PCORowl:{"tr2_uri"} a ns0:BFO_0000038;
 # START BIRTH_TIME BLOCK
 ## 1d temporal region tr3
 PCORowl:{"tr3_uri"} a ns0:BFO_0000038;
- rdfs:label "{\"birth_date_string\"}";
+ rdfs:label "{\"birth_date_string\"}"^^xsd:dateTime;
  sm:map [
 	sm:query """
 		SELECT tr3_uri, CONVERT(varchar, birth_date) AS birth_date_string
@@ -204,7 +204,7 @@ PCORowl:{"pnhid1_uri"} a PCORowl:PCORnet_00000016;
  # is specified output of
  ns0:OBI_0000312 PCORowl:{"etl1_uri"};
  # is about
- ns0:IAO_000136 PCORowl:{"p_uri"};
+ ns0:IAO_0000136 PCORowl:{"p_uri"};
  sm:map [
 	sm:query """
 		SELECT pnhid1_uri, etl1_uri, p_uri
@@ -219,7 +219,7 @@ PCORowl:{"pnhid1_uri"} a PCORowl:PCORnet_00000017;
  # is specified output of
  ns0:OBI_0000312 PCORowl:{"etl1_uri"};
  # is about
- ns0:IAO_000136 PCORowl:{"p_uri"};
+ ns0:IAO_0000136 PCORowl:{"p_uri"};
  sm:map [
 	sm:query """
 		SELECT pnhid1_uri, etl1_uri, p_uri
@@ -283,7 +283,7 @@ PCORowl:{"pnhid2_uri"} a PCORowl:PCORnet_00000006;
  # is specified output of
  ns0:OBI_0000312 PCORowl:{"etl1_uri"};
  # is about
- ns0:IAO_000136 PCORowl:{"p_uri"};
+ ns0:IAO_0000136 PCORowl:{"p_uri"};
  sm:map [
 	sm:query """
 		SELECT pnhid2_uri, etl1_uri, p_uri
@@ -315,7 +315,7 @@ PCORowl:{"pnhid2_uri"} a PCORowl:PCORnet_00000007;
  # is specified output of
  ns0:OBI_0000312 PCORowl:{"etl1_uri"};
  # is about
- ns0:IAO_000136 PCORowl:{"p_uri"};
+ ns0:IAO_0000136 PCORowl:{"p_uri"};
  sm:map [
 	sm:query """
 		SELECT pnhid2_uri, etl1_uri, p_uri
@@ -347,7 +347,7 @@ PCORowl:{"pnhid2_uri"} a PCORowl:PCORnet_00000009;
  # is specified output of
  ns0:OBI_0000312 PCORowl:{"etl1_uri"};
  # is about
- ns0:IAO_000136 PCORowl:{"p_uri"};
+ ns0:IAO_0000136 PCORowl:{"p_uri"};
  sm:map [
 	sm:query """
 		SELECT pnhid2_uri, etl1_uri, p_uri
@@ -379,7 +379,7 @@ PCORowl:{"pnhid2_uri"} a PCORowl:PCORnet_00000013;
  # is specified output of
  ns0:OBI_0000312 PCORowl:{"etl1_uri"};
  # is about
- ns0:IAO_000136 PCORowl:{"p_uri"};
+ ns0:IAO_0000136 PCORowl:{"p_uri"};
  sm:map [
 	sm:query """
 		SELECT pnhid2_uri, etl1_uri, p_uri
@@ -411,7 +411,7 @@ PCORowl:{"pnhid2_uri"} a PCORowl:PCORnet_00000014;
  # is specified output of
  ns0:OBI_0000312 PCORowl:{"etl1_uri"};
  # is about
- ns0:IAO_000136 PCORowl:{"p_uri"};
+ ns0:IAO_0000136 PCORowl:{"p_uri"};
  sm:map [
 	sm:query """
 		SELECT pnhid2_uri, etl1_uri, p_uri
