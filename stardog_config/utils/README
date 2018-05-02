@@ -1,0 +1,10 @@
+The Makefile is designed to speed up development with Stardog. Place the Makefile in the stardog/bin directory and run it from there. Note that the Makefile assumes your PCORowl directory is located at the same level as your stardog directory.
+
+
+PCORowl
+│   └── stardog_config
+│       └── utils
+│           └── Makefile copy to _
+└── stardog			  |
+    └── bin			  |
+        └── Makefile <------------|
