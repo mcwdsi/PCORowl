@@ -82,7 +82,7 @@ PCORowl:{"p_pheno_sex"} a ns0:PATO_0001340;
 
 # END PHENOTYPIC SEX BLOCK
 
-# START BIRTH_DATE BLOCK
+# START BIRTH_TIME BLOCK
 # organism and homo sapiens
 PCORowl:{"organism"} a ns0:OBI_0100026;
 	a ns0:NCBITaxon_9606;
@@ -131,10 +131,10 @@ PCORowl:{"p_birth_uri"} a ns0:UBERON_0035946;
 PCORowl:{"t1_uri"} a ns0:BFO_0000048;
  ns0:BFO_0000139 PCORowl:{"tr2_uri"};
  ns0:BFO_0000139 PCORowl:{"tr3_uri"};
- rdfs:label "{\"birth_time_string\"}";
+ rdfs:label "{\"birth_time\"}";
  sm:map [
 	 sm:query """
-		   SELECT t1_uri, tr2_uri, tr3_uri, CONVERT(varchar, birth_time) AS birth_time_string
+		   SELECT t1_uri, tr2_uri, tr3_uri, birth_time
 			FROM SANDBOX.pcori_cdmv3.demographic
 		""";
 	]
@@ -151,18 +151,18 @@ PCORowl:{"tr2_uri"} a ns0:BFO_0000038;
 .
 # END BIRTH_DATE BLOCK
 
-# START BIRTH_TIME BLOCK
+# START BIRTH_DATE BLOCK
 ## 1d temporal region tr3
 PCORowl:{"tr3_uri"} a ns0:BFO_0000038;
- rdfs:label "{\"birth_date_string\"}"^^xsd:dateTime;
+ rdfs:label "{\"birth_date_str\"}";
  sm:map [
 	sm:query """
-		SELECT tr3_uri, CONVERT(varchar, birth_date) AS birth_date_string
+	SELECT tr3_uri, CONVERT(varchar, birth_date) AS birth_date_str
 			FROM SANDBOX.pcori_cdmv3.demographic
 	""";
 	]
 .
-# END BIRTH_TIME BLOCK
+# END BIRTH_DATE BLOCK
 
 # START HISPANIC BLOCK
 ## hispanic or latino identity datum

@@ -18,11 +18,7 @@ SELECT  ?pspatid ?patid_text  ?organism ?phenosex
 		?pspatid obo:IAO_0000219 ?organism .
                 # RO_0000052 'inheres in'
 		?phenosex obo:RO_0000052 ?organism .
-                #MINUS
-			#FILTER NOT EXISTS
-		#	{  ?phenosex a obo:PATO_0000383  } 
-                #UNION
-                #{  ?phenosex a obo:PATO_0000383 . }
-		#		?phenosex a/rdfs:subClassOf  obo:PATO_0001894 .
         }
 }
+ORDER BY ?pspatid
+LIMIT 100

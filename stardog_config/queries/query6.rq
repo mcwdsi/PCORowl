@@ -3,16 +3,18 @@ PREFIX pcornet: <http://purl.obolibrary.org/obo/PCORnet/>
 PREFIX obo: <http://purl.obolibrary.org/obo/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
 
-SELECT ?p ?hlid ?pnhid ?etl ?eip 
+SELECT ?person ?hlid ?pnhid ?etl ?ethnic_identification_process 
 {
         GRAPH <virtual://PCORowl>
         {
 		?hlid 	a 	obo:OMRSE_00000128;
-			obo:IAO_0000136 ?p;
+			obo:IAO_0000136 ?person;
 			obo:OBI_0000925 ?etl;
-			obo:OBI_0000312 ?eip .
+			obo:OBI_0000312 ?ethnic_identification_process .
 		?pnhid	obo:OBI_0000312 ?etl .
 		
 				
         }
 }
+ORDER BY ?person
+LIMIT 100
