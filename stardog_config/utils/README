@@ -4,7 +4,7 @@ The Makefile is designed to speed up development with Stardog. Place the Makefil
 PCORowl
 │   └── stardog_config
 │       └── utils
-│           └── Makefile copy to _
+│           └── Makefile copy to--+
 └── stardog			  |
     └── bin			  |
-        └── Makefile <------------|
+        └── Makefile <------------+
