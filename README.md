@@ -1,4 +1,4 @@
-https://zenodo.org/badge/DOI/10.5281/zenodo.1241209.svg
+(https://zenodo.org/badge/DOI/10.5281/zenodo.1241209.svg)
 This repository stores the configuration for the PCORowl Stardog virtual graph.
 
 =======
