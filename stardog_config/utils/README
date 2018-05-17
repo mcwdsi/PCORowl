@@ -1,0 +1,12 @@
+The Makefile is designed to speed up development with Stardog. Place the Makefile in the stardog/bin directory and run it from there. Note that the Makefile assumes your PCORowl directory is located at the same level as your stardog directory.
+
+
+PCORowl
+│   └── stardog_config
+│       └── utils
+│           └── Makefile copy to--+
+└── stardog			  |
+    └── bin			  |
+        └── Makefile <------------+
+
+The add_cols.py script is used to add the necessary columns to store the pre-generated values for the URIs created by the Stardog mapping file. This also modifies the RACE values to add 100 responses of '07', or Refused to Answer.

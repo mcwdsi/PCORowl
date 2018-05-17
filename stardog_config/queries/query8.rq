@@ -1,0 +1,21 @@
+# get patients who refused to answer some question and that question's type 
+PREFIX PCORowl: <http://onefloridaconsortium.org/PCORowl_> 
+PREFIX pcornet: <http://purl.obolibrary.org/obo/PCORnet/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+#SELECT ?p_uri ?rta2_uri ?question ?question_type 
+SELECT ?rta2_uri ?p_uri ?question ?question_type
+	{
+       GRAPH <virtual://PCORowl>
+        {
+		?rta2_uri a PCORowl:PCORnet_00000010;
+			obo:IAO_0000136 ?p_uri .
+		?p_uri obo:RO_0000056 ?question .
+		?question a ?question_type . 
+	}
+
+
+}
+ORDER BY ?question_type
+LIMIT 10000

@@ -16,4 +16,3 @@ SELECT ?patientspatid ?patid ?patid_text
 	}
 }
 ORDER BY ?patientspatid
-LIMIT 100
