@@ -12,6 +12,7 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/PCORnet/">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/omrse.owl"/>
         <dc:contributor>Amanda Hicks</dc:contributor>
         <rdfs:comment xml:lang="en">An RDF/OWL representation of the PCORnet Common Data Model Version 3.0
 
@@ -873,6 +874,7 @@ Demographic Table
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000008"/>
+        <rdfs:comment xml:lang="en">Fix iri</rdfs:comment>
         <rdfs:label xml:lang="en">answer to ID question</rdfs:label>
     </owl:Class>
     
@@ -888,6 +890,7 @@ Demographic Table
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Fix iri</rdfs:comment>
         <rdfs:label xml:lang="en">response to an ID question asking process</rdfs:label>
     </owl:Class>
     
@@ -906,6 +909,7 @@ Demographic Table
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000010">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000011"/>
+        <rdfs:comment xml:lang="en">FIX IRI</rdfs:comment>
         <rdfs:label xml:lang="en">refusal to answer datum</rdfs:label>
     </owl:Class>
     
@@ -921,6 +925,7 @@ Demographic Table
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Fix IRI</rdfs:comment>
         <rdfs:label xml:lang="en">response to a question asking process</rdfs:label>
     </owl:Class>
     
@@ -930,6 +935,7 @@ Demographic Table
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000013">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000009"/>
+        <rdfs:comment xml:lang="en">Fix IRI</rdfs:comment>
         <rdfs:label xml:lang="en">ethnic ID question asking process</rdfs:label>
     </owl:Class>
     
@@ -939,6 +945,7 @@ Demographic Table
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000021">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000009"/>
+        <rdfs:comment xml:lang="en">FIX IRI</rdfs:comment>
         <rdfs:label xml:lang="en">race ID question asking process</rdfs:label>
     </owl:Class>
     
@@ -948,7 +955,17 @@ Demographic Table
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000037">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000099"/>
+        <rdfs:comment xml:lang="en">Fix IRI</rdfs:comment>
         <rdfs:label xml:lang="en">PCORnet racial identification process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000049"/>
+        <rdfs:label xml:lang="en">PCORnet sexual orientationidentity datum</rdfs:label>
     </owl:Class>
     
 
@@ -1388,6 +1405,162 @@ Demographic Table
         <obo:IAO_0000115 xml:lang="en">A centrally registered identifier that denotes a person in a PCORnet data mart and is used to link across tables. This identifier is not necessarily unique within PCORnet.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
         <rdfs:label xml:lang="en">PCORnet patient identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000132"/>
+        <rdfs:comment xml:lang="en">A sexual orientation identity datum sis an information content entity that is the output of some sexual orientation identitification process and is intended to be a truthful statement about the subjective feelings of sexual attration, emotional attraction, and romantic attatchments of the person.  Unlike data items they are not necessilary contributed or acquired by a reliable method.</rdfs:comment>
+        <rdfs:label xml:lang="en">sexual orientation identity datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000038"/>
+        <rdfs:label xml:lang="en">PCORnet asexual identity datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000038"/>
+        <rdfs:label xml:lang="en">PCORnet bisexual identity datum</rdfs:label>
+        <rdfs:label xml:lang="en">PCORnet gay identity datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000038"/>
+        <rdfs:label xml:lang="en">PCORnet lesbian identity datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000053">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000038"/>
+        <rdfs:label xml:lang="en">PCORnet multiple sexual orientations identity datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000054 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000038"/>
+        <rdfs:label xml:lang="en">PCORnet queer identity datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000038"/>
+        <rdfs:label xml:lang="en">PCORnet questioning identity datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000056 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000056">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000038"/>
+        <rdfs:label xml:lang="en">PCORnet something else identity datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000057">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000038"/>
+        <rdfs:label xml:lang="en">PCORnet straight identity datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000058">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000133"/>
+        <rdfs:comment xml:lang="en">A gender identity that is the output of a racial identification process that uses the PCORnet CDM race or terminology. PCORnet CDM claims to use the 2015 Edition Health Information Technology (Health IT) Certification Criteria, 2015 Edition Base Electronic Health Record (EHR) Definition, but the crucial difference is that PCORnet CDM requires persons to identify with only one category whereas the other does not have a multiple gender option, which changes the meaning of the values in the value set.</rdfs:comment>
+        <rdfs:label xml:lang="en">PCORnet gender identity datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000059">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000058"/>
+        <rdfs:label xml:lang="en">PCORnet genderqueer identity datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000058"/>
+        <rdfs:label xml:lang="en">PCORnet man identity datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000058"/>
+        <rdfs:label xml:lang="en">PCORnet multiple genders datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000058"/>
+        <rdfs:label xml:lang="en">PCORnet something else identity datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000063 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000063">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000058"/>
+        <rdfs:label xml:lang="en">PCORnet transgenderfemale/transwoman/male-to-female identity datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000058"/>
+        <rdfs:label xml:lang="en">PCORnet transgendermale/transman/female-to-male identity datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000065 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000065">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000058"/>
+        <rdfs:label xml:lang="en">PCORnet woman identity datum</rdfs:label>
     </owl:Class>
     
 
