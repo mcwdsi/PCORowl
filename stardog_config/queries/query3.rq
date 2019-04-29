@@ -1,0 +1,24 @@
+# get patients, patids, organism object, phenotypic sex object
+PREFIX pcornet: <http://purl.obolibrary.org/obo/PCORnet/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT  ?pspatid ?patid_text  ?organism ?phenosex 
+{
+        GRAPH <virtual://PCORowl>
+        {
+                # PCORnet_00000019 'patient identifier'
+                ?pspatid a pcornet:PCORnet_00000019 .
+                # BFO_0000051 'has part'
+		?pspatid obo:BFO_0000051 ?patid .
+		# IAO_0000028 'symbol'
+		?patid a obo:IAO_0000028; 
+                	rdfs:label ?patid_text .
+                # IAO_0000219 'denotes'
+		?pspatid obo:IAO_0000219 ?organism .
+                # RO_0000052 'inheres in'
+		?phenosex obo:RO_0000052 ?organism .
+        }
+}
+ORDER BY ?pspatid
+LIMIT 100

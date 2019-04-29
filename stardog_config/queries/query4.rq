@@ -1,0 +1,30 @@
+# get birthtime, patient, and intermediate objects
+PREFIX pcornet: <http://purl.obolibrary.org/obo/PCORnet/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+
+SELECT ?homosapiens ?neonate_stage ?birth ?instant_t1 ?birth_time 
+{
+        GRAPH <virtual://PCORowl>
+        {
+		?homosapiens a obo:NCBITaxon_9606;
+			# RO_0000056 'participates in' 
+		 	obo:RO_0000056 ?neonate_stage .
+		?neonate_stage a obo:UBERON_0000105 .
+		# UBERON_0035946 'start of neonate stage'
+		?birth a obo:UBERON_0035946;
+			# BFO_0000139 'temporal part of'
+			obo:BFO_0000139 ?neonate_stage;
+			# bfo_0000155 'occupies temporal region'
+			obo:BFO_0000155 ?instant_t1 .
+		# BFO_0000048 '0D temporal region'
+		?instant_t1 a obo:BFO_0000048;
+			# BFO_0000038 '1D temporal region'
+			# BFO_0000139 'proper temporal part of'
+			obo:BFO_0000139 ?tr3;
+			rdfs:label ?birth_time .
+	
+        }
+}
+ORDER BY ?homosapiens
+LIMIT 100
