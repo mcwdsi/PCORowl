@@ -1,17 +1,22 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/PCORnet/"
      xml:base="http://purl.obolibrary.org/obo/PCORnet/"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:cito="http://purl.org/spar/cito/"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:oboInOwl1="ttp://www.geneontology.org/formats/oboInOwl#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/PCORnet/">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/releases/2019-02-02/ro.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/omrse.owl"/>
         <owl:imports rdf:resource="https://github.com/OGMS/ogms/releases/tag/v2019-04-30"/>
         <dc:contributor>Amanda Hicks</dc:contributor>
@@ -740,42 +745,6 @@ Demographic Table
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OGMS_0000096 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000096">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000097"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000118"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000012"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000114"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </rdf:Description>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000011"/>
@@ -1019,6 +988,7 @@ Demographic Table
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORowl_00000045">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000099"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PCORowl_00000048"/>
         <obo:IAO_0000115 xml:lang="en">An outpatient encounter that occurs in an outpatient clinic, physician
 office, ambulatory surgery facility, urgent care
 facilitu, or a hospital encounters and
@@ -1043,6 +1013,48 @@ excludes emergency department encounters</obo:PCORowl_00000046>
         <obo:IAO_0000119>PCORnet CDM 4.1</obo:IAO_0000119>
         <obo:PCORowl_00000046 xml:lang="en">Includes ED encounters that become inpatient stays (in which case inpatient stays would be a separate encounter). Excludes urgent care facility visits. ED claims should be pulled before hospitalization claims to ensure that ED with subsequent admission won&apos;t be rolled up in the hospital event. Does not include observation stays, where known.</obo:PCORowl_00000046>
         <rdfs:label xml:lang="en">emergency department encounter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORowl_00000049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORowl_00000049">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PCORowl_00000048"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000063"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORowl_00000050"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PCORowl_00000050"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000062"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORowl_00000048"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
+        <obo:IAO_0000119>PCORnet CDM 4.1</obo:IAO_0000119>
+        <obo:PCORowl_00000046 xml:lang="en">Permissible substitution for preferred state of separate ED and IP records. Only for use with data sources where the individual records for ED and IP cannot be distinguished.</obo:PCORowl_00000046>
+        <rdfs:label xml:lang="en">emergency department admit to inpatient hospital stay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORowl_00000050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORowl_00000050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000099"/>
+        <rdfs:label xml:lang="en">inpatient hospital encounter</rdfs:label>
     </owl:Class>
     
 
