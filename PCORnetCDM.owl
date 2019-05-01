@@ -989,6 +989,7 @@ Demographic Table
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORowl_00000045">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000099"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PCORowl_00000048"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PCORowl_00000051"/>
         <obo:IAO_0000115 xml:lang="en">An outpatient encounter that occurs in an outpatient clinic, physician
 office, ambulatory surgery facility, urgent care
 facilitu, or a hospital encounters and
@@ -1007,7 +1008,8 @@ excludes emergency department encounters</obo:PCORowl_00000046>
     <!-- http://purl.obolibrary.org/obo/PCORowl_00000048 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORowl_00000048">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000099"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000097"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PCORowl_00000051"/>
         <obo:IAO_0000115 xml:lang="en">A health care encounter that occurs in an emergency department facillity and realizes the health care provider role of an organization and the emergency department function of the facility.</obo:IAO_0000115>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0000119>PCORnet CDM 4.1</obo:IAO_0000119>
@@ -1042,6 +1044,7 @@ excludes emergency department encounters</obo:PCORowl_00000046>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <obo:IAO_0000117 xml:lang="en">A healthcare encounter that first occurs as an emergency department visit and then becomes an inpatient hospital stay</obo:IAO_0000117>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0000119>PCORnet CDM 4.1</obo:IAO_0000119>
         <obo:PCORowl_00000046 xml:lang="en">Permissible substitution for preferred state of separate ED and IP records. Only for use with data sources where the individual records for ED and IP cannot be distinguished.</obo:PCORowl_00000046>
@@ -1053,8 +1056,52 @@ excludes emergency department encounters</obo:PCORowl_00000046>
     <!-- http://purl.obolibrary.org/obo/PCORowl_00000050 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORowl_00000050">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000099"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000097"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PCORowl_00000051"/>
         <rdfs:label xml:lang="en">inpatient hospital encounter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORowl_00000051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORowl_00000051">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000099"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000012"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000063"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000114"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
+        <obo:IAO_0000119>PCORnet CDM 4.1</obo:IAO_0000119>
+        <obo:PCORowl_00000046 xml:lang="en">Hospital outpatient services given to help the doctor decide if the patient needs to be admitted as an inpatient or can be discharged. Observations services may be given in the emergency department or another area of the hospital.” Definition from Medicare, CMS Product No. 11435, https://www.medicare.gov/Pubs/pdf/11435.pdf.</obo:PCORowl_00000046>
+        <rdfs:label xml:lang="en">observation stay</rdfs:label>
     </owl:Class>
     
 
