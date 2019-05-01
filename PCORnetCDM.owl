@@ -749,6 +749,10 @@ Demographic Table
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000097"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000118"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
@@ -763,24 +767,7 @@ Demographic Table
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000110"/>
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000111"/>
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000112"/>
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000113"/>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
-                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000063"/>
-                                            <owl:Class>
-                                                <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000114"/>
-                                            </owl:Class>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
-                                </owl:unionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000114"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1043,6 +1030,19 @@ offices, same day/ambulatory surgery centers, urgent care
 facilities, and other same-day ambulatory hospital encounters, but
 excludes emergency department encounters</obo:PCORowl_00000046>
         <rdfs:label xml:lang="en">ambulatory visit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORowl_00000048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORowl_00000048">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000099"/>
+        <obo:IAO_0000115 xml:lang="en">A health care encounter that occurs in an emergency department facillity and realizes the health care provider role of an organization and the emergency department function of the facility.</obo:IAO_0000115>
+        <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
+        <obo:IAO_0000119>PCORnet CDM 4.1</obo:IAO_0000119>
+        <obo:PCORowl_00000046 xml:lang="en">Includes ED encounters that become inpatient stays (in which case inpatient stays would be a separate encounter). Excludes urgent care facility visits. ED claims should be pulled before hospitalization claims to ensure that ED with subsequent admission won&apos;t be rolled up in the hospital event. Does not include observation stays, where known.</obo:PCORowl_00000046>
+        <rdfs:label xml:lang="en">emergency department encounter</rdfs:label>
     </owl:Class>
     
 
