@@ -11,6 +11,7 @@
      xmlns:cito="http://purl.org/spar/cito/"
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:oboInOwl1="ttp://www.geneontology.org/formats/oboInOwl#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
@@ -1795,6 +1796,22 @@ Note: A and B may be 2D or 3D.
 Examples include: the relationship between two channels collected simultaneously from a confocal microscope; the relationship between an image dpeicting X and a painted annotation layer that delineates regions of X; the relationship between the tracing of a neuron on an EM stack and the co-ordinate space of the stack; the relationship between two separately collected images that have been brought into register via some image registration software.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:dos</oboInOwl:hasDbXref>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002081 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002081">
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002083 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002083">
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
+    </rdf:Description>
     
 
 
@@ -7804,128 +7821,6 @@ Environmental exposures include those imposed by natural environments, experimen
     
 
 
-    <!-- http://purl.obolibrary.org/obo/PCORowl_00000045 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORowl_00000045">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000099"/>
-        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PCORowl_00000048"/>
-        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PCORowl_00000051"/>
-        <obo:IAO_0000115 xml:lang="en">An outpatient encounter that occurs in an outpatient clinic, physician
-office, ambulatory surgery facility, urgent care
-facilitu, or a hospital encounters and
-that does not occur in an emergency department facillity.</obo:IAO_0000115>
-        <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
-        <obo:IAO_0000119>PCORnet CDM 4.1</obo:IAO_0000119>
-        <obo:PCORowl_00000046 xml:lang="en">Includes visits at outpatient clinics, physician
-offices, same day/ambulatory surgery centers, urgent care
-facilities, and other same-day ambulatory hospital encounters, but
-excludes emergency department encounters</obo:PCORowl_00000046>
-        <rdfs:label xml:lang="en">ambulatory visit</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PCORowl_00000048 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORowl_00000048">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000097"/>
-        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PCORowl_00000051"/>
-        <obo:IAO_0000115 xml:lang="en">A health care encounter that occurs in an emergency department facillity and realizes the health care provider role of an organization and the emergency department function of the facility.</obo:IAO_0000115>
-        <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
-        <obo:IAO_0000119>PCORnet CDM 4.1</obo:IAO_0000119>
-        <obo:PCORowl_00000046 xml:lang="en">Includes ED encounters that become inpatient stays (in which case inpatient stays would be a separate encounter). Excludes urgent care facility visits. ED claims should be pulled before hospitalization claims to ensure that ED with subsequent admission won&apos;t be rolled up in the hospital event. Does not include observation stays, where known.</obo:PCORowl_00000046>
-        <rdfs:label xml:lang="en">emergency department encounter</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PCORowl_00000049 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORowl_00000049">
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PCORowl_00000048"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000063"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORowl_00000050"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PCORowl_00000050"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000062"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORowl_00000048"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <obo:IAO_0000117 xml:lang="en">A healthcare encounter that first occurs as an emergency department visit and then becomes an inpatient hospital stay</obo:IAO_0000117>
-        <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
-        <obo:IAO_0000119>PCORnet CDM 4.1</obo:IAO_0000119>
-        <obo:PCORowl_00000046 xml:lang="en">Permissible substitution for preferred state of separate ED and IP records. Only for use with data sources where the individual records for ED and IP cannot be distinguished.</obo:PCORowl_00000046>
-        <rdfs:label xml:lang="en">emergency department admit to inpatient hospital stay</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PCORowl_00000050 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORowl_00000050">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000100"/>
-        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PCORowl_00000051"/>
-        <rdfs:label xml:lang="en">inpatient hospital encounter</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PCORowl_00000051 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORowl_00000051">
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000099"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000012"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000063"/>
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000114"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
-        <obo:IAO_0000119>PCORnet CDM 4.1</obo:IAO_0000119>
-        <obo:PCORowl_00000046 xml:lang="en">Hospital outpatient services given to help the doctor decide if the patient needs to be admitted as an inpatient or can be discharged. Observations services may be given in the emergency department or another area of the hospital.” Definition from Medicare, CMS Product No. 11435, https://www.medicare.gov/Pubs/pdf/11435.pdf.</obo:PCORowl_00000046>
-        <rdfs:label xml:lang="en">observation stay</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/RO_0002310 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RO_0002310">
@@ -8204,6 +8099,51 @@ excludes emergency department encounters</obo:PCORowl_00000046>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000073"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000104"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002081"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000021"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000104"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002092"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000100"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000026"/>
+        <obo:IAO_0000115 xml:lang="en">a diagnosis about some patient that occurs before or during the admission of that patient</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">PCORnet CDM 4.1</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">admitting diagnosis</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000003">
@@ -8435,11 +8375,199 @@ excludes emergency department encounters</obo:PCORowl_00000046>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000021">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002083"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000024"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">admission process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000073"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000104"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002081"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000024"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000104"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002092"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000100"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000026"/>
+        <obo:IAO_0000115 xml:lang="en">a diagnosis that occurs before or simultaneously with the discharge of the patient whom the diagnosis is about</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">discharge diagnosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000024">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002083"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000021"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">discharge process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000073"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000309"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002092"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000099"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">a diagnosis about a patient that is the specified output of a diagnostic process that occurs during an outpatient encounter</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">final diagnosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000073"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000104"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002092"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000100"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">interim diagnosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000045">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000099"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000121"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000021"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000121"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000024"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000048"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000051"/>
+        <obo:IAO_0000115 xml:lang="en">An outpatient encounter that occurs in an outpatient clinic, physician
+office, ambulatory surgery facility, urgent care
+facilitu, or a hospital encounters and
+that does not occur in an emergency department facillity.</obo:IAO_0000115>
+        <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
+        <obo:IAO_0000119>PCORnet CDM 4.1</obo:IAO_0000119>
+        <obo:PCORowl_00000046 xml:lang="en">Includes visits at outpatient clinics, physician
+offices, same day/ambulatory surgery centers, urgent care
+facilities, and other same-day ambulatory hospital encounters, but
+excludes emergency department encounters</obo:PCORowl_00000046>
+        <rdfs:label xml:lang="en">ambulatory visit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000048">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000097"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000051"/>
+        <obo:IAO_0000115 xml:lang="en">A health care encounter that occurs in an emergency department facillity and realizes the health care provider role of an organization and the emergency department function of the facility.</obo:IAO_0000115>
+        <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
+        <obo:IAO_0000119>PCORnet CDM 4.1</obo:IAO_0000119>
+        <obo:PCORowl_00000046 xml:lang="en">Includes ED encounters that become inpatient stays (in which case inpatient stays would be a separate encounter). Excludes urgent care facility visits. ED claims should be pulled before hospitalization claims to ensure that ED with subsequent admission won&apos;t be rolled up in the hospital event. Does not include observation stays, where known.</obo:PCORowl_00000046>
+        <rdfs:label xml:lang="en">emergency department encounter</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000049 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000049">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000132"/>
+        <obo:IAO_0000117 xml:lang="en">A healthcare encounter that first occurs as an emergency department visit and then becomes an inpatient hospital stay</obo:IAO_0000117>
+        <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
+        <obo:IAO_0000119>PCORnet CDM 4.1</obo:IAO_0000119>
+        <obo:PCORowl_00000046 xml:lang="en">Permissible substitution for preferred state of separate ED and IP records. Only for use with data sources where the individual records for ED and IP cannot be distinguished.</obo:PCORowl_00000046>
         <rdfs:comment xml:lang="en">A sexual orientation identity datum sis an information content entity that is the output of some sexual orientation identitification process and is intended to be a truthful statement about the subjective feelings of sexual attration, emotional attraction, and romantic attatchments of the person.  Unlike data items they are not necessilary contributed or acquired by a reliable method.</rdfs:comment>
+        <rdfs:label xml:lang="en">emergency department admit to inpatient hospital stay</rdfs:label>
         <rdfs:label xml:lang="en">sexual orientation identity datum</rdfs:label>
     </owl:Class>
     
@@ -8449,7 +8577,9 @@ excludes emergency department encounters</obo:PCORowl_00000046>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000050">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000038"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000051"/>
         <rdfs:label xml:lang="en">PCORnet asexual identity datum</rdfs:label>
+        <rdfs:label xml:lang="en">inpatient hospital encounter</rdfs:label>
     </owl:Class>
     
 
@@ -8458,8 +8588,12 @@ excludes emergency department encounters</obo:PCORowl_00000046>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000051">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000038"/>
+        <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
+        <obo:IAO_0000119>PCORnet CDM 4.1</obo:IAO_0000119>
+        <obo:PCORowl_00000046 xml:lang="en">Hospital outpatient services given to help the doctor decide if the patient needs to be admitted as an inpatient or can be discharged. Observations services may be given in the emergency department or another area of the hospital.” Definition from Medicare, CMS Product No. 11435, https://www.medicare.gov/Pubs/pdf/11435.pdf.</obo:PCORowl_00000046>
         <rdfs:label xml:lang="en">PCORnet bisexual identity datum</rdfs:label>
         <rdfs:label xml:lang="en">PCORnet gay identity datum</rdfs:label>
+        <rdfs:label xml:lang="en">observation stay</rdfs:label>
     </owl:Class>
     
 
@@ -8672,8 +8806,8 @@ excludes emergency department encounters</obo:PCORowl_00000046>
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000012">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000010"/>
-        <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000015"/>
         <obo:RO_0000056 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000014"/>
+        <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000015"/>
         <rdfs:label xml:lang="en">rta1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -8778,8 +8912,8 @@ excludes emergency department encounters</obo:PCORowl_00000046>
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000025">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000010"/>
-        <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000024"/>
         <obo:RO_0000056 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000022"/>
+        <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000024"/>
         <rdfs:label xml:lang="en">rta2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -8826,9 +8960,9 @@ excludes emergency department encounters</obo:PCORowl_00000046>
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000101">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000127"/>
-        <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000001"/>
         <obo:OBI_0000295 rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000104"/>
         <obo:OBI_0000312 rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000102"/>
+        <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000001"/>
         <rdfs:label xml:lang="en">John Doe&apos;s Hispanic or Latino identity datum</rdfs:label>
     </owl:NamedIndividual>
     
@@ -8847,8 +8981,8 @@ excludes emergency department encounters</obo:PCORowl_00000046>
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000103">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000016"/>
-        <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000001"/>
         <obo:OBI_0000312 rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000104"/>
+        <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000001"/>
         <rdfs:label xml:lang="en">John Doe’s PCORnet Hispanic identity datum</rdfs:label>
     </owl:NamedIndividual>
     
@@ -8867,9 +9001,9 @@ excludes emergency department encounters</obo:PCORowl_00000046>
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000105">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000128"/>
-        <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000015"/>
         <obo:OBI_0000295 rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000109"/>
         <obo:OBI_0000312 rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000106"/>
+        <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000015"/>
         <rdfs:label xml:lang="en">Jane Doe&apos;s not Hispanic or Latino identity datum</rdfs:label>
     </owl:NamedIndividual>
     
@@ -8888,8 +9022,8 @@ excludes emergency department encounters</obo:PCORowl_00000046>
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000107">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000017"/>
-        <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000015"/>
         <obo:OBI_0000312 rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000109"/>
+        <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000015"/>
         <rdfs:label xml:lang="en">Jane Doe’s PCORnet not Hispanic identity datum</rdfs:label>
     </owl:NamedIndividual>
     
@@ -8938,15 +9072,9 @@ excludes emergency department encounters</obo:PCORowl_00000046>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0001001">
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002081">
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002082">
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <obo:IAO_0000117>David Osumi-Sutherland</obo:IAO_0000117>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002083">
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002084">
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
