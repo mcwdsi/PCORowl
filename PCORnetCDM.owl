@@ -23,7 +23,6 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/generated-axioms.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/pato_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/temporal-intervals.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/go_cc_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/chemical.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/go_mf_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/core.owl"/>
@@ -33,34 +32,10 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/go-biotic.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/el-constraints.owl"/>
         <owl:imports rdf:resource="https://github.com/OGMS/ogms/releases/tag/v2019-04-30"/>
-        <dc:description xml:lang="en">The OBO Relations Ontology (RO) is a collection of OWL relations (ObjectProperties) intended for use across a wide variety of biological ontologies.</dc:description>
         <dc:contributor>Amanda Hicks</dc:contributor>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(Anonymous-21)) [Axioms: 26 Logical Axioms: 0]</rdfs:comment>
-        <foaf:homepage rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"> https://github.com/oborel/obo-relations/</foaf:homepage>
-        <rdfs:comment xml:lang="en">An RDF/OWL representation of the PCORnet Common Data Model Version 3.0
-
-Contains
-
-Demographic Table
-     birth time
-     birth date
-     sex - male/female/ambigous
-     Hispanic - refusal to answer
-     Hispanic - Hispanic, non-Hispanic
-     race - refusal to answer
-
-To Do
- 
-Demographic Table
-     sex - other/unknown (working on a general strategy for other and unknown null flavors)
-     
-     race -</rdfs:comment>
         <dc:contributor>William R. Hogan</dc:contributor>
         <dc:title xml:lang="en">RDFized PCORnet CDM</dc:title>
         <dc:contributor>Josh Hanna</dc:contributor>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(Anonymous-21)) [Axioms: 32 Logical Axioms: 0]</rdfs:comment>
-        <dc:source rdf:resource="http://obofoundry.org/ro"/>
-        <dc:title xml:lang="en">OBO Relations Ontology</dc:title>
     </owl:Ontology>
     
 
@@ -269,46 +244,13 @@ Demographic Table
         <obo:IAO_0000115>An assertion that holds between an ontology class and an organism taxon class, which is intepreted to yield some relationship between instances of the ontology class and the taxon.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">taxonomic class assertion</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/obophenotype/uberon/wiki/Taxon-constraints"/>
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002420"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002173 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002173">
-        <obo:IAO_0000115>S ambiguous_for_taxon T if the class S does not have a clear referent in taxon T. An example would be the class &apos;manual digit 1&apos;, which encompasses a homology hypotheses that is accepted for some species (e.g. human and mouse), but does not have a clear referent in Aves - the referent is dependent on the hypothesis embraced, and also on the ontogenetic stage.  [PHENOSCPAE:asilomar_mtg]</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">ambiguous for taxon</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://github.com/obophenotype/uberon/wiki/Taxon-constraints"/>
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002172"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002174 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002174">
-        <obo:IAO_0000115>S dubious_for_taxon T if it is probably the case that no instances of S can be found in any instance of T.</obo:IAO_0000115>
-        <obo:IAO_0000117>https://orcid.org/0000-0002-6601-2165</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/22293552"/>
-        <rdfs:comment>This relation lacks a strong logical interpretation, but can be used in place of never_in_taxon where it is desirable to state that the definition of the class is too strict for the taxon under consideration, but placing a never_in_taxon link would result in a chain of inconsistencies that will take ongoing coordinated effort to resolve. Example: metencephalon in teleost</rdfs:comment>
-        <rdfs:label xml:lang="en">dubious for taxon</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://github.com/obophenotype/uberon/wiki/Taxon-constraints"/>
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002172"/>
     </owl:AnnotationProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002175 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002175">
-        <obo:IAO_0000115>S present_in_taxon T if some instance of T has some S. This does not means that all instances of T have an S - it may only be certain life stages or sexes that have S</obo:IAO_0000115>
-        <obo:IAO_0000117>https://orcid.org/0000-0002-6601-2165</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/22293552"/>
-        <rdfs:label xml:lang="en">present in taxon</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://github.com/obophenotype/uberon/wiki/Taxon-constraints"/>
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002172"/>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002175"/>
     
 
 
@@ -358,7 +300,6 @@ Demographic Table
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002421">
         <obo:IAO_0000115>A logical macro assertion whose domain is an IRI for a property</obo:IAO_0000115>
         <rdfs:label xml:lang="en">logical macro assertion on a property</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002416"/>
     </owl:AnnotationProperty>
     
 
@@ -377,7 +318,6 @@ Demographic Table
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002423">
         <rdfs:label xml:lang="en">logical macro assertion on an annotation property</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002421"/>
     </owl:AnnotationProperty>
     
 
@@ -1654,7 +1594,6 @@ boundary_of: http://purl.obolibrary.org/obo/RO_0002000</obo:IAO_0000115>
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002019">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/GO_0004872"/>
         <obo:IAO_0000115>A relationship that holds between between a receptor and an chemical entity, typically a small molecule or peptide, that carries information between cells or compartments of a cell and which binds the receptor and regulates its effector function.</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dos</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-07-19T17:30:36Z</oboInOwl:creation_date>
@@ -1796,6 +1735,22 @@ Note: A and B may be 2D or 3D.
 Examples include: the relationship between two channels collected simultaneously from a confocal microscope; the relationship between an image dpeicting X and a painted annotation layer that delineates regions of X; the relationship between the tracing of a neuron on an EM stack and the co-ordinate space of the stack; the relationship between two separately collected images that have been brought into register via some image registration software.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:dos</oboInOwl:hasDbXref>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002081 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002081">
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002083 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002083">
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
+    </rdf:Description>
     
 
 
@@ -7406,9 +7361,9 @@ Environmental exposures include those imposed by natural environments, experimen
     
 
 
-    <!-- http://purl.obolibrary.org/obo/GO_0004872 -->
+    <!-- http://purl.obolibrary.org/obo/GO_0005634 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0004872"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0005634"/>
     
 
 
@@ -7435,12 +7390,6 @@ Environmental exposures include those imposed by natural environments, experimen
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0048018 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0048018"/>
     
 
 
@@ -7490,6 +7439,12 @@ Environmental exposures include those imposed by natural environments, experimen
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -7681,7 +7636,9 @@ Environmental exposures include those imposed by natural environments, experimen
 
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000132 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000132"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000132">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000007"/>
+    </owl:Class>
     
 
 
@@ -7810,13 +7767,51 @@ Environmental exposures include those imposed by natural environments, experimen
     
 
 
-    <!-- http://purl.obolibrary.org/obo/PCORnet_00000037 -->
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000007 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000037">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000099"/>
-        <rdfs:comment xml:lang="en">Fix IRI</rdfs:comment>
-        <rdfs:label xml:lang="en">PCORnet racial identification process</rdfs:label>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000008"/>
+        <rdfs:comment xml:lang="en">Fix iri</rdfs:comment>
+        <rdfs:label xml:lang="en">answer to ID question</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000009"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Fix iri</rdfs:comment>
+        <rdfs:label xml:lang="en">response to an ID question asking process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000009"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000011"/>
+        <rdfs:comment xml:lang="en">FIX IRI</rdfs:comment>
+        <rdfs:label xml:lang="en">refusal to answer datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000011"/>
     
 
 
@@ -8075,7 +8070,34 @@ Environmental exposures include those imposed by natural environments, experimen
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000012"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">PROMIS response data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000008"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">question asking process</rdfs:label>
     </owl:Class>
     
 
@@ -8084,13 +8106,51 @@ Environmental exposures include those imposed by natural environments, experimen
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000002">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000073"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000073"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000104"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002081"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000021"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000104"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002092"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000100"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000026"/>
+        <obo:IAO_0000115 xml:lang="en">a diagnosis about some patient that occurs before or during the admission of that patient</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">PCORnet CDM 4.1</obo:IAO_0000119>
         <rdfs:label xml:lang="en">PCORnet diagnosis identifier</rdfs:label>
+        <rdfs:label xml:lang="en">admitting diagnosis</rdfs:label>
     </owl:Class>
     
 
@@ -8102,6 +8162,30 @@ Environmental exposures include those imposed by natural environments, experimen
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
         <rdfs:comment xml:lang="en">A racial identity that is the output of a racial identification process that uses the PCORnet CDM race or terminology. PCORnet CDM claims to use the OMB racial classification, but the crucial difference is that PCORnet CDM requires persons to identify with only one category whereas the OMB allows for multiple racial identities as outputs of an identification process.</rdfs:comment>
         <rdfs:label xml:lang="en">PCORnet racial identity datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:label xml:lang="en">question text</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002351"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000012"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">answer set</rdfs:label>
     </owl:Class>
     
 
@@ -8126,12 +8210,60 @@ Environmental exposures include those imposed by natural environments, experimen
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000004"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000005"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">material information bearer of question text plus answer set</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000009 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000009">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
         <rdfs:label xml:lang="en">PCORnet black or African American identity datum</rdfs:label>
+        <rdfs:label xml:lang="en">PCORnet item</rdfs:label>
     </owl:Class>
     
 
@@ -8155,7 +8287,29 @@ Environmental exposures include those imposed by natural environments, experimen
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000011">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">PCORnet item</rdfs:label>
+        <rdfs:label xml:lang="en">PROMIS response data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">option as memeber of answer set</rdfs:label>
     </owl:Class>
     
 
@@ -8254,7 +8408,14 @@ Environmental exposures include those imposed by natural environments, experimen
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002083"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000024"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">PCORnet provider identifier</rdfs:label>
+        <rdfs:label xml:lang="en">admission process</rdfs:label>
     </owl:Class>
     
 
@@ -8263,6 +8424,39 @@ Environmental exposures include those imposed by natural environments, experimen
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000023">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000073"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000104"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002081"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000024"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000104"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002092"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000100"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002351"/>
@@ -8275,7 +8469,79 @@ Environmental exposures include those imposed by natural environments, experimen
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000028"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000026"/>
+        <obo:IAO_0000115 xml:lang="en">a diagnosis that occurs before or simultaneously with the discharge of the patient whom the diagnosis is about</obo:IAO_0000115>
         <rdfs:label xml:lang="en">code set</rdfs:label>
+        <rdfs:label xml:lang="en">discharge diagnosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000024">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002083"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000021"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">discharge process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000073"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000309"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002092"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000099"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">a diagnosis about a patient that is the specified output of a diagnostic process that occurs during an outpatient encounter</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">final diagnosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000073"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000104"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002092"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000100"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">interim diagnosis</rdfs:label>
     </owl:Class>
     
 
@@ -8284,6 +8550,28 @@ Environmental exposures include those imposed by natural environments, experimen
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000045">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000099"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000121"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000021"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000121"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000024"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000048"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000051"/>
         <obo:IAO_0000115 xml:lang="en">An outpatient encounter that occurs in an outpatient clinic, physician
@@ -8781,7 +9069,7 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORowl_00000103">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000016"/>
-        <obo:OBI_0000312 rdf:resource="http://purl.obolibrary.org/obo/PCORowl_00000104"/>
+        <obo:OBI_0000312 rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000104"/>
         <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000001"/>
         <rdfs:label xml:lang="en">John Doe’s PCORnet Hispanic identity datum</rdfs:label>
     </owl:NamedIndividual>
@@ -8801,8 +9089,8 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORowl_00000105">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000128"/>
-        <obo:OBI_0000295 rdf:resource="http://purl.obolibrary.org/obo/PCORowl_00000109"/>
-        <obo:OBI_0000312 rdf:resource="http://purl.obolibrary.org/obo/PCORowl_00000106"/>
+        <obo:OBI_0000295 rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000109"/>
+        <obo:OBI_0000312 rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000106"/>
         <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000015"/>
         <rdfs:label xml:lang="en">Jane Doe&apos;s not Hispanic or Latino identity datum</rdfs:label>
     </owl:NamedIndividual>
@@ -8822,7 +9110,7 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORowl_00000107">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000017"/>
-        <obo:OBI_0000312 rdf:resource="http://purl.obolibrary.org/obo/PCORowl_00000109"/>
+        <obo:OBI_0000312 rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000109"/>
         <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000015"/>
         <rdfs:label xml:lang="en">Jane Doe’s PCORnet not Hispanic identity datum</rdfs:label>
     </owl:NamedIndividual>
@@ -8863,6 +9151,24 @@ excludes emergency department encounters</PCORnet_00000046>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000028"/>
         <rdfs:label xml:lang="en">1234</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000104 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000104"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000106 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000106"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000109 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000109"/>
     <rdf:Description>
         <rdfs:seeAlso rdf:resource="https://github.com/oborel/obo-relations/issues/259"/>
     </rdf:Description>
@@ -8891,15 +9197,9 @@ excludes emergency department encounters</PCORnet_00000046>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0001001">
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002081">
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002082">
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <obo:IAO_0000117>David Osumi-Sutherland</obo:IAO_0000117>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002083">
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002084">
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
@@ -9264,63 +9564,6 @@ e.g.  if GP X enables ATPase coupled transporter activity&apos; and &apos;ATPase
         </swrl:head>
     </rdf:Description>
     <rdf:Description>
-        <rdfs:label>From ligand activity to has_ligand</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002327"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#y"/>
-                        <swrl:argument2 rdf:resource="urn:swrl#z"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002578"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#z"/>
-                                <swrl:argument2 rdf:resource="urn:swrl#x"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="http://purl.obolibrary.org/obo/GO_0048018"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl#z"/>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002019"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
-                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
         <rdfs:comment>This rule is dubious: added as a quick fix for expected inference in GO-CAM.  The problem is most acute for transmembrane proteins, such as receptors or cell adhesion molecules, which have some subfunctions inside the cell (e.g. kinase activity) and some subfunctions outside (e.g. ligand binding).  Correct annotation of where these functions occurs leads to incorrect inference about the location of the whole protein.  This should probably be weakened to &quot;... -&gt; overlaps&quot;</rdfs:comment>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
@@ -9537,63 +9780,6 @@ e.g.  if GP X enables ATPase coupled transporter activity&apos; and &apos;ATPase
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdfs:label>From has_ligand to ligand activity</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002019"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
-                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002327"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#y"/>
-                                <swrl:argument2 rdf:resource="urn:swrl#z"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002578"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#z"/>
-                        <swrl:argument2 rdf:resource="urn:swrl#x"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://purl.obolibrary.org/obo/GO_0048018"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#z"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
             </rdf:Description>
         </swrl:head>
     </rdf:Description>
