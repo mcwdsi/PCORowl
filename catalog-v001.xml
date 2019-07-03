@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/omrse.owl" uri="https://raw.githubusercontent.com/ufbmi/OMRSE/eea2a3e6b9f926801342dcdd41c3b969f2959eb3/omrse/omrse.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/omrse.owl" uri="file:/Users/aehicks/repos/OMRSE/omrse/omrse.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ro/releases/2019-02-02/ro.owl" uri="http://purl.obolibrary.org/obo/ro.owl"/>
     <uri id="Imports Wizard Entry" name="https://github.com/OGMS/ogms/releases/tag/v2019-04-30" uri="http://purl.obolibrary.org/obo/ogms.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1562007978184" name="http://purl.obolibrary.org/obo/PCORnet/" uri="PCORnetCDM.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1562169478162" name="http://purl.obolibrary.org/obo/PCORnet/" uri="PCORnetCDM.owl"/>
     </group>
 </catalog>
