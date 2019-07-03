@@ -1,38 +1,38 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/PCORnet/"
      xml:base="http://purl.obolibrary.org/obo/PCORnet/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
-     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
-     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:cito="http://purl.org/spar/cito/"
-     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:oboInOwl1="ttp://www.geneontology.org/formats/oboInOwl#"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#">
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:cito="http://purl.org/spar/cito/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:oboInOwl1="ttp://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/PCORnet/">
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/annotations.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/generated-axioms.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/temporal-intervals.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/core.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/rohom.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/omrse.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/other_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/annotations.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/core.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/el-constraints.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/generated-axioms.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/other_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/rohom.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/temporal-intervals.owl"/>
         <owl:imports rdf:resource="https://github.com/OGMS/ogms/releases/tag/v2019-04-30"/>
         <dc:contributor>Amanda Hicks</dc:contributor>
-        <dc:date>2019-08-03</dc:date>
-        <dc:contributor>William R. Hogan</dc:contributor>
-        <dc:title xml:lang="en">RDFized PCORnet CDM</dc:title>
         <dc:contributor>Josh Hanna</dc:contributor>
+        <dc:contributor>William R. Hogan</dc:contributor>
+        <dc:date>2019-08-03</dc:date>
+        <dc:title xml:lang="en">RDFized PCORnet CDM</dc:title>
     </owl:Ontology>
     
 
@@ -8575,6 +8575,54 @@ excludes emergency department encounters</PCORnet_00000046>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00002018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00002018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+        <obo:IAO_0000115 xml:lang="en">A proper name that denotes a health care encounter and has part some symbol.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">PCORnet health care encounter identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00002019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00002019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+        <obo:IAO_0000115 xml:lang="en">A proper name that denotes a health care facility and has part some symbol.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">PCORnet facility identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00002020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00002020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000097"/>
+        <obo:IAO_0000115 xml:lang="en">A health care encounter that realizes some health care provider role that inheres in some Homo sapiens.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">institutional professional consult</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00002021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00002021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000097"/>
+        <obo:IAO_0000115 xml:lang="en">A health care encounter that occurs in some hospice facility, skilled nursing facility, rehabilitation facility, nursing home facility, residential home facility, overnight non-hospital dialysis facility, adult foster home facility, or assisted living facility.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">non-acute institutional stay</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -8700,8 +8748,8 @@ excludes emergency department encounters</PCORnet_00000046>
     <!-- http://purl.obolibrary.org/obo/PCORowl_00000012 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORowl_00000012">
-        <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000015"/>
         <obo:RO_0000056 rdf:resource="http://purl.obolibrary.org/obo/PCORowl_00000014"/>
+        <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000015"/>
         <rdfs:label xml:lang="en">rta1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -8808,8 +8856,8 @@ excludes emergency department encounters</PCORnet_00000046>
     <!-- http://purl.obolibrary.org/obo/PCORowl_00000025 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORowl_00000025">
-        <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000024"/>
         <obo:RO_0000056 rdf:resource="http://purl.obolibrary.org/obo/PCORowl_00000022"/>
+        <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000024"/>
         <rdfs:label xml:lang="en">rta2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -8837,9 +8885,9 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORowl_00000101">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000127"/>
-        <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000001"/>
         <obo:OBI_0000295 rdf:resource="http://purl.obolibrary.org/obo/PCORowl_00000104"/>
         <obo:OBI_0000312 rdf:resource="http://purl.obolibrary.org/obo/PCORowl_00000102"/>
+        <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000001"/>
         <rdfs:label xml:lang="en">John Doe&apos;s Hispanic or Latino identity datum</rdfs:label>
     </owl:NamedIndividual>
     
@@ -8858,8 +8906,8 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORowl_00000103">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000016"/>
-        <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000001"/>
         <obo:OBI_0000312 rdf:resource="http://purl.obolibrary.org/obo/PCORowl_00000104"/>
+        <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000001"/>
         <rdfs:label xml:lang="en">John Doe’s PCORnet Hispanic identity datum</rdfs:label>
     </owl:NamedIndividual>
     
@@ -8878,9 +8926,9 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORowl_00000105">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000128"/>
-        <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000015"/>
         <obo:OBI_0000295 rdf:resource="http://purl.obolibrary.org/obo/PCORowl_00000109"/>
         <obo:OBI_0000312 rdf:resource="http://purl.obolibrary.org/obo/PCORowl_00000106"/>
+        <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000015"/>
         <rdfs:label xml:lang="en">Jane Doe&apos;s not Hispanic or Latino identity datum</rdfs:label>
     </owl:NamedIndividual>
     
@@ -8899,8 +8947,8 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORowl_00000107">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000017"/>
-        <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000015"/>
         <obo:OBI_0000312 rdf:resource="http://purl.obolibrary.org/obo/PCORowl_00000109"/>
+        <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000015"/>
         <rdfs:label xml:lang="en">Jane Doe’s PCORnet not Hispanic identity datum</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9081,5 +9129,5 @@ excludes emergency department encounters</PCORnet_00000046>
 
 
 
-<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
