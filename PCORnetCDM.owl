@@ -7824,8 +7824,9 @@ Environmental exposures include those imposed by natural environments, experimen
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000026"/>
-        <obo:IAO_0000115 xml:lang="en">a diagnosis about some patient that occurs before or during the admission of that patient</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">a diagnosis that is about some patient and that is the specified output of a diagnostic process that occurs before or during the admission of that patient</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">PCORnet CDM 4.1</obo:IAO_0000119>
         <rdfs:label xml:lang="en">admitting diagnosis</rdfs:label>
     </owl:Class>
@@ -8026,9 +8027,10 @@ Environmental exposures include those imposed by natural environments, experimen
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000026"/>
-        <obo:IAO_0000115 xml:lang="en">a diagnosis that occurs before or simultaneously with the discharge of the patient whom the diagnosis is about</obo:IAO_0000115>
-        <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
-        <obo:IAO_0000119>PCORnet CDM 4.1</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">a diagnosis that is about some patient and that is the specified output of a diagnostic process that occurs before or simultaneously with the discharge of that patient</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">PCORnet CDM 4.1</obo:IAO_0000119>
         <rdfs:label xml:lang="en">discharge diagnosis</rdfs:label>
     </owl:Class>
     
@@ -8054,9 +8056,10 @@ Environmental exposures include those imposed by natural environments, experimen
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">a diagnosis about a patient that is the specified output of a diagnostic process that occurs during an outpatient encounter</obo:IAO_0000115>
-        <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
-        <obo:IAO_0000119>PCORnet CDM 4.1</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">a diagnosis that is about some patient and that is the specified output of a diagnostic process that occurs during an outpatient encounter</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">PCORnet CDM 4.1</obo:IAO_0000119>
         <rdfs:label xml:lang="en">final diagnosis</rdfs:label>
     </owl:Class>
     
@@ -8082,9 +8085,10 @@ Environmental exposures include those imposed by natural environments, experimen
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a diagnosis that is the output of a diagnostic process that occurs during an inpatient encounter, after admission, and before discharge</obo:IAO_0000115>
-        <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
-        <obo:IAO_0000119>PCORnet CDM 4.1</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">a diagnosis that is about some patient and that is the specified output of a diagnostic process that occurs during an inpatient encounter, after admission, and before discharge of that patient</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">PCORnet CDM 4.1</obo:IAO_0000119>
         <rdfs:label xml:lang="en">interim diagnosis</rdfs:label>
     </owl:Class>
     
