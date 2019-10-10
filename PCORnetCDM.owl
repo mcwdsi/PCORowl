@@ -7515,8 +7515,9 @@ Environmental exposures include those imposed by natural environments, experimen
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000021"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">a document act in which concludes an inpatient encounter</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">a document act that concludes an inpatient encounter</obo:IAO_0000119>
         <rdfs:label xml:lang="en">discharge process</rdfs:label>
     </owl:Class>
     
@@ -8858,8 +8859,8 @@ excludes emergency department encounters</PCORnet_00000046>
     <!-- http://purl.obolibrary.org/obo/PCORowl_00000012 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORowl_00000012">
-        <obo:RO_0000056 rdf:resource="http://purl.obolibrary.org/obo/PCORowl_00000014"/>
         <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000015"/>
+        <obo:RO_0000056 rdf:resource="http://purl.obolibrary.org/obo/PCORowl_00000014"/>
         <rdfs:label xml:lang="en">rta1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -8966,8 +8967,8 @@ excludes emergency department encounters</PCORnet_00000046>
     <!-- http://purl.obolibrary.org/obo/PCORowl_00000025 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORowl_00000025">
-        <obo:RO_0000056 rdf:resource="http://purl.obolibrary.org/obo/PCORowl_00000022"/>
         <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000024"/>
+        <obo:RO_0000056 rdf:resource="http://purl.obolibrary.org/obo/PCORowl_00000022"/>
         <rdfs:label xml:lang="en">rta2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -8995,9 +8996,9 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORowl_00000101">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000127"/>
+        <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000001"/>
         <obo:OBI_0000295 rdf:resource="http://purl.obolibrary.org/obo/PCORowl_00000104"/>
         <obo:OBI_0000312 rdf:resource="http://purl.obolibrary.org/obo/PCORowl_00000102"/>
-        <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000001"/>
         <rdfs:label xml:lang="en">John Doe&apos;s Hispanic or Latino identity datum</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9016,8 +9017,8 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORowl_00000103">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000016"/>
-        <obo:OBI_0000312 rdf:resource="http://purl.obolibrary.org/obo/PCORowl_00000104"/>
         <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000001"/>
+        <obo:OBI_0000312 rdf:resource="http://purl.obolibrary.org/obo/PCORowl_00000104"/>
         <rdfs:label xml:lang="en">John Doe’s PCORnet Hispanic identity datum</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9036,9 +9037,9 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORowl_00000105">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000128"/>
+        <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000015"/>
         <obo:OBI_0000295 rdf:resource="http://purl.obolibrary.org/obo/PCORowl_00000109"/>
         <obo:OBI_0000312 rdf:resource="http://purl.obolibrary.org/obo/PCORowl_00000106"/>
-        <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000015"/>
         <rdfs:label xml:lang="en">Jane Doe&apos;s not Hispanic or Latino identity datum</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9057,8 +9058,8 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORowl_00000107">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000017"/>
-        <obo:OBI_0000312 rdf:resource="http://purl.obolibrary.org/obo/PCORowl_00000109"/>
         <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000015"/>
+        <obo:OBI_0000312 rdf:resource="http://purl.obolibrary.org/obo/PCORowl_00000109"/>
         <rdfs:label xml:lang="en">Jane Doe’s PCORnet not Hispanic identity datum</rdfs:label>
     </owl:NamedIndividual>
     
