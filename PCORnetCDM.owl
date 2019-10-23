@@ -8437,9 +8437,12 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00002000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <obo:IAO_0000115 xml:lang="en">A data item that is about a patient discharge, or lack thereof, and the type of facility or organization, if any, to which the patient was discharged.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A data item that is about a documentation activity that records either (i) that some healthcare encounter ends with a patient discharge; (ii) that some healthcare encounter is terminated by a patient without any patient discharge; or (iii) that some healthcare encounter continues while the patient remains in the same hospital and while the hospital is billing a healthcare payor for services after a specified period.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">If the healthcare encounter ends with a patient discharge, then the status might also indicate the type of facility or organization, if any, to which the patient is discharged.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
         <rdfs:label xml:lang="en">PCORnet discharge status data item</rdfs:label>
     </owl:Class>
     
@@ -8449,7 +8452,7 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00002001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00002000"/>
-        <obo:IAO_0000115 xml:lang="en">A PCORnet discharge status that is about a skilled nursing facility to which a patient was discharged.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A PCORnet discharge status data item that is about a discharge process in which a patient is discharged to a skilled nursing facility.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
         <rdfs:label xml:lang="en">PCORnet skilled nursing facility discharge status data item</rdfs:label>
@@ -8461,7 +8464,7 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00002002">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00002000"/>
-        <obo:IAO_0000115 xml:lang="en">A PCORnet discharge status that is about an adult foster home facility to which a patient was discharged.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A PCORnet discharge status data item that is about a discharge process in which a patient is discharged to an adult foster home facility.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
         <rdfs:label xml:lang="en">PCORnet adult foster home facility discharge status data item</rdfs:label>
@@ -8473,7 +8476,7 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00002003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00002000"/>
-        <obo:IAO_0000115 xml:lang="en">A PCORnet discharge status that is about an assisted living facility to which a patient was discharged.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A PCORnet discharge status data item that is about a discharge process in which a patient is discharged to an assisted living facility.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
         <rdfs:label xml:lang="en">PCORnet assisted living facility discharge status data item</rdfs:label>
@@ -8485,7 +8488,7 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00002004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00002000"/>
-        <obo:IAO_0000115 xml:lang="en">A PCORnet discharge status that is about a hospital facility to which a patient was discharged and that is distinct from the discharging hospital.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A PCORnet discharge status data item that is about a discharge process in which a patient is discharged to another hospital.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
@@ -8498,7 +8501,7 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00002005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00002000"/>
-        <obo:IAO_0000115 xml:lang="en">A PCORnet discharge status that is about a nursing home facility to which a patient was discharged.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A PCORnet discharge status data item that is about a discharge process in which a patient is discharged to a nursing home facility.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
         <rdfs:label xml:lang="en">PCORnet nursing home facility discharge status data item</rdfs:label>
@@ -8510,7 +8513,7 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00002006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00002000"/>
-        <obo:IAO_0000115 xml:lang="en">A PCORnet discharge status that is about a rehabilitation facility to which a patient was discharged.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A PCORnet discharge status data item that is about a discharge process in which a patient is discharged to a rehabilitation facility.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
         <rdfs:label xml:lang="en">PCORnet rehabilitation facility discharge status data item</rdfs:label>
@@ -8522,7 +8525,7 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00002007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00002000"/>
-        <obo:IAO_0000115 xml:lang="en">A PCORnet discharge status that is about a residential facility to which a patient was discharged.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A PCORnet discharge status data item that is about a discharge process in which a patient is discharged to a residential facility.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
         <rdfs:label xml:lang="en">PCORnet residential facility discharge status data item</rdfs:label>
@@ -8534,7 +8537,7 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00002008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00002000"/>
-        <obo:IAO_0000115 xml:lang="en">A PCORnet discharge status that is about a hospice organization to which a patient was discharged.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A PCORnet discharge status data item that is about a discharge process in which a patient is discharged under the care of a hospice organization.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
         <rdfs:label xml:lang="en">PCORnet hospice discharge status data item</rdfs:label>
@@ -8546,7 +8549,7 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00002009">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00002000"/>
-        <obo:IAO_0000115 xml:lang="en">A PCORnet discharge status that is about a patient who is discharged upon deciding to leave against the advice of a health care provider.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A PCORnet discharge status data item that is about a discharge process in which a patient is discharged upon deciding to end the encounter against the advice of a healthcare provider.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
         <rdfs:label xml:lang="en">PCORnet against medical advice discharge status data item</rdfs:label>
@@ -8558,9 +8561,10 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00002010">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00002000"/>
-        <obo:IAO_0000115 xml:lang="en">A PCORnet discharge status that is about a hospital facility in which a patient remains, having not been discharged.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A PCORnet discharge status data item that is about a healthcare encounter that continues while the patient remains in the same hospital, and while the hospital is billing a healthcare payor for services after a specified period (typically 90 days).</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
         <rdfs:label xml:lang="en">PCORnet still in hospital discharge status data item</rdfs:label>
     </owl:Class>
     
@@ -8570,9 +8574,10 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00002011">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00002000"/>
-        <obo:IAO_0000115 xml:lang="en">A PCORnet discharge status that is about a home healthcare organization and the household to which a patient was discharged.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A PCORnet discharge status data item that is about a discharge process in which a patient is discharged (i) to a housing unit, and (ii) under the care of a home healthcare organization.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
         <rdfs:label xml:lang="en">PCORnet home health discharge status data item</rdfs:label>
     </owl:Class>
     
@@ -8702,10 +8707,11 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00002022">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00002000"/>
-        <obo:IAO_0000115 xml:lang="en">A discharge status that is about a patient’s terminating a healthcare encounter without being discharged.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A PCORnet discharge status data item that is about a termination of an inpatient encounter, initiated by the patient, that lacks a discharge process as a proper part.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">Matt Diller</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
         <rdfs:label xml:lang="en">PCORnet absent without leave discharge status data item</rdfs:label>
     </owl:Class>
     
