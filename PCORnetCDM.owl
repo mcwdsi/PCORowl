@@ -7949,7 +7949,8 @@ Environmental exposures include those imposed by natural environments, experimen
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000010">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <rdfs:label xml:lang="en">PCORnet CDM item identifier</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete PCORnet CDM item identifier</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -7958,7 +7959,8 @@ Environmental exposures include those imposed by natural environments, experimen
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000011">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <rdfs:label xml:lang="en">PCORnet item</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete PCORnet item</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -8403,7 +8405,8 @@ excludes emergency department encounters</PCORnet_00000046>
     <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000100 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000100">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+        <obo:IAO_0000115 xml:lang="en">An identifier that denotes a diagnosis.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">PCORnet diagnosis identifier</rdfs:label>
     </owl:Class>
     
@@ -8659,7 +8662,7 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00002018">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
-        <obo:IAO_0000115 xml:lang="en">A proper name that denotes a health care encounter and has part some symbol.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An identifier that denotes a health care encounter and has part some symbol.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
         <rdfs:label xml:lang="en">PCORnet health care encounter identifier</rdfs:label>
@@ -8671,7 +8674,7 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00002019">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
-        <obo:IAO_0000115 xml:lang="en">A proper name that denotes a health care facility and has part some symbol.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An identifier that denotes a health care facility and has part some symbol.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
         <rdfs:label xml:lang="en">PCORnet facility identifier</rdfs:label>
@@ -8732,7 +8735,7 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00002024">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
-        <obo:IAO_0000115 xml:lang="en">A proper name that denotes a human being who is a bearer of a person healthcare provider role.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An identifier that denotes a human being who is a bearer of a person healthcare provider role.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
         <rdfs:label xml:lang="en">PCORnet provider identifier</rdfs:label>
