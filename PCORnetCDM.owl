@@ -11940,6 +11940,19 @@ excludes emergency department encounters</PCORnet_00000046>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000506 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000506">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+        <obo:IAO_0000111 xml:lang="en">Internationalized Resource Identifier</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">An identifier that is the specified output of a planned process that realizes the Internet standard RFC 3987 which is available from http://www.ietf.org/rfc/rfc3987.txt.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">IRI</obo:IAO_0000118>
+        <rdfs:comment xml:lang="en">RFC 3987 has the title &quot;Internationalized Resource Identifiers (IRIs)&quot;.  It was published in 2005.</rdfs:comment>
+        <rdfs:label xml:lang="en">Internationalized Resource Identifier</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00002000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00002000">
