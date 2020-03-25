@@ -1087,7 +1087,9 @@ Where we have an annotation assertion
 
     <!-- http://xmlns.com/foaf/0.1/depicted_by -->
 
-    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/depicted_by"/>
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/depicted_by">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">depicted by</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -7539,6 +7541,63 @@ editor date: 2017-04-18
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000996 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000996">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0013515"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fibromuscular tubular tract leading from the uterus to the exterior of the body in female placental mammals and marsupials, or to the cloaca in female birds, monotremes, and some reptiles[WP].</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/uberon/releases/2019-11-22/uberon.owl</obo:IAO_0000412>
+        <obo:UBPROP_0000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organ with organ cavity which connects the cervical canal of uterus to the vestibule of vagina.[FMA]</obo:UBPROP_0000001>
+        <obo:UBPROP_0000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The genital canal in the female, leading from the opening of the vulva to the cervix of the uterus. [TFD][VHOG]</obo:UBPROP_0000001>
+        <obo:UBPROP_0000003 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The distal end of the oviducts differentiates as a vagina in Metatheria and Eutheria.[well established][VHOG]</obo:UBPROP_0000003>
+        <obo:UBPROP_0000007 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vaginal</obo:UBPROP_0000007>
+        <obo:UBPROP_0000011 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;The distal end of the oviducts differentiates as a vagina in Metatheria and Eutheria.&apos; Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective, Third Edition (2001) Orlando Fla.: Harcourt College Publishers, p.688</obo:UBPROP_0000011>
+        <oboInOwl:date_retrieved rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-09-17</oboInOwl:date_retrieved>
+        <oboInOwl:date_retrieved rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-11-29</oboInOwl:date_retrieved>
+        <oboInOwl:external_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:19949</oboInOwl:external_class>
+        <oboInOwl:external_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHOG:0001138</oboInOwl:external_class>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Vagina"/>
+        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0042232"/>
+        <oboInOwl:hasDbXref rdf:resource="http://orcid.org/0000-0002-6601-2165"/>
+        <oboInOwl:hasDbXref rdf:resource="http://www.snomedbrowser.com/Codes/Details/181441005"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000243</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-1103</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0000976</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EMAPA:18986</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EV:0100117</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:19949</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAID:381</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MA:0000394</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MAT:0000128</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D014621</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MIAA:0000128</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C12407</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OpenCyc:Mx4rvVj1B5wpEbGdrcN5Y29ycA</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0042232</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHOG:0001138</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">galen:Vagina</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">distal oviductal region</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">distal portion of oviduct</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vaginae</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#PLURAL"/>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000996</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#efo_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#pheno_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#uberon_slim"/>
+        <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA</oboInOwl:ontology>
+        <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHOG</oboInOwl:ontology>
+        <oboInOwl:source rdf:resource="http://bgee.unil.ch/"/>
+        <oboInOwl:source rdf:resource="http://medical-dictionary.thefreedictionary.com/vagina"/>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.688</oboInOwl:source>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ncithesaurus:Vagina</oboInOwl:source>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vagina</rdfs:label>
+        <foaf:depicted_by rdf:resource="http://upload.wikimedia.org/wikipedia/commons/1/1b/Illu_repdt_female.jpg"/>
+        <foaf:depicted_by rdf:resource="http://upload.wikimedia.org/wikipedia/commons/a/a4/Vaginal_opening_-_english_description.jpg"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0001037 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001037">
@@ -8876,6 +8935,24 @@ editor date: 2017-04-18
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002409 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002409">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007794"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transudate contained in the pericardial cavity.[FMA]</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/uberon/releases/2019-11-22/uberon.owl</obo:IAO_0000412>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Pericardial_fluid"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0001016</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:9887</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MA:0002530</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0002409</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#uberon_slim"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pericardial fluid</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0002530 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002530">
@@ -9358,6 +9435,24 @@ editor date: 2017-04-18
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plasma ultrafiltrate</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0007779</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transudate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0007794 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0007794">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006314"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any fluid produced by a serous gland.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/uberon/releases/2019-11-22/uberon.owl</obo:IAO_0000412>
+        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">serous fluid</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Serous_fluid"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:cjm</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">serosal fluid</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">serous gland fluid</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0007794</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">secretion of serous gland</rdfs:label>
     </owl:Class>
     
 
