@@ -5324,7 +5324,7 @@ Environmental exposures include those imposed by natural environments, experimen
     <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C49474 -->
 
     <owl:Class rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C49474">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000101"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020020"/>
         <rdfs:label xml:lang="en">International Classification of Diseases</rdfs:label>
     </owl:Class>
     
@@ -5561,7 +5561,7 @@ Environmental exposures include those imposed by natural environments, experimen
     <!-- http://purl.obolibrary.org/obo/NCIT_C53489 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C53489">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000101"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020020"/>
         <rdfs:label xml:lang="en">Systematized Nomenclature of Medicine</rdfs:label>
     </owl:Class>
     
@@ -10266,23 +10266,10 @@ excludes emergency department encounters</PCORnet_00000046>
     <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000101 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000101">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002351"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000028"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002351"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000028"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <obo:IAO_0000117 xml:lang="en">a set of non-lexical symbols with a conventionally agreed usage among a group for a particular purpose</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">code set</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This class is superfluous, given the addition of PNO: code set.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DEPRECATED obsolete code set</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/IAO_0020020"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
