@@ -10544,8 +10544,10 @@ editor date: 2017-04-18
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000098"/>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <obo:IAO_0100001 xml:lang="en">&apos;PCORnet racial identity information content entity&apos;</obo:IAO_0100001>
         <rdfs:comment xml:lang="en">A racial identity that is the output of a racial identification process that uses the PCORnet CDM race or terminology. PCORnet CDM claims to use the OMB racial classification, but the crucial difference is that PCORnet CDM requires persons to identify with only one category whereas the OMB allows for multiple racial identities as outputs of an identification process.</rdfs:comment>
-        <rdfs:label xml:lang="en">PCORnet racial identity datum</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete PCORnet racial identity datum</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -10555,7 +10557,9 @@ editor date: 2017-04-18
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000003"/>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">PCORnet American Indian or Alaska Native identity datum</rdfs:label>
+        <obo:IAO_0100001 xml:lang="en">&apos;PCORnet American Indian or Alaska Native identity information content entity&apos;</obo:IAO_0100001>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete PCORnet American Indian or Alaska Native identity datum</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -10565,7 +10569,9 @@ editor date: 2017-04-18
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000003"/>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">PCORnet Asian identity datum</rdfs:label>
+        <obo:IAO_0100001 xml:lang="en">&apos;PCORnet Asian identity information content entity&apos;</obo:IAO_0100001>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete PCORnet Asian identity datum</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -10575,8 +10581,10 @@ editor date: 2017-04-18
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000009">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000003"/>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">PCORnet black or African American identity datum</rdfs:label>
-        <rdfs:label xml:lang="en">PCORnet item</rdfs:label>
+        <obo:IAO_0100001 xml:lang="en">&apos;PCORnet black or African American identity information content entity&apos;</obo:IAO_0100001>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete PCORnet black or African American identity datum</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete PCORnet item</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -10606,7 +10614,9 @@ editor date: 2017-04-18
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000013">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000003"/>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">PCORnet Native Hawaiian or other Pacific Islander identity datum</rdfs:label>
+        <obo:IAO_0100001 xml:lang="en">&apos;PCORnet Native Hawaiian or other Pacific Islander identity information content entity&apos;</obo:IAO_0100001>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete PCORnet Native Hawaiian or other Pacific Islander identity datum</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -10616,7 +10626,9 @@ editor date: 2017-04-18
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000014">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000003"/>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">PCORnet white identity datum</rdfs:label>
+        <obo:IAO_0100001 xml:lang="en">&apos;PCORnet white identity information content entity&apos;</obo:IAO_0100001>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete PCORnet white identity datum</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -10626,7 +10638,9 @@ editor date: 2017-04-18
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000015">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000003"/>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">PCORnet multiple race identity datum</rdfs:label>
+        <obo:IAO_0100001 xml:lang="en">&apos;PCORnet multiple race identity information content entity&apos;</obo:IAO_0100001>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete PCORnet multiple race identity datum</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -10636,8 +10650,10 @@ editor date: 2017-04-18
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000016">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000127"/>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <obo:IAO_0100001 xml:lang="en">&apos;PCORnet Hispanic identity information content entity&apos;</obo:IAO_0100001>
         <rdfs:comment xml:lang="en">From PCORnet CDM &quot;A person of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race.&quot;</rdfs:comment>
-        <rdfs:label xml:lang="en">PCORnet Hispanic identity datum</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete PCORnet Hispanic identity datum</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -10647,7 +10663,9 @@ editor date: 2017-04-18
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000017">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000128"/>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">PCORnet not Hispanic identity datum</rdfs:label>
+        <obo:IAO_0100001 xml:lang="en">&apos;PCORnet non-Hispanic identity information content entity&apos;</obo:IAO_0100001>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete PCORnet not Hispanic identity datum</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -10657,7 +10675,8 @@ editor date: 2017-04-18
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000018">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000100"/>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">PCORnet ethnic identity datum</rdfs:label>
+        <obo:IAO_0100001 xml:lang="en">&apos;PCORnet ethnic identity information content entity&apos;</obo:IAO_0100001>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete PCORnet ethnic identity datum</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -10814,7 +10833,9 @@ editor date: 2017-04-18
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000038">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000049"/>
-        <rdfs:label xml:lang="en">PCORnet sexual orientation identity datum</rdfs:label>
+        <obo:IAO_0100001 xml:lang="en">&apos;PCORnet sexual orientation identity information content entity&apos;</obo:IAO_0100001>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete PCORnet sexual orientation identity datum</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -10882,10 +10903,12 @@ excludes emergency department encounters</PCORnet_00000046>
         <obo:IAO_0000117 xml:lang="en">A healthcare encounter that first occurs as an emergency department visit and then becomes an inpatient hospital stay</obo:IAO_0000117>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0000119>PCORnet CDM 4.1</obo:IAO_0000119>
+        <obo:IAO_0100001 xml:lang="en">&apos;sexual orientation identity information content entity&apos;</obo:IAO_0100001>
         <PCORnet_00000046 xml:lang="en">Permissible substitution for preferred state of separate ED and IP records. Only for use with data sources where the individual records for ED and IP cannot be distinguished.</PCORnet_00000046>
         <rdfs:comment xml:lang="en">A sexual orientation identity datum sis an information content entity that is the output of some sexual orientation identitification process and is intended to be a truthful statement about the subjective feelings of sexual attration, emotional attraction, and romantic attatchments of the person.  Unlike data items they are not necessilary contributed or acquired by a reliable method.</rdfs:comment>
-        <rdfs:label xml:lang="en">emergency department admit to inpatient hospital stay</rdfs:label>
-        <rdfs:label xml:lang="en">sexual orientation identity datum</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete emergency department admit to inpatient hospital stay</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete sexual orientation identity datum</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -10894,9 +10917,10 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000050">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000038"/>
-        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000051"/>
-        <rdfs:label xml:lang="en">PCORnet asexual identity datum</rdfs:label>
-        <rdfs:label xml:lang="en">inpatient hospital encounter</rdfs:label>
+        <obo:IAO_0100001 xml:lang="en">&apos;PCORnet asexual identity information content entity&apos;</obo:IAO_0100001>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete PCORnet asexual identity datum</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete inpatient hospital encounter</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -10905,7 +10929,9 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000051">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000038"/>
-        <rdfs:label xml:lang="en">PCORnet gay identity datum</rdfs:label>
+        <obo:IAO_0100001 xml:lang="en">&apos;PCORnet gay identity information content entity&apos;</obo:IAO_0100001>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete PCORnet gay identity datum</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -10914,7 +10940,9 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000052">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000038"/>
-        <rdfs:label xml:lang="en">PCORnet lesbian identity datum</rdfs:label>
+        <obo:IAO_0100001 xml:lang="en">&apos;PCORnet lesbian identity information content entity&apos;</obo:IAO_0100001>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete PCORnet lesbian identity datum</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -10923,7 +10951,9 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000053">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000038"/>
-        <rdfs:label xml:lang="en">PCORnet multiple sexual orientations identity datum</rdfs:label>
+        <obo:IAO_0100001 xml:lang="en">&apos;PCORnet multiple sexual orientations identity information content entity&apos;</obo:IAO_0100001>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete PCORnet multiple sexual orientations identity datum</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -10932,7 +10962,9 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000054">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000038"/>
-        <rdfs:label xml:lang="en">PCORnet queer identity datum</rdfs:label>
+        <obo:IAO_0100001 xml:lang="en">&apos;PCORnet queer identity information content entity&apos;</obo:IAO_0100001>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete PCORnet queer identity datum</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -10941,7 +10973,9 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000055">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000038"/>
-        <rdfs:label xml:lang="en">PCORnet questioning identity datum</rdfs:label>
+        <obo:IAO_0100001 xml:lang="en">&apos;PCORnet questioning sexual orientation identity information content entity&apos;</obo:IAO_0100001>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete PCORnet questioning identity datum</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -10950,7 +10984,9 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000056">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000038"/>
-        <rdfs:label xml:lang="en">PCORnet something else identity datum</rdfs:label>
+        <obo:IAO_0100001 xml:lang="en">&apos;PCORnet something else sexual orientation identity information content entity&apos;</obo:IAO_0100001>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete PCORnet something else identity datum</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -10959,7 +10995,9 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000057">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000038"/>
-        <rdfs:label xml:lang="en">PCORnet straight identity datum</rdfs:label>
+        <obo:IAO_0100001 xml:lang="en">&apos;PCORnet straight identity information content entity&apos;</obo:IAO_0100001>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete PCORnet straight identity datum</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -10968,8 +11006,10 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000058">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000133"/>
+        <obo:IAO_0100001 xml:lang="en">&apos;PCORnet gender identity information content entity&apos;</obo:IAO_0100001>
         <rdfs:comment xml:lang="en">A gender identity that is the output of a racial identification process that uses the PCORnet CDM race or terminology. PCORnet CDM claims to use the 2015 Edition Health Information Technology (Health IT) Certification Criteria, 2015 Edition Base Electronic Health Record (EHR) Definition, but the crucial difference is that PCORnet CDM requires persons to identify with only one category whereas the other does not have a multiple gender option, which changes the meaning of the values in the value set.</rdfs:comment>
-        <rdfs:label xml:lang="en">PCORnet gender identity datum</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete PCORnet gender identity datum</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -10978,7 +11018,9 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000059">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000058"/>
-        <rdfs:label xml:lang="en">PCORnet genderqueer identity datum</rdfs:label>
+        <obo:IAO_0100001 xml:lang="en">&apos;PCORnet genderqueer/non-binary identity information content entity&apos;</obo:IAO_0100001>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete PCORnet genderqueer identity datum</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -10987,7 +11029,9 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000060">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000058"/>
-        <rdfs:label xml:lang="en">PCORnet man identity datum</rdfs:label>
+        <obo:IAO_0100001 xml:lang="en">&apos;PCORnet man identity information content entity&apos;</obo:IAO_0100001>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete PCORnet man identity datum</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -10996,7 +11040,9 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000061">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000058"/>
-        <rdfs:label xml:lang="en">PCORnet multiple genders datum</rdfs:label>
+        <obo:IAO_0100001 xml:lang="en">&apos;PCORnet multiple gender categories identity information content entity&apos;</obo:IAO_0100001>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete PCORnet multiple genders datum</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -11005,7 +11051,9 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000062">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000058"/>
-        <rdfs:label xml:lang="en">PCORnet something else identity datum</rdfs:label>
+        <obo:IAO_0100001 xml:lang="en">&apos;PCORnet something else gender identity information content entity&apos;</obo:IAO_0100001>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete PCORnet something else identity datum</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -11014,7 +11062,9 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000063">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000058"/>
-        <rdfs:label xml:lang="en">PCORnet transgenderfemale/transwoman/male-to-female identity datum</rdfs:label>
+        <obo:IAO_0100001 xml:lang="en">&apos;PCORnet transgender female/trans woman/male-to-female identity information content entity&apos;</obo:IAO_0100001>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete PCORnet transgenderfemale/transwoman/male-to-female identity datum</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -11023,7 +11073,9 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000064">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000058"/>
-        <rdfs:label xml:lang="en">PCORnet transgendermale/transman/female-to-male identity datum</rdfs:label>
+        <obo:IAO_0100001 xml:lang="en">&apos;PCORnet transgender male/trans man/female-to-male identity information content entity&apos;</obo:IAO_0100001>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete PCORnet transgendermale/transman/female-to-male identity datum</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -11032,7 +11084,9 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000065">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000058"/>
-        <rdfs:label xml:lang="en">PCORnet woman identity datum</rdfs:label>
+        <obo:IAO_0100001 xml:lang="en">&apos;PCORnet woman identity information content entity&apos;</obo:IAO_0100001>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete PCORnet woman identity datum</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
