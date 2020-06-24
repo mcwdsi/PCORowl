@@ -6298,6 +6298,23 @@ editor date: 2017-04-18
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000020"/>
+        <obo:IAO_0000115 xml:lang="en">A PCORnet sexual orientation identity information content entity that is about some person&apos;s identifying as having a sexual orientation referred to by the PCORnet CDM with the term &quot;queer.&quot;</obo:IAO_0000115>
+        <obo:IAO_0000117>S. Clint Dowland</obo:IAO_0000117>
+        <dc:contributor>Mathias Brochhausen</dc:contributor>
+        <dc:contributor>Matthew Diller</dc:contributor>
+        <dc:contributor>Sarah Bost</dc:contributor>
+        <dc:contributor>William R. Hogan</dc:contributor>
+        <rdfs:comment xml:lang="en">The labels and definitions used for the subclasses of &apos;PCORnet sexual orientation identity information content entity&apos; are based on the terminology used for the value set options for the PCORnet Common Data Model&apos;s &apos;sexual orientation&apos; field, which is a modifed version of the terms for, and categories of, sexual orientation that are found in the &quot;2015 Edition Health Information Technology (Health IT) Certification Criteria, 2015 Edition Base Electronic Health Record (EHR) Definition, and ONC Health IT Certification Program Modifications&quot; of the US Department of Health and Human Services (https://www.federalregister.gov/documents/2015/10/16/2015-25597/2015-edition-health-information-technology-health-it-certification-criteria-2015-edition-base). Neither the PCORnet CDM nor the other source provide definitions of their terms for sexual orientations. Our definitions for the corresponding classes thus point to the terms, rather than explain what they mean, as it is unclear how PCORnet intends them to be understood. Furthermore, these terms may be understood differently by different patients who select them as self-descriptions, as some may understand them to be defined in terms of phenotypic sex, others in terms of gender, and others in terms of some combination of the two.</rdfs:comment>
+        <rdfs:comment xml:lang="en">While this is not about one&apos;s identifying as having or not having some sexual orientation, we regard it as a &apos;sexual orientation identity information content entity,&apos; which is defined as being about &quot;whether one identifies as having some sexual orientation.&quot; For example, if one is uncertain whether one is bisexual or heterosexual, one might be in a state of questioning one&apos;s sexuality, and an information content entity about that would seem to qualify as being about whether one identifies as having some sexual orientations. Indeed, there would be two sexual orientations in that example, and the information content entity could be both about whether one identifies as bisexual and about whether one identifies as heterosexual.</rdfs:comment>
+        <rdfs:label xml:lang="en">PCORnet questioning sexual orientation identity information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002577 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RO_0002577">
