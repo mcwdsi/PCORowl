@@ -5925,6 +5925,37 @@ editor date: 2017-04-18
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000000"/>
+        <obo:IAO_0000115 xml:lang="en">A PCORnet ethnic identity information content entity that is about some person&apos;s identifying as Hispanic, which is intended to mean being of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race.</obo:IAO_0000115>
+        <obo:IAO_0000117>S. Clint Dowland</obo:IAO_0000117>
+        <dc:contributor>Amanda Hicks</dc:contributor>
+        <dc:contributor>Mathias Brochhausen</dc:contributor>
+        <dc:contributor>Matthew Diller</dc:contributor>
+        <dc:contributor>Sarah Bost</dc:contributor>
+        <dc:contributor>William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">PCORnet Hispanic identity information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000000"/>
+        <obo:IAO_0000115 xml:lang="en">A PCORnet ethnic identity information content entity that is about some person&apos;s identifying as not Hispanic, where &quot;Hispanic&quot; is intended to mean being of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race.</obo:IAO_0000115>
+        <obo:IAO_0000117>S. Clint Dowland</obo:IAO_0000117>
+        <dc:contributor>Mathias Brochhausen</dc:contributor>
+        <dc:contributor>Matthew Diller</dc:contributor>
+        <dc:contributor>Sarah Bost</dc:contributor>
+        <dc:contributor>William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">PCORnet non-Hispanic identity information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002577 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RO_0002577">
