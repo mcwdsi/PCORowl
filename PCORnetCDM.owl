@@ -5910,16 +5910,16 @@ editor date: 2017-04-18
     
 
 
-    <!-- http://purl.obolibrary.org/obo/PCOR_00000000 -->
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000000 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCOR_00000000">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000205"/>
         <obo:IAO_0000115 xml:lang="en">An ethnic identity information content entity that uses PCORnet CDM terminology for ethnicity, where this terminology corresponds to values for the &quot;Hispanic&quot; field of the Demographic Table.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
-        <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
-        <dc:contributor xml:lang="en">Matthew Diller</dc:contributor>
-        <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
-        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <obo:IAO_0000117>S. Clint Dowland</obo:IAO_0000117>
+        <dc:contributor>Mathias Brochhausen</dc:contributor>
+        <dc:contributor>Matthew Diller</dc:contributor>
+        <dc:contributor>Sarah Bost</dc:contributor>
+        <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:label xml:lang="en">PCORnet ethnic identity information content entity</rdfs:label>
     </owl:Class>
     
