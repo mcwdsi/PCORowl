@@ -5956,6 +5956,23 @@ editor date: 2017-04-18
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000209"/>
+        <obo:IAO_0000115 xml:lang="en">A gender identity information content entity that uses the PCORnet CDM terminology for gender, where this terminology corresponds to values for the &quot;gender identity&quot; field of the Demographic Table.</obo:IAO_0000115>
+        <obo:IAO_0000117>S. Clint Dowland</obo:IAO_0000117>
+        <dc:contributor>Amanda Hicks</dc:contributor>
+        <dc:contributor>Mathias Brochhausen</dc:contributor>
+        <dc:contributor>Matthew Diller</dc:contributor>
+        <dc:contributor>Sarah Bost</dc:contributor>
+        <dc:contributor>William R. Hogan</dc:contributor>
+        <rdfs:comment xml:lang="en">The PCORnet CDM cites the &quot;2015 Edition Health Information Technology (Health IT) Certification Criteria, 2015 Edition Base Electronic Health Record (EHR) Definition, and ONC Health IT Certification Program Modifications&quot; of the US Department of Health and Human Services as the source for its terminology, but the two differ in that the PCORnet CDM allows one to select only one value for gender and includes &apos;multiple gender&apos; as an option, while the other lacks a &apos;multiple gender&apos; option and allows multiple options to be selected. For that source used by PCORnet, see here: https://www.federalregister.gov/documents/2015/10/16/2015-25597/2015-edition-health-information-technology-health-it-certification-criteria-2015-edition-base</rdfs:comment>
+        <rdfs:label xml:lang="en">PCORnet gender identity information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002577 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RO_0002577">
