@@ -6095,6 +6095,22 @@ editor date: 2017-04-18
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000012"/>
+        <obo:IAO_0000115 xml:lang="en">A PCORnet racial identity information content entity that is about some person&apos;s identifying as American Indian or Alaska Native, which is intended to mean having origins in any of the original peoples of North and South America (including Central America), and maintains tribal affiliation or community attachment.</obo:IAO_0000115>
+        <obo:IAO_0000117>S. Clint Dowland</obo:IAO_0000117>
+        <dc:contributor>Mathias Brochhausen</dc:contributor>
+        <dc:contributor>Matthew Diller</dc:contributor>
+        <dc:contributor>Sarah Bost</dc:contributor>
+        <dc:contributor>William R. Hogan</dc:contributor>
+        <rdfs:comment xml:lang="en">This definition corresponds to that used by OMB, which is PCORnet&apos;s source for the terminology used for the value options of the &apos;race&apos; field. It is worth noting that the OMB definition from which this one is derived is problematic, in that it implies that one&apos;s race cannot be Native American or Alaskan Native unless one maintains tribal affiliations or community attachment.</rdfs:comment>
+        <rdfs:label xml:lang="en">PCORnet American Indian or Alaska Native identity information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002577 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RO_0002577">
