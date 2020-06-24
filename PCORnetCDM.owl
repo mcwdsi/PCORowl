@@ -6078,6 +6078,23 @@ editor date: 2017-04-18
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000213"/>
+        <obo:IAO_0000115 xml:lang="en">A racial identity information content entity that uses the PCORnet CDM terminology for race, where this terminology corresponds to the values for the &quot;race&quot; field of the Demographic Table.</obo:IAO_0000115>
+        <obo:IAO_0000117>S. Clint Dowland</obo:IAO_0000117>
+        <dc:contributor>Amanda Hicks</dc:contributor>
+        <dc:contributor>Mathias Brochhausen</dc:contributor>
+        <dc:contributor>Matthew Diller</dc:contributor>
+        <dc:contributor>Sarah Bost</dc:contributor>
+        <dc:contributor>William R. Hogan</dc:contributor>
+        <rdfs:comment xml:lang="en">The PCORnet CDM&apos;s values for the race field are based on the OMB racial classification, but differ in that the PCORnet CDM allows one to select only one value for race and includes &quot;multiple race&quot; as an option, while OMB lacks a &apos;multiple race&apos; option and allows multiple options to be selected.</rdfs:comment>
+        <rdfs:label xml:lang="en">PCORnet racial identity information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002577 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RO_0002577">
