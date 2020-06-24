@@ -6141,6 +6141,21 @@ editor date: 2017-04-18
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000012"/>
+        <obo:IAO_0000115 xml:lang="en">A PCORnet racial identity information content entity that is about some person&apos;s identifying as more than one race.</obo:IAO_0000115>
+        <obo:IAO_0000117>S. Clint Dowland</obo:IAO_0000117>
+        <dc:contributor>Mathias Brochhausen</dc:contributor>
+        <dc:contributor>Matthew Diller</dc:contributor>
+        <dc:contributor>Sarah Bost</dc:contributor>
+        <dc:contributor>William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">PCORnet multiple race identity information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002577 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RO_0002577">
