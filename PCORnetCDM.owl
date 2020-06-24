@@ -6156,6 +6156,21 @@ editor date: 2017-04-18
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000012"/>
+        <obo:IAO_0000115 xml:lang="en">A PCORnet racial identity information content entity that is about some person&apos;s identifying as Native Hawaiian or other Pacific Islander, which is intended to mean having origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands.</obo:IAO_0000115>
+        <obo:IAO_0000117>S. Clint Dowland</obo:IAO_0000117>
+        <dc:contributor>Mathias Brochhausen</dc:contributor>
+        <dc:contributor>Matthew Diller</dc:contributor>
+        <dc:contributor>Sarah Bost</dc:contributor>
+        <dc:contributor>William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">PCORnet Native Hawaiian or other Pacific Islander identity information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002577 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RO_0002577">
