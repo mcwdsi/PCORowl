@@ -6048,6 +6048,36 @@ editor date: 2017-04-18
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000004"/>
+        <obo:IAO_0000115 xml:lang="en">A PCORnet gender identity information content entity that is about some person&apos;s identifying as transgender male, a trans man, or female-to-male.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000117>S. Clint Dowland</obo:IAO_0000117>
+        <obo:IAO_0000117>William R. Hogan</obo:IAO_0000117>
+        <dc:contributor>Sarah Bost</dc:contributor>
+        <rdfs:label xml:lang="en">PCORnet transgender male/trans man/female-to-male identity information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000004"/>
+        <obo:IAO_0000115 xml:lang="en">A PCORnet gender identity information content entity that is about some person&apos;s identifying as a woman.</obo:IAO_0000115>
+        <obo:IAO_0000117>S. Clint Dowland</obo:IAO_0000117>
+        <dc:contributor>Mathias Brochhausen</dc:contributor>
+        <dc:contributor>Matthew Diller</dc:contributor>
+        <dc:contributor>Sarah Bost</dc:contributor>
+        <dc:contributor>William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">PCORnet woman identity information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002577 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RO_0002577">
