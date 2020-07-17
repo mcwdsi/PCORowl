@@ -6347,6 +6347,76 @@ editor date: 2017-04-18
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000101 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000101">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+        <obo:IAO_0000115 xml:lang="en">An identifier that denotes a LOINC information content entity that itself is about some material entity that is the bearer of a specimen role.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">PCORnet Common Data Model Specification v5.1</obo:IAO_0000119>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:comment xml:lang="en">The use of &apos;value name&apos; in the label is a product of PCORnet calling these identifiers &quot;value names.&quot;</rdfs:comment>
+        <rdfs:label xml:lang="en">PCORnet specimen source value name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000102 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000102">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000101"/>
+        <obo:IAO_0000115 xml:lang="en">A PCORnet specimen source value name that is about some blood serum, blood plasma, or urine samples.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:comment xml:lang="en">The use of &apos;value name&apos; in the label is a product of PCORnet calling these identifiers &quot;value names.&quot;</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class, while not ideal in that it doesn’t refer to an actual universal, is a consequence of LOINC system identifiers that consist of disjunctions (e.g., ‘Serum or plasma’).</rdfs:comment>
+        <rdfs:label xml:lang="en">serum, plasma, or urine PCORnet specimen source value name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000103 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000103">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000101"/>
+        <obo:IAO_0000115 xml:lang="en">A PCORnet specimen source value name that is about some blood serum or blood plasma samples.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:comment xml:lang="en">The use of &apos;value name&apos; in the label is a product of PCORnet calling these identifiers &quot;value names.&quot;</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class, while not ideal in that it doesn’t refer to an actual universal, is a consequence of LOINC system identifiers that consist of disjunctions (e.g., ‘Serum or plasma’).</rdfs:comment>
+        <rdfs:label xml:lang="en">serum or plasma PCORnet specimen source value name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000104 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000104">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000101"/>
+        <obo:IAO_0000115 xml:lang="en">A PCORnet specimen source value name that is about some blood serum, blood plasma, or whole blood samples.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:comment xml:lang="en">The use of &apos;value name&apos; in the label is a product of PCORnet calling these identifiers &quot;value names.&quot;</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class, while not ideal in that it doesn’t refer to an actual universal, is a consequence of LOINC system identifiers that consist of disjunctions (e.g., ‘Serum or plasma’).</rdfs:comment>
+        <rdfs:label xml:lang="en">serum, plasma, or blood PCORnet specimen source value name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000105 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000105">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000101"/>
+        <obo:IAO_0000115 xml:lang="en">A PCORnet specimen source value name that is about some blood plasma or tissue samples.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:comment xml:lang="en">The use of &apos;value name&apos; in the label is a product of PCORnet calling these identifiers &quot;value names.&quot;</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class, while not ideal in that it doesn’t refer to an actual universal, is a consequence of LOINC system identifiers that consist of disjunctions (e.g., ‘Serum or plasma’).</rdfs:comment>
+        <rdfs:label xml:lang="en">blood or tissue PCORnet specimen source value name</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002577 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RO_0002577">
