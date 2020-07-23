@@ -5737,27 +5737,7 @@ editor date: 2017-04-18
 
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000126 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000126">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002229"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000100"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty>
-                    <rdf:Description>
-                        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002083"/>
-                    </rdf:Description>
-                </owl:onProperty>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000021"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">a document act that concludes an inpatient encounter</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">discharge process</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000126"/>
     
 
 
