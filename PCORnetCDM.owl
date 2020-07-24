@@ -6397,6 +6397,71 @@ editor date: 2017-04-18
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000106 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000106">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000101"/>
+        <obo:IAO_0000115 xml:lang="en">A PCORnet specimen source value name that is about some specimen of blood plasma.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:comment xml:lang="en">The use of &apos;value name&apos; in the label is a product of PCORnet calling these identifiers &quot;value names.&quot;</rdfs:comment>
+        <rdfs:label xml:lang="en">blood plasma PCORnet specimen source value name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000107 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000107">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000101"/>
+        <obo:IAO_0000115 xml:lang="en">A PCORnet specimen source value name that is about some specimen of cerebrospinal fluid.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:comment xml:lang="en">The use of &apos;value name&apos; in the label is a product of PCORnet calling these identifiers &quot;value names.&quot;</rdfs:comment>
+        <rdfs:label xml:lang="en">cerebrospinal fluid PCORnet specimen source value name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000108 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000108">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000101"/>
+        <obo:IAO_0000115 xml:lang="en">A PCORnet specimen source value name that is about some vaginal specimen.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:comment xml:lang="en">The use of &apos;value name&apos; in the label is a product of PCORnet calling these identifiers &quot;value names.&quot;</rdfs:comment>
+        <rdfs:label xml:lang="en">vagina PCORnet specimen source value name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000109 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000109">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000101"/>
+        <obo:IAO_0000115 xml:lang="en">A PCORnet specimen source value name that is about some cervical specimen.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:comment xml:lang="en">The use of &apos;value name&apos; in the label is a product of PCORnet calling these identifiers &quot;value names.&quot;</rdfs:comment>
+        <rdfs:label xml:lang="en">cervix PCORnet specimen source value name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000110 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000110">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000101"/>
+        <obo:IAO_0000115 xml:lang="en">A PCORnet specimen source value name that is about some specimen of pericardial fluid.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:comment xml:lang="en">The use of &apos;value name&apos; in the label is a product of PCORnet calling these identifiers &quot;value names.&quot;</rdfs:comment>
+        <rdfs:label xml:lang="en">pericardial fluid PCORnet specimen source value name</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002577 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RO_0002577">
