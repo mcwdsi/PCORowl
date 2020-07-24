@@ -1846,14 +1846,6 @@ Examples include: the relationship between two channels collected simultaneously
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RO_0002083 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002083">
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
-    </rdf:Description>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/RO_0002085 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002085">
@@ -10621,7 +10613,7 @@ editor date: 2017-04-18
                             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000104"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002081"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000021"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000201"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -10812,21 +10804,12 @@ editor date: 2017-04-18
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000021">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021002"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002083"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000126"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002223"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000100"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">a social act in which a patient is registered with a health care provider for the purposes of recieving care in an inpatient encounter</obo:IAO_0000115>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">admission process</rdfs:label>
+        <obo:IAO_0100001>&apos;admission process&apos;
+http://purl.obolibrary.org/obo/OMRSE_00000201</obo:IAO_0100001>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete admission process</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -10974,7 +10957,7 @@ editor date: 2017-04-18
                         <owl:complementOf>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000121"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000021"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000201"/>
                             </owl:Restriction>
                         </owl:complementOf>
                     </owl:Class>
@@ -11968,6 +11951,9 @@ excludes emergency department encounters</PCORnet_00000046>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002082">
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <obo:IAO_0000117>David Osumi-Sutherland</obo:IAO_0000117>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002083">
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002084">
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
