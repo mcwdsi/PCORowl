@@ -6319,6 +6319,20 @@ editor date: 2017-04-18
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000101"/>
+        <obo:IAO_0000115 xml:lang="en">A PCORnet specimen source value name that is about a patient.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:comment xml:lang="en">The LOINC codes that this value name applies to are 59768-2 (Procedure indications [Interpretation] Narrative), 32624-9 (Race), 56850-1 (Interpretation and review of laboratory results), and 56794-1 (Internal identifier).</rdfs:comment>
+        <rdfs:comment xml:lang="en">This value name is not about an actual specimen.</rdfs:comment>
+        <rdfs:label xml:lang="en">patient PCORnet specimen source value name</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PCORnet_00000101 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000101">
