@@ -6333,6 +6333,20 @@ editor date: 2017-04-18
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000101"/>
+        <obo:IAO_0000115 xml:lang="en">A PCORnet specimen source value name that is about some identifier that denotes a physician.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:comment xml:lang="en">The PROVIDER value name might denote something other than a physician identifier, like a telephone number, depending on the data source. We limit it to being about an identifier that denotes a physician because this is what our data sources apply the value name to.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This value name is not about an actual specimen.</rdfs:comment>
+        <rdfs:label xml:lang="en">provider PCORnet specimen source value name</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PCORnet_00000101 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000101">
