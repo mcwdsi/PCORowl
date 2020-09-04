@@ -6347,6 +6347,19 @@ editor date: 2017-04-18
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000097"/>
+        <obo:IAO_0000115 xml:lang="en">A health care encounter that first occurs as an emergency department visit and then becomes an inpatient hospital stay</obo:IAO_0000115>
+        <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
+        <obo:IAO_0000119>PCORnet CDM 4.1</obo:IAO_0000119>
+        <PCORnet_00000046 xml:lang="en">Permissible substitution for preferred state of separate ED and IP records. Only for use with data sources where the individual records for ED and IP cannot be distinguished.</PCORnet_00000046>
+        <rdfs:label xml:lang="en">emergency department admit to inpatient hospital stay</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PCORnet_00000101 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000101">
@@ -11026,13 +11039,9 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000049">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000132"/>
-        <obo:IAO_0000117 xml:lang="en">A healthcare encounter that first occurs as an emergency department visit and then becomes an inpatient hospital stay</obo:IAO_0000117>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
-        <obo:IAO_0000119>PCORnet CDM 4.1</obo:IAO_0000119>
         <obo:IAO_0100001 xml:lang="en">&apos;sexual orientation identity information content entity&apos;</obo:IAO_0100001>
-        <PCORnet_00000046 xml:lang="en">Permissible substitution for preferred state of separate ED and IP records. Only for use with data sources where the individual records for ED and IP cannot be distinguished.</PCORnet_00000046>
         <rdfs:comment xml:lang="en">A sexual orientation identity datum sis an information content entity that is the output of some sexual orientation identitification process and is intended to be a truthful statement about the subjective feelings of sexual attration, emotional attraction, and romantic attatchments of the person.  Unlike data items they are not necessilary contributed or acquired by a reliable method.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete emergency department admit to inpatient hospital stay</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete sexual orientation identity datum</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
