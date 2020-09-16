@@ -11,6 +11,7 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:obda="https://w3id.org/obda/vocabulary#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
@@ -1082,6 +1083,30 @@ Where we have an annotation assertion
     <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">see also</rdfs:label>
     </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#example -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#scopeNote -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote"/>
     
 
 
@@ -5385,6 +5410,35 @@ Environmental exposures include those imposed by natural environments, experimen
     <!-- http://purl.obolibrary.org/obo/BFO_0000182 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000182"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000202 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000202">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/bfo/2020/bfo.owl</obo:IAO_0000412>
+        <dc:identifier>155-BFO</dc:identifier>
+        <rdfs:label xml:lang="en">temporal interval</rdfs:label>
+        <skos:definition xml:lang="en">(Elucidation) a temporal interval is a one-dimensional temporal region that is continuous, thus without gaps or breaks</skos:definition>
+        <skos:example xml:lang="en">The year 2018. </skos:example>
+        <skos:prefLabel xml:lang="en">temporal interval</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">A one-dimensional temporal region can include as parts not only temporal intervals but also temporal instants separated from other parts by gaps. </skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000203 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000203">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000148"/>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/bfo/2020/bfo.owl</obo:IAO_0000412>
+        <dc:identifier>209-BFO</dc:identifier>
+        <rdfs:label xml:lang="en">temporal instant</rdfs:label>
+        <skos:definition xml:lang="en">(Elucidation) a temporal instant is a zero-dimensional temporal region that has no proper temporal part</skos:definition>
+        <skos:example xml:lang="en">The millennium.</skos:example>
+        <skos:prefLabel xml:lang="en">temporal instant</skos:prefLabel>
+    </owl:Class>
     
 
 
