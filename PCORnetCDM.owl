@@ -5342,7 +5342,8 @@ Environmental exposures include those imposed by natural environments, experimen
 
     <owl:Class rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C49474">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020020"/>
-        <rdfs:label xml:lang="en">International Classification of Diseases</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete International Classification of Diseases</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -5608,7 +5609,8 @@ Environmental exposures include those imposed by natural environments, experimen
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C53489">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020020"/>
-        <rdfs:label xml:lang="en">Systematized Nomenclature of Medicine</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete Systematized Nomenclature of Medicine</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -11647,8 +11649,9 @@ excludes emergency department encounters</PCORnet_00000046>
     <!-- http://purl.obolibrary.org/obo/NCIT_C49469 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/NCIT_C49469">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/NCIT_C53489"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0020020"/>
         <obo:IAO_0000115 xml:lang="en">Published by the College of American Pathologists, the Systematized Nomenclature of Medicine Clinical Terms is a combination of content of SNOMED Reference Terminology and READ codes.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">SNOMED CT</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">NCI</obo:IAO_0000119>
         <rdfs:label xml:lang="en">Systematized Nomenclature of Medicine Clinical Terms</rdfs:label>
     </owl:NamedIndividual>
