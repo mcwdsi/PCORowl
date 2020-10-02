@@ -11635,8 +11635,9 @@ excludes emergency department encounters</PCORnet_00000046>
     <!-- http://purl.obolibrary.org/obo/NCIT_C128691 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/NCIT_C128691">
-        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C49474"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0020020"/>
         <obo:IAO_0000115 xml:lang="en">An extension of the ICD-10 created by the U.S. National Center for Health Statistics so that the system could be used to capture more morbidity data. This extension included a section of procedure codes.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">ICD-10-CM</obo:IAO_0000118>
         <obo:IAO_0000119>NCI</obo:IAO_0000119>
         <rdfs:label xml:lang="en">International Classification of Diseases, Tenth Revision, Clinical Modification</rdfs:label>
     </owl:NamedIndividual>
@@ -11657,8 +11658,9 @@ excludes emergency department encounters</PCORnet_00000046>
     <!-- http://purl.obolibrary.org/obo/NCIT_C71891 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/NCIT_C71891">
-        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C49474"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0020020"/>
         <obo:IAO_0000115 xml:lang="en">An extension of the ICD-9 created by the U.S. National Center for Health Statistics so that the system could be used to capture more morbidity data. This extension included a section of procedure codes.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">ICD-9-CM</obo:IAO_0000118>
         <obo:IAO_0000119>NCI</obo:IAO_0000119>
         <rdfs:label xml:lang="en">International Classification of Diseases, Ninth Revision, Clinical Modification</rdfs:label>
     </owl:NamedIndividual>
@@ -11680,6 +11682,46 @@ excludes emergency department encounters</PCORnet_00000046>
     <!-- http://purl.obolibrary.org/obo/PCORnet_00000024 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000024"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000034 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000034">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0020020"/>
+        <obo:IAO_0000118 xml:lang="en">ICD-10-PCS</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">International Classification of Diseases, Tenth Revision, Procedure Coding System</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000035 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000035">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0020020"/>
+        <obo:IAO_0000118 xml:lang="en">CPT</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">Current Procedural Terminology</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000036 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000036">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0020020"/>
+        <obo:IAO_0000118 xml:lang="en">HCPCS</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">Healthcare Common Procedural Coding System</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCORnet_00000037 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORnet_00000037">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0020020"/>
+        <obo:IAO_0000118 xml:lang="en">UB-04 FL 42 Revenue Codes</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">Uniform Billing 04 Form Locator 42 Revenue Codes</rdfs:label>
+    </owl:NamedIndividual>
     
 
 
