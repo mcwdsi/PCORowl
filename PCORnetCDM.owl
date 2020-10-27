@@ -874,7 +874,8 @@ Where we have an annotation assertion
     <!-- http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000046 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/PCORnet/PCORnet_00000046">
-        <rdfs:label xml:lang="en">PCORnet CDM Comments</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A verbatim excerpt—such as a definition, comment, or description—from the PCORnet Common Data Model.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">PCORnet CDM comment</rdfs:label>
     </owl:AnnotationProperty>
     
 
