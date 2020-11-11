@@ -11880,9 +11880,7 @@ excludes emergency department encounters</PCORnet_00000046>
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PCORowl_00000020">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000011"/>
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/PATO_0000384"/>
         <obo:RO_0000052 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000001"/>
-        <obo:RO_0000052 rdf:resource="http://purl.obolibrary.org/obo/PCORnet_00000019"/>
         <rdfs:label xml:lang="en">John Doe&apos;s patient role</rdfs:label>
         <rdfs:label xml:lang="en">m1</rdfs:label>
     </owl:NamedIndividual>
